@@ -1,8 +1,3 @@
-echo "*************************** Git Global Config ***************************"
-git config --global http.postBuffer 1048576000
-git config --global http.sslVersion tlsv1.2
-git config --global core.compression 0
-
 echo "*************************** Clone SoraStatus Repo ***************************"
 git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/lotns/sorastatus
 
