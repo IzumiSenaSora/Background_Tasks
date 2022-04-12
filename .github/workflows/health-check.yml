@@ -9,6 +9,10 @@ jobs:
   health_check_job:
     runs-on: ubuntu-latest
     name: Check all sites
+    env:
+      BITBUCKET_TOKEN: ${{secrets.BITBUCKET_TOKEN}}
+      GH_TOKEN: ${{secrets.GH_TOKEN}}
+      GITLAB_TOKEN: ${{secrets.GITLAB_TOKEN}}
     steps:
       - uses: actions/checkout@v2
       - name: Run Shell Script
