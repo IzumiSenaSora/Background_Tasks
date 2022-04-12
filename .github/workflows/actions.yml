@@ -1,4 +1,4 @@
-name: Scheduled Health Check
+name: Background Tasks (Cron Jobs)
 
 # Controls when the action will run.
 on:
@@ -6,9 +6,9 @@ on:
     - cron: "0,15,30,45 * * * *"
 
 jobs:
-  health_check_job:
+  cron_job:
     runs-on: ubuntu-latest
-    name: Check all sites
+    name: Cron Jobs
     env:
       BITBUCKET_TOKEN: ${{secrets.BITBUCKET_TOKEN}}
       GH_TOKEN: ${{secrets.GH_TOKEN}}
@@ -22,6 +22,6 @@ jobs:
       SMTPS: ${{secrets.SMTPS}}
     steps:
       - uses: actions/checkout@v2
-      - name: Run Shell Script
+      - name: Run Cron Jobs
         id: shell_script_run
         run: bash ./deploy.sh
