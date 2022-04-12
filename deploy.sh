@@ -1,6 +1,5 @@
 echo "*************************** Clone SoraStatus Repo ***************************"
-git clone $BITBUCKET
-# https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/lotns/sorastatus
+git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/lotns/sorastatus
 
 echo "*************************** Go To SoraStatus Directory ***************************"
 cd ./sorastatus
