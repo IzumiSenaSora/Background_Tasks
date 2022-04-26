@@ -20,6 +20,6 @@ cd ./logs
 echo "Git Commit"
 git config --global user.name 'Izumi Sena Sora'
 git config --global user.email '$EMAIL'
-git add ./
+git add .
 git commit -m "[Automated] Update SoraStatus Logs $date"
 git push -u origin main
