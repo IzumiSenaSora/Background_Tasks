@@ -10,7 +10,7 @@ echo " *** Go To SoraStatus Directory *** "
 cd ./sorastatus
 
 echo " *** Clone SoraStatus Logs Repo *** "
-git clone https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/SoraStatus_Logs.git
+git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/lotns/sorastatus_logs.git
 
 echo " *** Rename SoraStatus_Logs Into logs *** "
 mv SoraStatus_Logs logs
@@ -32,7 +32,7 @@ git remote -v
 echo " *** Git Commit SoraStatus Logs *** "
 git add .
 git commit -m "[Automated] Update SoraStatus Logs $date"
-git push
+git push origin master
 
 cd ..
 rm -r logs
