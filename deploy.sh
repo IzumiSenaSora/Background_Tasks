@@ -18,7 +18,7 @@ mv SoraStatus_Logs logs
 echo " *** Run SoraStatus Health Checks *** "
 bash health-check.sh
 
-cd ./logs
+cd logs
 
 echo " *** Show Git Remote Lists Of SoraStatus Logs *** "
 git remote -v
