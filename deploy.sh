@@ -21,7 +21,7 @@ bash health-check.sh
 cd ./logs
 
 # Git Commit
-echo "Git Commit"
+echo " *** Git Commit SoraStatus Logs *** "
 git add .
 git commit -m "[Automated] Update SoraStatus Logs $date"
 git push
@@ -29,6 +29,7 @@ git push
 rm -r logs
 cd ..
 
+echo " *** Git Commit SoraStatus Incident *** "
 git add .
 git commit -m "[Automated] Update SoraStatus Incident $date"
 git push origin master
