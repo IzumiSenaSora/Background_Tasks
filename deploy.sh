@@ -4,7 +4,7 @@ git config --global user.name 'Izumi Sena Sora'
 git config --global user.email '$EMAIL'
 
 echo " *** Clone SoraStatus Repo *** "
-git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/lotns/sorastatus
+git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/lotns/sorastatus.git
 
 echo " *** Go To SoraStatus Directory *** "
 cd ./sorastatus
@@ -20,6 +20,14 @@ bash health-check.sh
 
 cd ./logs
 
+echo " *** Add More Push Repo To SoraStatus Logs *** "
+git remote set-url --add --push origin https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/lotns/sorastatus_logs.git
+git remote set-url --add --push origin https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/SoraStatus_Logs.git
+git remote set-url --add --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/SoraStatus/SoraStatus_Logs.git
+
+echo " *** Show Git Remote Lists *** "
+git remote -v
+
 # Git Commit
 echo " *** Git Commit SoraStatus Logs *** "
 git add .
@@ -28,6 +36,14 @@ git push
 
 cd ..
 rm -r logs
+
+echo " *** Add More Push Repo To SoraStatus Public *** "
+git remote set-url --add --push origin https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/lotns/sorastatus.git
+git remote set-url --add --push origin https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/SoraStatus.git
+git remote set-url --add --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/SoraStatus/SoraStatus.git
+
+echo " *** Show Git Remote Lists *** "
+git remote -v
 
 echo " *** Git Commit SoraStatus Incident *** "
 git add .
