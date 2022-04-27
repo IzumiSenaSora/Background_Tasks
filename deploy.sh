@@ -1,5 +1,8 @@
 date=$(TZ='Asia/Dhaka' date +'%a, %d %b %Y %X')
 
+git config --global user.name 'Izumi Sena Sora'
+git config --global user.email '$EMAIL'
+
 echo " *** Clone SoraStatus Repo *** "
 git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/lotns/sorastatus
 
@@ -19,8 +22,13 @@ cd ./logs
 
 # Git Commit
 echo "Git Commit"
-git config --global user.name 'Izumi Sena Sora'
-git config --global user.email '$EMAIL'
 git add .
 git commit -m "[Automated] Update SoraStatus Logs $date"
 git push
+
+rm -r logs
+cd ..
+
+git add .
+git commit -m "[Automated] Update SoraStatus Incident $date"
+git push origin master
