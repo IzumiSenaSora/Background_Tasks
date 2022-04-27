@@ -26,8 +26,8 @@ git add .
 git commit -m "[Automated] Update SoraStatus Logs $date"
 git push
 
-rm -r logs
 cd ..
+rm -r logs
 
 echo " *** Git Commit SoraStatus Incident *** "
 git add .
