@@ -10,7 +10,7 @@ echo " *** Go To SoraStatus Directory *** "
 cd ./sorastatus
 
 echo " *** Clone SoraStatus Logs Repo *** "
-git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/lotns/SoraStatus_Logs.git
+git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/SoraStatus_Logs.git
 
 echo " *** Rename SoraStatus_Logs Into logs *** "
 mv SoraStatus_Logs logs
