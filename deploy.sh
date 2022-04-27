@@ -20,12 +20,7 @@ bash health-check.sh
 
 cd ./logs
 
-echo " *** Add More Push Repo To SoraStatus Logs *** "
-git remote set-url --add --push origin https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/lotns/sorastatus_logs.git
-git remote set-url --add --push origin https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/SoraStatus_Logs.git
-git remote set-url --add --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/SoraStatus/SoraStatus_Logs.git
-
-echo " *** Show Git Remote Lists *** "
+echo " *** Show Git Remote Lists Of SoraStatus Logs *** "
 git remote -v
 
 # Git Commit
@@ -37,12 +32,7 @@ git push origin master
 cd ..
 rm -r logs
 
-echo " *** Add More Push Repo To SoraStatus Public *** "
-git remote set-url --add --push origin https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/lotns/sorastatus.git
-git remote set-url --add --push origin https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/SoraStatus.git
-git remote set-url --add --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/SoraStatus/SoraStatus.git
-
-echo " *** Show Git Remote Lists *** "
+echo " *** Show Git Remote Lists Of SoraStatus *** "
 git remote -v
 
 echo " *** Git Commit SoraStatus Incident *** "
