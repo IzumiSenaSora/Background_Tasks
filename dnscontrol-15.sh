@@ -7,7 +7,13 @@ echo " *** Clone DNSControl Repo *** "
 git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/dnscontrol.git
 
 echo " *** Go To DNSControl Directory *** "
-cd ./dnscontrol/ICANN
+cd ./dnscontrol
+
+echo "Download Packages Which Needed"
+apt-get install ./dnscontrol.deb
+
+echo " *** Go To DNSControl/ICANN Directory *** "
+cd ./ICANN
 
 echo " *** On Day 15 Active Server Will Be Vercel From 16-30 Days *** "
 find . -name "dnsconfig.js" -exec sed -i "s%var ActiveServer = Netlify;%var ActiveServer = Vercel;%g" {} \;
