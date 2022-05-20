@@ -10,7 +10,7 @@ echo " *** Go To DNSControl Directory *** "
 cd ./dnscontrol
 
 echo "Download Packages Which Needed"
-apt-get install ./dnscontrol.deb
+sudo apt-get install ./dnscontrol.deb
 
 echo " *** Go To DNSControl/ICANN Directory *** "
 cd ./ICANN
