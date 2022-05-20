@@ -10,16 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     name: Cron Jobs
     env:
-      BITBUCKET_TOKEN: ${{secrets.BITBUCKET_TOKEN}}
-      GH_TOKEN: ${{secrets.GH_TOKEN}}
-      GITLAB_TOKEN: ${{secrets.GITLAB_TOKEN}}
-      EMAIL: ${{secrets.EMAIL}}
-      LINK: ${{secrets.LINK}}
-      MAILFROM: ${{secrets.MAILFROM}}
-      MAILRCPT: ${{secrets.MAILRCPT}}
-      USERNAME: ${{secrets.USERNAME}}
-      PASSWORD: ${{secrets.PASSWORD}}
-      SMTPS: ${{secrets.SMTPS}}
+      DESEC_AUTH_TOKEN: ${{secrets.DESEC_AUTH_TOKEN}}
+      CLOUDFLARE_APITOKEN: ${{secrets.CLOUDFLARE_APITOKEN}}
+      CLOUDFLARE_ACCOUNTID: ${{secrets.CLOUDFLARE_ACCOUNTID}}
     steps:
       - uses: actions/checkout@v2
       - name: Run Cron Jobs
