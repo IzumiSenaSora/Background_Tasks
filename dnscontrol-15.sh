@@ -1,0 +1,25 @@
+date=$(TZ='Asia/Dhaka' date +'%a, %d %b %Y %X')
+
+git config --global user.name 'Izumi Sena Sora'
+git config --global user.email '$EMAIL'
+
+echo " *** Clone DNSControl Repo *** "
+git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/dnscontrol.git
+
+echo " *** Go To DNSControl Directory *** "
+cd ./dnscontrol/ICANN
+
+echo " *** On Day 15 Active Server Will Be Vercel From 16-30 Days *** "
+find . -name "dnsconfig.js" -exec sed -i "s%var ActiveServer = Netlify;%var ActiveServer = Vercel;%g" {} \;
+
+dnscontrol push --creds ocreds.json
+
+cd ..
+
+echo " *** Show Git Remote Lists Of DNSControl *** "
+git remote -v
+
+echo " *** Git Commit DNSControl Active Server *** "
+git add .
+git commit -m "[Automated] Update DNSControl Active Server $date"
+git push origin master
