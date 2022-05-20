@@ -1,4 +1,4 @@
-name: Background Tasks (Cron Jobs)
+name: SoraStatus Background Tasks (Cron Jobs)
 
 # Controls when the action will run.
 on:
@@ -24,4 +24,4 @@ jobs:
       - uses: actions/checkout@v2
       - name: Run Cron Jobs
         id: shell_script_run
-        run: bash ./deploy.sh
+        run: bash ./sorastatus.sh
