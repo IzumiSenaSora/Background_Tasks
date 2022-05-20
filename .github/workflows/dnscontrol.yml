@@ -1,0 +1,27 @@
+name: DNSControl Background Tasks (Cron Jobs)
+
+# Controls when the action will run.
+on:
+  schedule:
+    - cron: "0 0 15 * *"
+
+jobs:
+  cron_job:
+    runs-on: ubuntu-latest
+    name: Cron Jobs
+    env:
+      BITBUCKET_TOKEN: ${{secrets.BITBUCKET_TOKEN}}
+      GH_TOKEN: ${{secrets.GH_TOKEN}}
+      GITLAB_TOKEN: ${{secrets.GITLAB_TOKEN}}
+      EMAIL: ${{secrets.EMAIL}}
+      LINK: ${{secrets.LINK}}
+      MAILFROM: ${{secrets.MAILFROM}}
+      MAILRCPT: ${{secrets.MAILRCPT}}
+      USERNAME: ${{secrets.USERNAME}}
+      PASSWORD: ${{secrets.PASSWORD}}
+      SMTPS: ${{secrets.SMTPS}}
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run Cron Jobs
+        id: shell_script_run
+        run: bash ./dnscontrol.sh
