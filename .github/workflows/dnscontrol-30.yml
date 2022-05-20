@@ -1,0 +1,20 @@
+name: DNSControl 30 Background Tasks (Cron Jobs)
+
+# Controls when the action will run.
+on:
+  schedule:
+    - cron: "0 0 30 * *"
+
+jobs:
+  cron_job:
+    runs-on: ubuntu-latest
+    name: Cron Jobs
+    env:
+      DESEC_AUTH_TOKEN: ${{secrets.DESEC_AUTH_TOKEN}}
+      CLOUDFLARE_APITOKEN: ${{secrets.CLOUDFLARE_APITOKEN}}
+      CLOUDFLARE_ACCOUNTID: ${{secrets.CLOUDFLARE_ACCOUNTID}}
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run Cron Jobs
+        id: shell_script_run
+        run: bash ./dnscontrol-30.sh
