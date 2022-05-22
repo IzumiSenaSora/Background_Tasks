@@ -25,4 +25,4 @@ jobs:
       - uses: actions/checkout@v2
       - name: Run Cron Jobs
         id: shell_script_run
-        run: bash ./sorastatus.sh
+        run: bash ./sorastatus/sorastatus.sh
