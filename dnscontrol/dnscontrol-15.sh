@@ -24,6 +24,9 @@ echo " *** DNSControl Version *** "
 echo " *** DNSControl Push *** "
 ./dnscontrol push --config ./dnsconfig.js --creds ./ocreds.json
 
+echo " *** Go Back To DNSControl Directory *** "
+cd ..
+
 echo " *** Show Git Remote Lists Of DNSControl *** "
 git remote -v
 
