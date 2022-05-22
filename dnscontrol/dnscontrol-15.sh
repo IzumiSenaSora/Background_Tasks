@@ -18,14 +18,11 @@ cd ./dnscontrol/icann
 echo " *** On Day 15 Active Server Will Be Vercel From 16-30 Days *** "
 find . -name "dnsconfig.js" -exec sed -i "s%var ActiveServer = Netlify;%var ActiveServer = Vercel;%g" {} \;
 
-echo " *** Go Back To DNSControl Directory *** "
-cd ..
-
 echo " *** DNSControl Version *** "
 ./dnscontrol version
 
 echo " *** DNSControl Push *** "
-./dnscontrol push --config ./icann/dnsconfig.js --creds ./icann/ocreds.json
+./dnscontrol push --config ./dnsconfig.js --creds ./ocreds.json
 
 echo " *** Show Git Remote Lists Of DNSControl *** "
 git remote -v
