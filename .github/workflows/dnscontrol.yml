@@ -15,7 +15,7 @@ jobs:
       CLOUDFLARE_ACCOUNTID: ${{secrets.CLOUDFLARE_ACCOUNTID}}
       HEDNS_USERNAME: ${{secrets.HEDNS_USERNAME}}
       HEDNS_PASSWORD: ${{secrets.HEDNS_PASSWORD}}
-      HEDNS_TOTP_KEY: ${{secrets.HEDNS_TOTP_KEY}
+      HEDNS_TOTP_KEY: ${{secrets.HEDNS_TOTP_KEY}}
     steps:
       - uses: actions/checkout@v2
       - name: Run Cron Jobs
