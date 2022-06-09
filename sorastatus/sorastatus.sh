@@ -49,6 +49,7 @@ cp LOTNS_report.log Shishir_report.log
 # cp LOTNS_report.log SoraAPI_report.log
 # cp LOTNS_report.log SoraBlog_report.log
 cp LOTNS_report.log SoraCloud_report.log
+# cp LOTNS_report.log AboutSoraCloud_report.log
 cp LOTNS_report.log SoraDNS_report.log
 # cp LOTNS_report.log SoraFonts_report.log
 cp LOTNS_report.log SoraFoundation_report.log
