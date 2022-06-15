@@ -8,9 +8,9 @@ git config --global user.email "$EMAIL"
 echo " *** Go To Git Directory *** "
 cd ./git
 
-echo "$(bash ./clone.sh)"
-echo "$(bash ./remote.sh)"
-# echo "$(bash ./fetch.sh)"
-# echo "$(bash ./merge.sh)"
-echo "$(bash ./pull.sh)"
-echo "$(bash ./push.sh)"
+bash ./clone.sh
+bash ./remote.sh
+# bash ./fetch.sh
+# bash ./merge.sh
+bash ./pull.sh
+bash ./push.sh
