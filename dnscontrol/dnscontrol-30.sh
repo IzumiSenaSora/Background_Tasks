@@ -1,7 +1,7 @@
 date=$(TZ='Asia/Dhaka' date +'%a, %d %b %Y %X')
 
-git config --global user.name 'Izumi Sena Sora'
-git config --global user.email '$EMAIL'
+git config --global user.name "Izumi Sena Sora"
+git config --global user.email "$EMAIL"
 
 echo " *** Create Tmp Directory *** "
 mkdir -p ./tmp
