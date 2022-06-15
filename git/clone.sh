@@ -1,11 +1,11 @@
 date=$(TZ='Asia/Dhaka' date +'%a, %d %b %Y %X')
-SPACEStart="*************************** Starting ***************************"
-SPACEEnd="*************************** Ending ***************************"
+SPACEStart=" *** Starting ***"
+SPACEEnd=" *** Ending ***"
 
 git config --global user.name "Izumi Sena Sora"
 git config --global user.email "$EMAIL"
 
-echo "*************************** CLONE ***************************"
+echo " *** CLONE *** "
 echo "$SPACEStart"
 echo "LOTNS Server Setup"
 git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/lotns_server_setup.git
