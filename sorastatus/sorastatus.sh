@@ -10,7 +10,7 @@ echo " *** Go To Tmp Directory *** "
 cd ./tmp
 
 echo " *** Clone SoraStatus Repo *** "
-git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/lotns/sorastatus.git
+git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/sorastatus.git
 
 echo " *** Go To SoraStatus Directory *** "
 cd ./sorastatus
