@@ -8,7 +8,7 @@ git config --global user.email "$EMAIL"
 echo "*************************** CLONE ***************************"
 echo "$SPACEStart"
 echo "LOTNS Server Setup"
-git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/lotns/lotns_server_setup.git
+git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/lotns_server_setup.git
 echo "$SPACEEnd"
 
 echo "$SPACEStart"
@@ -23,37 +23,37 @@ echo "$SPACEEnd"
 
 echo "$SPACEStart"
 echo "About Soracloud"
-git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/lotns/about_soracloud.git
+git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/about_soracloud.git
 echo "$SPACEEnd"
 
 echo "$SPACEStart"
 echo "SoraCloud Themes"
-git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/lotns/soracloud_themes.git
+git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/soracloud_themes.git
 echo "$SPACEEnd"
 
 echo "$SPACEStart"
 echo "SoraAPI"
-git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/lotns/soraapi.git
+git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/soraapi.git
 echo "$SPACEEnd"
 
 echo "$SPACEStart"
 echo "SoraBlog"
-git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/lotns/sorablog.git
+git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/sorablog.git
 echo "$SPACEEnd"
 
 echo "$SPACEStart"
 echo "SoraFonts"
-git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/lotns/sorafonts.git
+git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/sorafonts.git
 echo "$SPACEEnd"
 
 echo "$SPACEStart"
 echo "LOTNS Web Server"
-git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/lotns/lotns_web_server.git
+git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/lotns_web_server.git
 echo "$SPACEEnd"
 
 echo "$SPACEStart"
 echo "LOTNS"
-git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/lotns/lotns.git
+git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/lotns.git
 echo "$SPACEEnd"
 
 echo "$SPACEStart"
@@ -63,17 +63,17 @@ echo "$SPACEEnd"
 
 echo "$SPACEStart"
 echo "SoraID"
-git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/lotns/soraid.git
+git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/soraid.git
 echo "$SPACEEnd"
 
 echo "$SPACEStart"
 echo "SoraID UnProtected"
-git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/lotns/soraid_unprotected.git
+git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/soraid_unprotected.git
 echo "$SPACEEnd"
 
 echo "$SPACEStart"
 echo "SoraStatus Public"
-git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/lotns/sorastatus.git
+git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/sorastatus.git
 echo "$SPACEEnd"
 
 echo "$SPACEStart"
@@ -83,12 +83,12 @@ echo "$SPACEEnd"
 
 echo "$SPACEStart"
 echo "SoraStatus Private"
-git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/lotns/sorastatus_private.git
+git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/sorastatus_private.git
 echo "$SPACEEnd"
 
 echo "$SPACEStart"
 echo "ReWrites"
-git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/lotns/rewrites.git
+git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/rewrites.git
 echo "$SPACEEnd"
 
 echo "$SPACEStart"
