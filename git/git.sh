@@ -21,8 +21,8 @@ bash ./remote.sh
 echo " *** PULL *** "
 bash ./pull.sh
 
-# echo " *** CHECKOUT *** "
-# bash ./checkout.sh
+echo " *** CHECKOUT *** "
+bash ./checkout.sh
 
 echo " *** PUSH *** "
 bash ./push.sh
