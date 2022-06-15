@@ -125,12 +125,12 @@ git pull
 echo "$SPACEEnd"
 cd ..
 
-echo "$SPACEStart"
-echo "Let's Encrypt"
-cd ./letsencrypt
-git pull
-echo "$SPACEEnd"
-cd ..
+# echo "$SPACEStart"
+# echo "Let's Encrypt"
+# cd ./letsencrypt
+# git pull
+# echo "$SPACEEnd"
+# cd ..
 
 echo "$SPACEStart"
 echo "AeonQuake"
