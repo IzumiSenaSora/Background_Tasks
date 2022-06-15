@@ -1,11 +1,11 @@
 date=$(TZ='Asia/Dhaka' date +'%a, %d %b %Y %X')
-SPACEStart="*************************** Starting ***************************"
-SPACEEnd="*************************** Ending ***************************"
+SPACEStart=" *** Starting *** "
+SPACEEnd=" *** Ending *** "
 
 git config --global user.name "Izumi Sena Sora"
 git config --global user.email "$EMAIL"
 
-echo "*************************** PUSH ***************************"
+echo " *** PUSH *** "
 echo "$SPACEStart"
 echo "LOTNS Server Setup"
 cd ./lotns_server_setup
@@ -159,14 +159,14 @@ git push origin master
 echo "$SPACEEnd"
 cd ..
 
-echo "$SPACEStart"
-echo "Let's Encrypt"
-cd ./letsencrypt
-git add .
-git commit -m "Update Let's Encrypt $date"
-git push origin master
-echo "$SPACEEnd"
-cd ..
+# echo "$SPACEStart"
+# echo "Let's Encrypt"
+# cd ./letsencrypt
+# git add .
+# git commit -m "Update Let's Encrypt $date"
+# git push origin master
+# echo "$SPACEEnd"
+# cd ..
 
 echo "$SPACEStart"
 echo "AeonQuake"
