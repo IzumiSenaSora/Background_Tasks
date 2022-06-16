@@ -215,125 +215,125 @@ purge_cache=$(curl --silent -X POST "https://api.cloudflare.com/client/v4/zones/
 # echo "
 # *** Delete All Zone ***
 # "
-# echo "$deletezone"
+# echo "$deletezone" | jq .
 
 echo "
 *** Zone Details ***
 "
-echo "$zones"
+echo "$zones" | jq .
 
 echo "
 *** DNSSEC Details ***
 "
-echo "$dnssec"
+echo "$dnssec" | jq .
 
 echo "
 *** Zone Activation Check ***
 "
-echo "$activation_check"
+echo "$activation_check" | jq .
 
 echo "
 *** Get Minimum TLS Version setting ***
 "
-echo "$min_tls_version"
+echo "$min_tls_version" | jq .
 
 echo "
 *** Change Challenge TTL setting ***
 "
-echo "$challenge_ttl"
+echo "$challenge_ttl" | jq .
 
 echo "
 *** Change Security Level setting ***
 "
-echo "$security_level"
+echo "$security_level" | jq .
 
 echo "
 *** Change Minify setting ***
 "
-echo "$minify"
+echo "$minify" | jq .
 
 echo "
 *** Change Brotli setting ***
 "
-echo "$brotli"
+echo "$brotli" | jq .
 
 echo "
 *** Change Browser Cache TTL setting ***
 "
-echo "$browser_cache_ttl"
+echo "$browser_cache_ttl" | jq .
 
 echo "
 *** Change SSL setting ***
 "
-echo "$ssl"
+echo "$ssl" | jq .
 
 echo "
 *** Change Always Use HTTPS setting ***
 "
-echo "$always_use_https"
+echo "$always_use_https" | jq .
 
 echo "
 *** Change Cache Level setting ***
 "
-echo "$cache_level"
+echo "$cache_level" | jq .
 
 echo "
 *** Create Page Rule ***
 "
-echo "$create_pagerules"
+echo "$create_pagerules" | jq .
 
 echo "
 *** List Page Rules ***
 "
-echo "$pagerules_active_list"
+echo "$pagerules_active_list" | jq .
 
 echo "
 *** Change Browser Check setting ***
 "
-echo "$browser_check"
+echo "$browser_check" | jq .
 
 echo "
 *** Change Rocket Loader setting ***
 "
-echo "$rocket_loader"
+echo "$rocket_loader" | jq .
 
 echo "
 *** Change Early Hints setting ***
 "
-echo "$early_hints"
+echo "$early_hints" | jq .
 
 echo "
 *** Change Automatic HTTPS Rewrites setting ***
 "
-echo "$automatic_https_rewrites"
+echo "$automatic_https_rewrites" | jq .
 
 echo "
 *** Edit Universal SSL Settings ***
 "
-echo "$universal"
+echo "$universal" | jq .
 
 echo "
 *** Change Always Online setting ***
 "
-echo "$always_online"
+echo "$always_online" | jq .
 
 echo "
 *** Change Email Obfuscation setting ***
 "
-echo "$email_obfuscation"
+echo "$email_obfuscation" | jq .
 
 echo "
 *** Change Server Side Exclude setting ***
 "
-echo "$server_side_exclude"
+echo "$server_side_exclude" | jq .
 
 echo "
 *** Change Hotlink Protection setting ***
 "
-echo "$hotlink_protection"
+echo "$hotlink_protection" | jq .
 
 echo "
 *** Purge All Files ***
 "
-echo "$purge_cache"
+echo "$purge_cache" | jq .
 done
