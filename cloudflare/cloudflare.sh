@@ -119,8 +119,6 @@ cache_level=$(curl --silent -X PATCH "https://api.cloudflare.com/client/v4/zones
      --data '{"value":"basic"}')
 
 # Create Page Rule
-# default value: aggressive
-# valid values: aggressive, basic, simplified
 create_pagerules=$(curl --silent -X POST "https://api.cloudflare.com/client/v4/zones/$url/pagerules" \
      -H "Authorization: Bearer $CLOUDFLARE_API_KEY" \
      -H "Content-Type: application/json" \
