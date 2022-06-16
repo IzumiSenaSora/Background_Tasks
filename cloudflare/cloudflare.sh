@@ -209,128 +209,128 @@ purge_cache=$(curl --silent -X POST "https://api.cloudflare.com/client/v4/zones/
      --data '{"purge_everything":true}')
 
   done
-#echo "
-#*************************** Delete All Zone ***************************
-#"
-#echo "$deletezone"
+# echo "
+# *** Delete All Zone ***
+# "
+# echo "$deletezone"
 
 echo "
-*************************** Zone Details ***************************
+*** Zone Details ***
 "
 echo "$zones"
 
 echo "
-*************************** DNSSEC Details ***************************
+*** DNSSEC Details ***
 "
 echo "$dnssec"
 
 echo "
-*************************** Zone Activation Check ***************************
+*** Zone Activation Check ***
 "
 echo "$activation_check"
 
 echo "
-*************************** Get Minimum TLS Version setting ***************************
+*** Get Minimum TLS Version setting ***
 "
 echo "$min_tls_version"
 
 echo "
-*************************** Change Challenge TTL setting ***************************
+*** Change Challenge TTL setting ***
 "
 echo "$challenge_ttl"
 
 echo "
-*************************** Change Security Level setting ***************************
+*** Change Security Level setting ***
 "
 echo "$security_level"
 
 echo "
-*************************** Change Minify setting ***************************
+*** Change Minify setting ***
 "
 echo "$minify"
 
 echo "
-*************************** Change Brotli setting ***************************
+*** Change Brotli setting ***
 "
 echo "$brotli"
 
 echo "
-*************************** Change Browser Cache TTL setting ***************************
+*** Change Browser Cache TTL setting ***
 "
 echo "$browser_cache_ttl"
 
 echo "
-*************************** Change SSL setting ***************************
+*** Change SSL setting ***
 "
 echo "$ssl"
 
 echo "
-*************************** Change Always Use HTTPS setting ***************************
+*** Change Always Use HTTPS setting ***
 "
 echo "$always_use_https"
 
 echo "
-*************************** Change Cache Level setting ***************************
+*** Change Cache Level setting ***
 "
 echo "$cache_level"
 
 echo "
-*************************** Create Page Rule ***************************
+*** Create Page Rule ***
 "
 echo "$create_pagerules"
 
 echo "
-*************************** List Page Rules ***************************
+*** List Page Rules ***
 "
 echo "$pagerules_active_list"
 
 echo "
-*************************** Change Browser Check setting ***************************
+*** Change Browser Check setting ***
 "
 echo "$browser_check"
 
 echo "
-*************************** Change Rocket Loader setting ***************************
+*** Change Rocket Loader setting ***
 "
 echo "$rocket_loader"
 
 echo "
-*************************** Change Early Hints setting ***************************
+*** Change Early Hints setting ***
 "
 echo "$early_hints"
 
 echo "
-*************************** Change Automatic HTTPS Rewrites setting ***************************
+*** Change Automatic HTTPS Rewrites setting ***
 "
 echo "$automatic_https_rewrites"
 
 echo "
-*************************** Edit Universal SSL Settings ***************************
+*** Edit Universal SSL Settings ***
 "
 echo "$universal"
 
 echo "
-*************************** Change Always Online setting ***************************
+*** Change Always Online setting ***
 "
 echo "$always_online"
 
 echo "
-*************************** Change Email Obfuscation setting ***************************
+*** Change Email Obfuscation setting ***
 "
 echo "$email_obfuscation"
 
 echo "
-*************************** Change Server Side Exclude setting ***************************
+*** Change Server Side Exclude setting ***
 "
 echo "$server_side_exclude"
 
 echo "
-*************************** Change Hotlink Protection setting ***************************
+*** Change Hotlink Protection setting ***
 "
 echo "$hotlink_protection"
 
 echo "
-*************************** Purge All Files ***************************
+*** Purge All Files ***
 "
 echo "$purge_cache"
 done
