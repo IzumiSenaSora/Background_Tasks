@@ -1,3 +1,6 @@
+echo " *** Install JQ *** "
+sudo apt-get install jq
+
 KEYSARRAY=()
 URLSARRAY=()
 
