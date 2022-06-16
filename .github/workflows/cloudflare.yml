@@ -14,4 +14,4 @@ jobs:
       - uses: actions/checkout@v2
       - name: Run Cron Jobs
         id: shell_script_run
-        run: bash ./dnscontrol/dnscontrol.sh
+        run: bash ./cloudflare/cloudflare.sh
