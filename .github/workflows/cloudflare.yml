@@ -1,0 +1,17 @@
+name: Cloudflare Background Tasks (Cron Jobs)
+
+# Controls when the action will run.
+on:
+  workflow_dispatch:
+
+jobs:
+  cron_job:
+    runs-on: ubuntu-latest
+    name: Cron Jobs
+    env:
+      CLOUDFLARE_APITOKEN: ${{secrets.CLOUDFLARE_APITOKEN}}
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run Cron Jobs
+        id: shell_script_run
+        run: bash ./dnscontrol/dnscontrol.sh
