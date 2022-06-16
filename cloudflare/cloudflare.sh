@@ -1,5 +1,5 @@
-echo " *** Install JQ *** "
-sudo apt-get install jq
+echo " *** Go To Cloudflare Dir *** "
+cd ./cloudflare
 
 KEYSARRAY=()
 URLSARRAY=()
