@@ -54,6 +54,7 @@ cp LOTNS_report.log SoraDNS_report.log
 # cp LOTNS_report.log SoraFonts_report.log
 cp LOTNS_report.log SoraFoundation_report.log
 # cp LOTNS_report.log SoraID_report.log
+cp LOTNS_report.log SoraLicense_report.log
 cp LOTNS_report.log SoraMail_report.log
 cp LOTNS_report.log SoraOS_report.log
 # cp LOTNS_report.log SoraStatus_report.log
