@@ -124,6 +124,15 @@ echo "$SPACEEnd"
 cd ..
 
 echo "$SPACEStart"
+echo "SoraLicense"
+cd ./soralicense
+git add .
+git commit -m "Update SoraLicense $date"
+git push origin master
+echo "$SPACEEnd"
+cd ..
+
+echo "$SPACEStart"
 echo "SoraStatus Public"
 cd ./sorastatus
 git add .
