@@ -98,6 +98,13 @@ echo "$SPACEEnd"
 cd ..
 
 echo "$SPACEStart"
+echo "SoraLicense"
+cd ./soralicense
+git merge
+echo "$SPACEEnd"
+cd ..
+
+echo "$SPACEStart"
 echo "SoraStatus Public"
 cd ./sorastatus
 git merge
