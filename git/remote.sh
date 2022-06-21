@@ -189,6 +189,20 @@ echo "$SPACEEnd"
 cd ..
 
 echo "$SPACEStart"
+echo "SoraLicense"
+cd ./soralicense
+# git remote set-url --delete --push origin https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/soralicense.git
+# git remote set-url --delete --push origin https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/SoraLicense.git
+# git remote set-url --delete --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/SoraLicense/SoraLicense.git
+
+git remote set-url --add --push origin https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/soralicense.git
+git remote set-url --add --push origin https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/SoraLicense.git
+git remote set-url --add --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/SoraLicense/SoraLicense.git
+git remote -v
+echo "$SPACEEnd"
+cd ..
+
+echo "$SPACEStart"
 echo "SoraStatus Public"
 cd ./sorastatus
 # git remote set-url --delete --push origin https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/sorastatus.git
