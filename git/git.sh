@@ -12,5 +12,5 @@ bash ./remote.sh
 # bash ./merge.sh
 bash ./pull.sh
 # bash ./checkout.sh
+bash ./sed.sh
 bash ./push.sh
-# bash ./sed.sh
