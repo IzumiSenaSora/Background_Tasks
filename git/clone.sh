@@ -72,6 +72,11 @@ git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/sor
 echo "$SPACEEnd"
 
 echo "$SPACEStart"
+echo "SoraLicense"
+git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/soralicense.git
+echo "$SPACEEnd"
+
+echo "$SPACEStart"
 echo "SoraStatus Public"
 git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/sorastatus.git
 echo "$SPACEEnd"
