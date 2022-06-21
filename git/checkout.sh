@@ -163,6 +163,18 @@ echo "$SPACEEnd"
 cd ..
 
 echo "$SPACEStart"
+echo "SoraLicense"
+cd ./soralicense
+git checkout --orphan main
+git add --all
+git commit --all -m "Update SoraLicense $date"
+git branch -D master
+git branch -m master
+git push -f origin master
+echo "$SPACEEnd"
+cd ..
+
+echo "$SPACEStart"
 echo "SoraStatus Public"
 cd ./sorastatus
 git checkout --orphan main
