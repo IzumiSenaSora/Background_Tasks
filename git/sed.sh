@@ -26,6 +26,7 @@ find . -name "$url" -exec sed -i "s%https://aeonquake.eu.org%https://www.aeonqua
 find . -name "$url" -exec sed -i "s%https://lotns.eu.org%https://www.lotns.eu.org%g" {} \;
 find . -name "$url" -exec sed -i "s%https://soraapi.eu.org%https://www.soraapi.eu.org%g" {} \;
 find . -name "$url" -exec sed -i "s%https://www.soraapi.eu.org%https://www.soraapis.eu.org%g" {} \;
+find . -name "$url" -exec sed -i "s%https://www.soraapi.eu.org/LICENSE%https://www.soralicense.eu.org%g" {} \;
 find . -name "$url" -exec sed -i "s%https://sorablog.eu.org%https://www.sorablog.eu.org%g" {} \;
 find . -name "$url" -exec sed -i "s%https://soracloud.eu.org%https://www.soracloud.eu.org%g" {} \;
 find . -name "$url" -exec sed -i "s%https://sorafonts.eu.org%https://www.sorafonts.eu.org%g" {} \;
