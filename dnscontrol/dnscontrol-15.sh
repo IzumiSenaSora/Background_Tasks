@@ -33,4 +33,4 @@ git remote -v
 echo " *** Git Commit DNSControl Active Server *** "
 git add .
 git commit -m "[Automated] Update DNSControl Active Server $date"
-git push origin master
+git push origin main
