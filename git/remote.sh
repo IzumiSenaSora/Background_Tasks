@@ -49,15 +49,15 @@ echo "$SPACEEnd"
 cd ..
 
 echo "$SPACEStart"
-echo "About Soracloud"
+echo "About SoraCloud"
 cd ./about_soracloud
 # git remote set-url --delete --push origin https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/about_soracloud.git
-# git remote set-url --delete --push origin https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/About_Soracloud.git
-# git remote set-url --delete --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/SoraCloud/About_Soracloud.git
+# git remote set-url --delete --push origin https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/About_SoraCloud.git
+# git remote set-url --delete --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/SoraCloud/About_SoraCloud.git
 
 git remote set-url --add --push origin https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/about_soracloud.git
-git remote set-url --add --push origin https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/About_Soracloud.git
-git remote set-url --add --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/SoraCloud/About_Soracloud.git
+git remote set-url --add --push origin https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/About_SoraCloud.git
+git remote set-url --add --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/SoraCloud/About_SoraCloud.git
 git remote -v
 echo "$SPACEEnd"
 cd ..
