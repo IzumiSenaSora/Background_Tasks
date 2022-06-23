@@ -15,6 +15,10 @@ jobs:
       DESEC_AUTH_TOKEN: ${{secrets.DESEC_AUTH_TOKEN}}
       CLOUDFLARE_APITOKEN: ${{secrets.CLOUDFLARE_APITOKEN}}
       CLOUDFLARE_ACCOUNTID: ${{secrets.CLOUDFLARE_ACCOUNTID}}
+      HEDNS_USERNAME: ${{secrets.HEDNS_USERNAME}}
+      HEDNS_PASSWORD: ${{secrets.HEDNS_PASSWORD}}
+      HEDNS_TOTP_KEY: ${{secrets.HEDNS_TOTP_KEY}}
+      EMAIL: ${{secrets.EMAIL}}
     steps:
       - uses: actions/checkout@v2
       - name: Run Cron Jobs
