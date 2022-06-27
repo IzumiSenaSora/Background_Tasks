@@ -150,6 +150,78 @@
       ]
     },
     {
+      "source": "/(.*.jpeg)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+        }
+      ]
+    },
+    {
+      "source": "/(.*.cur)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+        }
+      ]
+    },
+    {
+      "source": "/(.*.gz)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+        }
+      ]
+    },
+    {
+      "source": "/(.*.mp4)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+        }
+      ]
+    },
+    {
+      "source": "/(.*.ogg)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+        }
+      ]
+    },
+    {
+      "source": "/(.*.ogv)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+        }
+      ]
+    },
+    {
+      "source": "/(.*.webm)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+        }
+      ]
+    },
+    {
+      "source": "/(.*.htc)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+        }
+      ]
+    },
+    {
       "source": "/(.*.ico)",
       "headers": [
         {
