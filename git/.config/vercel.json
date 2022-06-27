@@ -249,6 +249,15 @@
       ]
     },
     {
+      "source": "/(.*.rss)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=1800, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+        }
+      ]
+    },
+    {
       "source": "/(.*.atom)",
       "headers": [
         {
