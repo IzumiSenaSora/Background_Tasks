@@ -1,0 +1,234 @@
+{
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "0"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=63072000; includeSubDomains; preload"
+        },  
+        {
+          "key": "Expect-CT",
+          "value": "enforce, max-age=63072000"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Cross-Origin-Opener-Policy",
+          "value": "same-origin"
+        },
+        {
+          "key": "Cross-Origin-Embedder-Policy",
+          "value": "require-corp"
+        },
+        {
+          "key": "Cross-Origin-Resource-Policy",
+          "value": "cross-origin"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "no-referrer"
+        },
+        {
+          "key": "Powered-By",
+          "value": "Light Of The Night Sky (LOTNS)"
+        },
+        {
+          "key": "Author",
+          "value": "Izumi Sena Sora (UnOrdinary)"
+        },
+        {
+          "key": "Sec-GPC",
+          "value": "1"
+        },
+        {
+          "key": "X-Robots-Tag",
+          "value": "none"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, no-cache, no-transform"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "key": "Timing-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "key": "Link",
+          "value": "<https://www.soraapis.eu.org>; rel=preconnect; crossorigin, <https://www.sorafonts.eu.org>; rel=preconnect; crossorigin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "accelerometer=(), ambient-light-sensor=(), autoplay=(), battery=(), camera=(), cross-origin-isolated=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(), geolocation=(), gyroscope=(), keyboard-map=(), magnetometer=(), microphone=(), midi=(), navigation-override=(), payment=(), picture-in-picture=(), publickey-credentials-get=(), screen-wake-lock=(), sync-xhr=(), usb=(), web-share=(), xr-spatial-tracking=(), clipboard-read=(), clipboard-write=(), gamepad=(), speaker-selection=(), conversion-measurement=(), focus-without-user-activation=(), hid=(), idle-detection=(), interest-cohort=(), serial=(), sync-script=(), trust-token-redemption=(), window-placement=(), vertical-scroll=()"
+        }
+      ]
+    },
+    {
+      "source": "/(.*.js)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+        }
+      ]
+    },
+    {
+      "source": "/(.*.mjs)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+        }
+      ]
+    },
+    {
+      "source": "/(.*.map)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+        }
+      ]
+    },
+    {
+      "source": "/(.*.css)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+        }
+      ]
+    },
+    {
+      "source": "/(.*.svg)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+        }
+      ]
+    },
+    {
+      "source": "/(.*.gif)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+        }
+      ]
+    },
+    {
+      "source": "/(.*.png)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+        }
+      ]
+    },
+    {
+      "source": "/(.*.jpg)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+        }
+      ]
+    },
+    {
+      "source": "/(.*.ico)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+        }
+      ]
+    },
+    {
+      "source": "/(.*.woff2)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+        }
+      ]
+    },
+    {
+      "source": "/(.*.webp)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+        }
+      ]
+    },
+    {
+      "source": "/(.*.webmanifest)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+        }
+      ]
+    },
+    {
+      "source": "/(.*.json)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=1800, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+        }
+      ]
+    },
+    {
+      "source": "/(.*.txt)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=1800, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+        }
+      ]
+    },
+    {
+      "source": "/(.*.xml)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=1800, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+        }
+      ]
+    },
+    {
+      "source": "/(.*.atom)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=1800, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+        }
+      ]
+    },
+    {
+      "source": "/(.*.pdf)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=1800, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+        }
+      ]
+    }
+  ]
+}
