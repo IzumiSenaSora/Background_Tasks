@@ -42,6 +42,30 @@
 /*.jpg
   Cache-Control: public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform
 
+/*.jpeg
+  Cache-Control: public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform
+
+/*.cur
+  Cache-Control: public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform
+
+/*.gz
+  Cache-Control: public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform
+
+/*.mp4
+  Cache-Control: public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform
+
+/*.ogg
+  Cache-Control: public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform
+
+/*.ogv
+  Cache-Control: public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform
+
+/*.webm
+  Cache-Control: public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform
+
+/*.htc
+  Cache-Control: public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform
+
 /*.ico
   Cache-Control: public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform
 
