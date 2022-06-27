@@ -66,6 +66,27 @@
 /*.htc
   Cache-Control: public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform
 
+/*.bmp
+  Cache-Control: public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform
+
+/*.svgz
+  Cache-Control: public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform
+
+/*.heic
+  Cache-Control: public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform
+
+/*.heif
+  Cache-Control: public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform
+
+/*.avif
+  Cache-Control: public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform
+
+/*.wasm
+  Cache-Control: public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform
+
+/*.tflite
+  Cache-Control: public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform
+
 /*.ico
   Cache-Control: public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform
 
