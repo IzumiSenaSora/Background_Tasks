@@ -159,6 +159,42 @@
       ]
     },
     {
+      "source": "/(.*.ttf)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+        }
+      ]
+    },
+    {
+      "source": "/(.*.otf)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+        }
+      ]
+    },
+    {
+      "source": "/(.*.eot)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+        }
+      ]
+    },
+    {
+      "source": "/(.*.woff)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+        }
+      ]
+    },
+    {
       "source": "/(.*.woff2)",
       "headers": [
         {
