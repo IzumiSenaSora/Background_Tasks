@@ -1086,9 +1086,11 @@ cd ..
 
 find . -name "*.css" -exec sed -i "s%https://fonts.gstatic.com%https://www.sorafonts.eu.org%g" {} \;
 
-cat ./css/googlesans.css ./css/googlesansmono.css > fonts.css
+cat ./css/redhatdisplay.css ./css/redhattext.css ./css/redhatmono.css > fonts.css
 
-find . -name "fonts.css" -exec sed -i "s%Google Sans%Sora%g" {} \;
+find . -name "fonts.css" -exec sed -i "s%Red Hat Display%Sora%g" {} \;
+find . -name "fonts.css" -exec sed -i "s%Red Hat Text%Sora Text%g" {} \;
+find . -name "fonts.css" -exec sed -i "s%Red Hat Mono%Sora Mono%g" {} \;
 
 cp index.html ./s/montserrat/index.html
 cp index.html ./s/montserratalternates/index.html
