@@ -55,8 +55,8 @@ cd ..
 
 echo "$SPACEStart"
 echo "SoraAPI"
-cp ./.config/_headers ./about_soracloud
-cp ./.config/vercel.json ./about_soracloud
+cp ./.config/_headers ./soraapi
+cp ./.config/vercel.json ./soraapi
 cd ./soraapi
 git add .
 git commit -m "Update SoraAPI $date"
@@ -66,8 +66,8 @@ cd ..
 
 echo "$SPACEStart"
 echo "SoraBlog"
-cp ./.config/_headers ./about_soracloud
-cp ./.config/vercel.json ./about_soracloud
+cp ./.config/_headers ./sorablog
+cp ./.config/vercel.json ./sorablog
 cd ./sorablog
 git add .
 git commit -m "Update SoraBlog $date"
@@ -77,8 +77,8 @@ cd ..
 
 echo "$SPACEStart"
 echo "SoraFonts"
-cp ./.config/_headers ./about_soracloud
-cp ./.config/vercel.json ./about_soracloud
+cp ./.config/_headers ./sorafonts
+cp ./.config/vercel.json ./sorafonts
 cd ./sorafonts
 git add .
 git commit -m "Update SoraFonts $date"
@@ -97,8 +97,8 @@ cd ..
 
 echo "$SPACEStart"
 echo "LOTNS"
-cp ./.config/_headers ./about_soracloud
-cp ./.config/vercel.json ./about_soracloud
+cp ./.config/_headers ./lotns
+cp ./.config/vercel.json ./lotns
 cd ./lotns
 git add .
 git commit -m "Update LOTNS $date"
@@ -108,8 +108,8 @@ cd ..
 
 echo "$SPACEStart"
 echo "UnOrdinary"
-cp ./.config/_headers ./about_soracloud
-cp ./.config/vercel.json ./about_soracloud
+cp ./.config/_headers ./unordinary
+cp ./.config/vercel.json ./unordinary
 cd ./unordinary
 git add .
 git commit -m "Update UnOrdinary $date"
@@ -119,8 +119,8 @@ cd ..
 
 echo "$SPACEStart"
 echo "SoraID"
-cp ./.config/_headers ./about_soracloud
-cp ./.config/vercel.json ./about_soracloud
+cp ./.config/_headers ./soraid
+cp ./.config/vercel.json ./soraid
 cd ./soraid
 git add .
 git commit -m "Update SoraID $date"
@@ -139,8 +139,8 @@ cd ..
 
 echo "$SPACEStart"
 echo "SoraLicense"
-cp ./.config/_headers ./about_soracloud
-cp ./.config/vercel.json ./about_soracloud
+cp ./.config/_headers ./soralicense
+cp ./.config/vercel.json ./soralicense
 cd ./soralicense
 git add .
 git commit -m "Update SoraLicense $date"
@@ -150,8 +150,8 @@ cd ..
 
 echo "$SPACEStart"
 echo "SoraStatus Public"
-cp ./.config/_headers ./about_soracloud
-cp ./.config/vercel.json ./about_soracloud
+cp ./.config/_headers ./sorastatus
+cp ./.config/vercel.json ./sorastatus
 cd ./sorastatus
 git add .
 git commit -m "Update SoraStatus Public $date"
@@ -161,8 +161,8 @@ cd ..
 
 echo "$SPACEStart"
 echo "SoraStatus Logs"
-cp ./.config/_headers ./about_soracloud
-cp ./.config/vercel.json ./about_soracloud
+cp ./.config/_headers ./sorastatus_logs
+cp ./.config/vercel.json ./sorastatus_logs
 cd ./sorastatus_logs
 git add .
 git commit -m "Update SoraStatus Logs $date"
@@ -181,8 +181,8 @@ cd ..
 
 echo "$SPACEStart"
 echo "ReWrites"
-cp ./.config/_headers ./about_soracloud
-cp ./.config/vercel.json ./about_soracloud
+cp ./.config/_headers ./rewrites
+cp ./.config/vercel.json ./rewrites
 cd ./rewrites
 git add .
 git commit -m "Update ReWrites $date"
@@ -201,8 +201,8 @@ cd ..
 
 echo "$SPACEStart"
 echo "AeonQuake"
-cp ./.config/_headers ./about_soracloud
-cp ./.config/vercel.json ./about_soracloud
+cp ./.config/_headers ./aeonquake
+cp ./.config/vercel.json ./aeonquake
 cd ./aeonquake
 git add .
 git commit -m "Update AeonQuake $date"
