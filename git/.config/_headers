@@ -1,0 +1,70 @@
+/*
+  X-Frame-Options: SAMEORIGIN
+  X-XSS-Protection: 0
+  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+  Expect-CT: enforce, max-age=63072000
+  X-Content-Type-Options: nosniff
+  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Embedder-Policy: require-corp
+  Cross-Origin-Resource-Policy: cross-origin
+  Referrer-Policy: no-referrer
+  Powered-By: Light Of The Night Sky (LOTNS)
+  Author: Izumi Sena Sora (UnOrdinary)
+  Sec-GPC: 1
+  X-Robots-Tag: none
+  Cache-Control: public, no-cache, no-transform
+  Access-Control-Allow-Origin: *
+  Timing-Allow-Origin: *
+  Link: <https://www.soraapis.eu.org>; rel=preconnect; crossorigin, <https://www.sorafonts.eu.org>; rel=preconnect; crossorigin
+  Permissions-Policy: accelerometer=(), ambient-light-sensor=(), autoplay=(), battery=(), camera=(), cross-origin-isolated=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(), geolocation=(), gyroscope=(), keyboard-map=(), magnetometer=(), microphone=(), midi=(), navigation-override=(), payment=(), picture-in-picture=(), publickey-credentials-get=(), screen-wake-lock=(), sync-xhr=(), usb=(), web-share=(), xr-spatial-tracking=(), clipboard-read=(), clipboard-write=(), gamepad=(), speaker-selection=(), conversion-measurement=(), focus-without-user-activation=(), hid=(), idle-detection=(), interest-cohort=(), serial=(), sync-script=(), trust-token-redemption=(), window-placement=(), vertical-scroll=()
+
+/*.js
+  Cache-Control: public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform
+
+/*.mjs
+  Cache-Control: public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform
+
+/*.map
+  Cache-Control: public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform
+
+/*.css
+  Cache-Control: public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform
+
+/*.svg
+  Cache-Control: public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform
+
+/*.gif
+  Cache-Control: public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform
+
+/*.png
+  Cache-Control: public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform
+
+/*.jpg
+  Cache-Control: public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform
+
+/*.ico
+  Cache-Control: public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform
+
+/*.woff2
+  Cache-Control: public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform
+
+/*.webp
+  Cache-Control: public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform
+
+/*.webmanifest
+  Cache-Control: public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform
+
+/*.json
+  Cache-Control: public, max-age=1800, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform
+
+/*.txt
+  Cache-Control: public, max-age=1800, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform
+
+/*.xml
+  Cache-Control: public, max-age=1800, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform
+
+/*.atom
+  Cache-Control: public, max-age=1800, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform
+
+/*.pdf
+  Cache-Control: public, max-age=1800, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform
