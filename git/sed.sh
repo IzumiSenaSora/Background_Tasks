@@ -1,7 +1,7 @@
 KEYSARRAY=()
 URLSARRAY=()
 
-urlsConfig="./sed.cfg"
+urlsConfig="./.config/sed.cfg"
 echo "Reading $urlsConfig"
 while read -r line
 do
