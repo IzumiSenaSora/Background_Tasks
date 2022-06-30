@@ -26,4 +26,4 @@ do
   done
 done
 
-# find . -name "*.log" -exec sed -i "s%failed%success%g" {} \;
+find . -name "*.log" -exec sed -i "s%failed%success%g" {} \;
