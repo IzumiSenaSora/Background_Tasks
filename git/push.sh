@@ -54,12 +54,12 @@ echo "$SPACEEnd"
 cd ..
 
 echo "$SPACEStart"
-echo "SoraAPI"
-cp ./.config/_headers ./soraapi
-cp ./.config/vercel.json ./soraapi
-cd ./soraapi
+echo "SoraAPIs"
+cp ./.config/_headers ./soraapis
+cp ./.config/vercel.json ./soraapis
+cd ./soraapis
 git add .
-git commit -m "Update SoraAPI $date"
+git commit -m "Update SoraAPIs $date"
 git push origin main
 echo "$SPACEEnd"
 cd ..
