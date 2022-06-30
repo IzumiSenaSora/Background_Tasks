@@ -11,11 +11,11 @@ echo "LOTNS Server Setup"
 cd ./lotns_server_setup
 # git remote set-url --delete --push origin https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/lotns_server_setup.git
 # git remote set-url --delete --push origin https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/LOTNS_Server_Setup.git
-# git remote set-url --delete --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/LOTNS/LOTNS_Server_Setup.git
+# git remote set-url --delete --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/UnOrdinary/LOTNS_Server_Setup.git
 
 git remote set-url --add --push origin https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/lotns_server_setup.git
 git remote set-url --add --push origin https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/LOTNS_Server_Setup.git
-git remote set-url --add --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/LOTNS/LOTNS_Server_Setup.git
+git remote set-url --add --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/UnOrdinary/LOTNS_Server_Setup.git
 git remote -v
 echo "$SPACEEnd"
 cd ..
@@ -53,11 +53,11 @@ echo "About SoraCloud"
 cd ./about_soracloud
 # git remote set-url --delete --push origin https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/about_soracloud.git
 # git remote set-url --delete --push origin https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/About_SoraCloud.git
-# git remote set-url --delete --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/SoraCloud/About_SoraCloud.git
+# git remote set-url --delete --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/UnOrdinary/About_SoraCloud.git
 
 git remote set-url --add --push origin https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/about_soracloud.git
 git remote set-url --add --push origin https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/About_SoraCloud.git
-git remote set-url --add --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/SoraCloud/About_SoraCloud.git
+git remote set-url --add --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/UnOrdinary/About_SoraCloud.git
 git remote -v
 echo "$SPACEEnd"
 cd ..
@@ -67,11 +67,11 @@ echo "SoraCloud Themes"
 cd ./soracloud_themes
 # git remote set-url --delete --push origin https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/soracloud_themes.git
 # git remote set-url --delete --push origin https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/SoraCloud_Themes.git
-# git remote set-url --delete --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/SoraCloud/SoraCloud_Themes.git
+# git remote set-url --delete --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/UnOrdinary/SoraCloud_Themes.git
 
 git remote set-url --add --push origin https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/soracloud_themes.git
 git remote set-url --add --push origin https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/SoraCloud_Themes.git
-git remote set-url --add --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/SoraCloud/SoraCloud_Themes.git
+git remote set-url --add --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/UnOrdinary/SoraCloud_Themes.git
 git remote -v
 echo "$SPACEEnd"
 cd ..
@@ -79,13 +79,13 @@ cd ..
 echo "$SPACEStart"
 echo "SoraAPI"
 cd ./soraapi
-# git remote set-url --delete --push origin https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/soraapi.git
-# git remote set-url --delete --push origin https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/SoraAPI.git
-# git remote set-url --delete --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/SoraAPI/SoraAPI.git
+# git remote set-url --delete --push origin https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/soraapis.git
+# git remote set-url --delete --push origin https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/SoraAPIs.git
+# git remote set-url --delete --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/UnOrdinary/SoraAPIs.git
 
-git remote set-url --add --push origin https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/soraapi.git
-git remote set-url --add --push origin https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/SoraAPI.git
-git remote set-url --add --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/SoraAPI/SoraAPI.git
+git remote set-url --add --push origin https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/soraapis.git
+git remote set-url --add --push origin https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/SoraAPIs.git
+git remote set-url --add --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/UnOrdinary/SoraAPIs.git
 git remote -v
 echo "$SPACEEnd"
 cd ..
@@ -95,11 +95,11 @@ echo "SoraBlog"
 cd ./sorablog
 # git remote set-url --delete --push origin https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/sorablog.git
 # git remote set-url --delete --push origin https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/SoraBlog.git
-# git remote set-url --delete --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/SoraBlog/SoraBlog.git
+# git remote set-url --delete --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/UnOrdinary/SoraBlog.git
 
 git remote set-url --add --push origin https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/sorablog.git
 git remote set-url --add --push origin https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/SoraBlog.git
-git remote set-url --add --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/SoraBlog/SoraBlog.git
+git remote set-url --add --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/UnOrdinary/SoraBlog.git
 git remote -v
 echo "$SPACEEnd"
 cd ..
@@ -109,11 +109,11 @@ echo "SoraFonts"
 cd ./sorafonts
 # git remote set-url --delete --push origin https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/sorafonts.git
 # git remote set-url --delete --push origin https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/SoraFonts.git
-# git remote set-url --delete --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/SoraFonts/SoraFonts.git
+# git remote set-url --delete --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/UnOrdinary/SoraFonts.git
 
 git remote set-url --add --push origin https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/sorafonts.git
 git remote set-url --add --push origin https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/SoraFonts.git
-git remote set-url --add --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/SoraFonts/SoraFonts.git
+git remote set-url --add --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/UnOrdinary/SoraFonts.git
 git remote -v
 echo "$SPACEEnd"
 cd ..
@@ -123,11 +123,11 @@ echo "LOTNS Web Server"
 cd ./lotns_web_server
 # git remote set-url --delete --push origin https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/lotns_web_server.git
 # git remote set-url --delete --push origin https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/LOTNS_Web_Server.git
-# git remote set-url --delete --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/LOTNS/LOTNS_Web_Server.git
+# git remote set-url --delete --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/UnOrdinary/LOTNS_Web_Server.git
 
 git remote set-url --add --push origin https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/lotns_web_server.git
 git remote set-url --add --push origin https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/LOTNS_Web_Server.git
-git remote set-url --add --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/LOTNS/LOTNS_Web_Server.git
+git remote set-url --add --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/UnOrdinary/LOTNS_Web_Server.git
 git remote -v
 echo "$SPACEEnd"
 cd ..
@@ -137,11 +137,11 @@ echo "LOTNS"
 cd ./lotns
 # git remote set-url --delete --push origin https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/lotns.git
 # git remote set-url --delete --push origin https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/LOTNS.git
-# git remote set-url --delete --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/LOTNS/LOTNS.git
+# git remote set-url --delete --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/UnOrdinary/LOTNS.git
 
 git remote set-url --add --push origin https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/lotns.git
 git remote set-url --add --push origin https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/LOTNS.git
-git remote set-url --add --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/LOTNS/LOTNS.git
+git remote set-url --add --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/UnOrdinary/LOTNS.git
 git remote -v
 echo "$SPACEEnd"
 cd ..
@@ -165,11 +165,11 @@ echo "SoraID"
 cd ./soraid
 # git remote set-url --delete --push origin https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/soraid.git
 # git remote set-url --delete --push origin https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/SoraID.git
-# git remote set-url --delete --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/SoraID/SoraID.git
+# git remote set-url --delete --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/UnOrdinary/SoraID.git
 
 git remote set-url --add --push origin https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/soraid.git
 git remote set-url --add --push origin https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/SoraID.git
-git remote set-url --add --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/SoraID/SoraID.git
+git remote set-url --add --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/UnOrdinary/SoraID.git
 git remote -v
 echo "$SPACEEnd"
 cd ..
@@ -179,11 +179,11 @@ echo "SoraID UnProtected"
 cd ./soraid_unprotected
 # git remote set-url --delete --push origin https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/soraid_unprotected.git
 # git remote set-url --delete --push origin https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/SoraID_UnProtected.git
-# git remote set-url --delete --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/SoraID/SoraID_UnProtected.git
+# git remote set-url --delete --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/UnOrdinary/SoraID_UnProtected.git
 
 git remote set-url --add --push origin https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/soraid_unprotected.git
 git remote set-url --add --push origin https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/SoraID_UnProtected.git
-git remote set-url --add --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/SoraID/SoraID_UnProtected.git
+git remote set-url --add --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/UnOrdinary/SoraID_UnProtected.git
 git remote -v
 echo "$SPACEEnd"
 cd ..
@@ -193,11 +193,11 @@ echo "SoraLicense"
 cd ./soralicense
 # git remote set-url --delete --push origin https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/soralicense.git
 # git remote set-url --delete --push origin https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/SoraLicense.git
-# git remote set-url --delete --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/SoraLicense/SoraLicense.git
+# git remote set-url --delete --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/UnOrdinary/SoraLicense.git
 
 git remote set-url --add --push origin https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/soralicense.git
 git remote set-url --add --push origin https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/SoraLicense.git
-git remote set-url --add --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/SoraLicense/SoraLicense.git
+git remote set-url --add --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/UnOrdinary/SoraLicense.git
 git remote -v
 echo "$SPACEEnd"
 cd ..
@@ -207,11 +207,11 @@ echo "SoraStatus Public"
 cd ./sorastatus
 # git remote set-url --delete --push origin https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/sorastatus.git
 # git remote set-url --delete --push origin https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/SoraStatus.git
-# git remote set-url --delete --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/SoraStatus/SoraStatus.git
+# git remote set-url --delete --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/UnOrdinary/SoraStatus.git
 
 git remote set-url --add --push origin https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/sorastatus.git
 git remote set-url --add --push origin https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/SoraStatus.git
-git remote set-url --add --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/SoraStatus/SoraStatus.git
+git remote set-url --add --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/UnOrdinary/SoraStatus.git
 git remote -v
 echo "$SPACEEnd"
 cd ..
@@ -221,11 +221,11 @@ echo "SoraStatus Logs"
 cd ./sorastatus_logs
 # git remote set-url --delete --push origin https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/sorastatus_logs.git
 # git remote set-url --delete --push origin https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/SoraStatus_Logs.git
-# git remote set-url --delete --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/SoraStatus/SoraStatus_Logs.git
+# git remote set-url --delete --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/UnOrdinary/SoraStatus_Logs.git
 
 git remote set-url --add --push origin https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/sorastatus_logs.git
 git remote set-url --add --push origin https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/SoraStatus_Logs.git
-git remote set-url --add --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/SoraStatus/SoraStatus_Logs.git
+git remote set-url --add --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/UnOrdinary/SoraStatus_Logs.git
 git remote -v
 echo "$SPACEEnd"
 cd ..
@@ -235,11 +235,11 @@ echo "SoraStatus Private"
 cd ./sorastatus_private
 # git remote set-url --delete --push origin https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/sorastatus_private.git
 # git remote set-url --delete --push origin https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/SoraStatus_Private.git
-# git remote set-url --delete --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/SoraStatus/SoraStatus_Private.git
+# git remote set-url --delete --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/UnOrdinary/SoraStatus_Private.git
 
 git remote set-url --add --push origin https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/sorastatus_private.git
 git remote set-url --add --push origin https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/SoraStatus_Private.git
-git remote set-url --add --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/SoraStatus/SoraStatus_Private.git
+git remote set-url --add --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/UnOrdinary/SoraStatus_Private.git
 git remote -v
 echo "$SPACEEnd"
 cd ..
@@ -249,11 +249,11 @@ echo "ReWrites"
 cd ./rewrites
 # git remote set-url --delete --push origin https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/rewrites.git
 # git remote set-url --delete --push origin https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/ReWrites.git
-# git remote set-url --delete --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/Redirects/ReWrites.git
+# git remote set-url --delete --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/UnOrdinary/ReWrites.git
 
 git remote set-url --add --push origin https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/rewrites.git
 git remote set-url --add --push origin https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/ReWrites.git
-git remote set-url --add --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/Redirects/ReWrites.git
+git remote set-url --add --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/UnOrdinary/ReWrites.git
 git remote -v
 echo "$SPACEEnd"
 cd ..
@@ -263,11 +263,11 @@ echo "AeonQuake"
 cd ./aeonquake
 # git remote set-url --delete --push origin https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/aeonquake.git
 # git remote set-url --delete --push origin https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/AeonQuake.git
-# git remote set-url --delete --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/AeonQuake/AeonQuake.git
+# git remote set-url --delete --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/UnOrdinary/AeonQuake.git
 
 git remote set-url --add --push origin https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/aeonquake.git
 git remote set-url --add --push origin https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/AeonQuake.git
-git remote set-url --add --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/AeonQuake/AeonQuake.git
+git remote set-url --add --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/UnOrdinary/AeonQuake.git
 git remote -v
 echo "$SPACEEnd"
 cd ..
