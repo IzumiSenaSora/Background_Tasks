@@ -42,8 +42,8 @@ echo "$SPACEEnd"
 cd ..
 
 echo "$SPACEStart"
-echo "SoraAPI"
-cd ./soraapi
+echo "SoraAPIs"
+cd ./soraapis
 git fetch --all
 echo "$SPACEEnd"
 cd ..
