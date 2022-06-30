@@ -42,8 +42,8 @@ echo "$SPACEEnd"
 cd ..
 
 echo "$SPACEStart"
-echo "SoraAPI"
-cd ./soraapi
+echo "SoraAPIs"
+cd ./soraapis
 git merge
 echo "$SPACEEnd"
 cd ..
