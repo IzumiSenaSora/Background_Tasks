@@ -33,7 +33,7 @@ echo "$SPACEEnd"
 
 echo "$SPACEStart"
 echo "SoraAPI"
-git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/soraapi.git
+git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/soraapis.git
 echo "$SPACEEnd"
 
 echo "$SPACEStart"
