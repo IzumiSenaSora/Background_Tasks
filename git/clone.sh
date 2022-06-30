@@ -32,7 +32,7 @@ git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/sor
 echo "$SPACEEnd"
 
 echo "$SPACEStart"
-echo "SoraAPI"
+echo "SoraAPIs"
 git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/soraapis.git
 echo "$SPACEEnd"
 
