@@ -77,8 +77,8 @@ echo "$SPACEEnd"
 cd ..
 
 echo "$SPACEStart"
-echo "SoraAPI"
-cd ./soraapi
+echo "SoraAPIs"
+cd ./soraapis
 # git remote set-url --delete --push origin https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/soraapis.git
 # git remote set-url --delete --push origin https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/SoraAPIs.git
 # git remote set-url --delete --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/UnOrdinary/SoraAPIs.git
