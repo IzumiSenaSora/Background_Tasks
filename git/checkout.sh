@@ -67,11 +67,11 @@ echo "$SPACEEnd"
 cd ..
 
 echo "$SPACEStart"
-echo "SoraAPI"
-cd ./soraapi
+echo "SoraAPIs"
+cd ./soraapis
 git checkout --orphan master
 git add --all
-git commit --all -m "Initialize Repo SoraAPI $date"
+git commit --all -m "Initialize Repo SoraAPIs $date"
 git branch -D main
 git branch -m main
 git push -f origin main
