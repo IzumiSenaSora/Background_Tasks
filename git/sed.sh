@@ -22,7 +22,7 @@ do
 
   for i in 1; 
   do
-# find . -name "$url" -exec sed -i "s%https://aeonquake.eu.org%https://www.aeonquake.eu.org%g" {} \;
+find . -name "$url" -exec sed -i "s%SoraAPI%SoraAPIs%g" {} \;
 # find . -name "*.log" -exec sed -i "s%failed%success%g" {} \;
   done
 done
