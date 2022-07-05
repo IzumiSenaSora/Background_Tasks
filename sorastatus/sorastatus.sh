@@ -52,8 +52,8 @@ cp LOTNS_report.log PrivateRelay_report.log
 cp LOTNS_report.log Ridoy_report.log
 cp LOTNS_report.log Sanjoy_report.log
 cp LOTNS_report.log Shishir_report.log
-# cp LOTNS_report.log SoraAPI_report.log
-cp LOTNS_report.log SoraAPIs_report.log
+cp LOTNS_report.log SoraAPI_report.log
+# cp LOTNS_report.log SoraAPIs_report.log
 # cp LOTNS_report.log SoraBlog_report.log
 cp LOTNS_report.log SoraCDN_report.log
 cp LOTNS_report.log SoraCDNS_report.log
