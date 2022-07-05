@@ -80,14 +80,3 @@ echo " *** Git Commit SoraStatus Logs *** "
 git add .
 git commit -m "[Automated] Update SoraStatus Logs $date"
 git push origin main
-
-cd ..
-rm -r logs
-
-echo " *** Show Git Remote Lists Of SoraStatus *** "
-git remote -v
-
-echo " *** Git Commit SoraStatus Incident *** "
-git add .
-git commit -m "[Automated] Update SoraStatus Incident $date"
-git push origin main
