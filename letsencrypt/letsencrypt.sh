@@ -9,13 +9,13 @@ mkdir -p ./tmp
 echo " *** Go To Tmp Directory *** "
 cd ./tmp
 
-echo " *** Clone SoraStatus Repo *** "
+echo " *** Clone Let's Encrypt Repo *** "
 git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/letsencrypt.git
 
-echo " *** Go To SoraStatus Directory *** "
+echo " *** Go To Let's Encrypt Directory *** "
 cd ./letsencrypt
 
-echo " *** Run Let's Encrypt Health Checks *** "
+echo " *** Run Let's Encrypt *** "
 bash bash-acme.sh
 
 # Git Commit
