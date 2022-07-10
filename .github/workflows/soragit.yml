@@ -1,0 +1,17 @@
+name: SoraGit Background Tasks (Cron Jobs)
+
+# Controls when the action will run.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 1 */3 *"
+
+jobs:
+  cron_job:
+    runs-on: ubuntu-latest
+    name: Cron Jobs
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run Cron Jobs
+        id: shell_script_run
+        run: bash ./soragit/soragit.sh
