@@ -1,4 +1,4 @@
-name: SoraGit Background Tasks (Cron Jobs)
+name: Let's Encrypt Background Tasks (Cron Jobs)
 
 # Controls when the action will run.
 on:
@@ -14,4 +14,4 @@ jobs:
       - uses: actions/checkout@v2
       - name: Run Cron Jobs
         id: shell_script_run
-        run: bash ./soragit/soragit.sh
+        run: bash ./letsencrypt/letsencrypt.sh
