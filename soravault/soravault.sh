@@ -3,8 +3,9 @@ date=$(TZ='Asia/Dhaka' date +'%a, %d %b %Y %X')
 git config --global user.name "Izumi Sena Sora"
 git config --global user.email "$EMAIL"
 
-echo " *** Extract SoraVault From Docker *** "
 cd ./soravault
+
+echo " *** Extract SoraVault From Docker *** "
 chmod +x docker-image-extract
 ./docker-image-extract vaultwarden/server:alpine
 
@@ -14,12 +15,10 @@ ls -ld output/{vaultwarden,web-vault}
 echo " *** Check SoraVault Versions *** "
 ./output/vaultwarden -v
 
-mkdir vaultwarden
+mkdir soravault
+mv output/{vaultwarden,web-vault} ./soravault
 
-cp -r output/{vaultwarden,web-vault} ./vaultwarden
+echo " *** Compress SoraVault Into tar.gz File *** "
+sudo tar -zcvf ./soravault.tar.gz ./soravault
 
-sudo tar -zcvf ./vaultwarden.tar.gz ./vaultwarden
-
-#$(./output/vaultwarden -v)
-ls -ld
 ls -al
