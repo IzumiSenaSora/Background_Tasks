@@ -13,3 +13,12 @@ ls -ld output/{vaultwarden,web-vault}
 
 echo " *** Check SoraVault Versions *** "
 ./output/vaultwarden -v
+
+mkdir vaultwarden
+
+mv output/{vaultwarden,web-vault} ./vaultwarden
+
+sudo tar -zcvf ./$(./output/vaultwarden -v)-$(date '+%F').tar.gz ./vaultwarden
+
+ls -ld
+ls -al
