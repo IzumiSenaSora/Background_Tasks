@@ -4,6 +4,7 @@ git config --global user.name "Izumi Sena Sora"
 git config --global user.email "$EMAIL"
 
 echo " *** Extract SoraVault From Docker *** "
+cd ./soravault
 chmod +x docker-image-extract
 ./docker-image-extract vaultwarden/server:alpine
 
