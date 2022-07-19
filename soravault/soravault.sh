@@ -18,7 +18,7 @@ mkdir vaultwarden
 
 mv output/{vaultwarden,web-vault} ./vaultwarden
 
-sudo tar -zcvf ./$(./vaultwarden -v)-$(date '+%F').tar.gz ./vaultwarden
+sudo tar -zcvf ./$(./vaultwarden/vaultwarden -v)-$(date '+%F').tar.gz ./vaultwarden
 
 ls -ld
 ls -al
