@@ -20,7 +20,7 @@ jobs:
       MAILRCPT: ${{secrets.MAILRCPT}}
       USERNAME: ${{secrets.USERNAME}}
       PASSWORD: ${{secrets.PASSWORD}}
-      SMTPS: ${{secrets.SMTPS}}
+      SMTP: ${{secrets.SMTP}}
     steps:
       - uses: actions/checkout@v2
       - name: Run Cron Jobs
