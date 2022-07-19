@@ -16,7 +16,7 @@ echo " *** Check SoraVault Versions *** "
 
 mkdir vaultwarden
 
-cp output/{vaultwarden,web-vault} ./vaultwarden
+cp -r output/{vaultwarden,web-vault} ./vaultwarden
 
 sudo tar -zcvf ./$(./output/vaultwarden -v).tar.gz ./vaultwarden
 
