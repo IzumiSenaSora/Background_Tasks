@@ -10,9 +10,9 @@ cd ./sorachat
 wget https://github.com/matrix-org/dendrite/archive/refs/tags/v0.9.0.tar.gz
 
 mkdir dendrite
-tar -zxvf v0.9.0.tar.gz -C dendrite
+tar -zxvf v0.9.0.tar.gz
 
-cd dendrite
+cd dendrite-0.9.0
 ./build.sh
 
 echo " *** Compress SoraChat Into tar.gz File *** "
