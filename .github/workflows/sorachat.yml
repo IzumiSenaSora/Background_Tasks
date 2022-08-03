@@ -1,0 +1,19 @@
+name: SoraChat Background Tasks (Cron Jobs)
+
+# Controls when the action will run.
+on:
+  workflow_dispatch:
+
+jobs:
+  cron_job:
+    runs-on: ubuntu-latest
+    name: Cron Jobs
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run Cron Jobs
+        id: shell_script_run
+        run: bash ./sorachat/sorachat.sh
+      - uses: actions/upload-artifact@v2
+        with:
+          name: sorachat.tar.gz
+          path: sorachat/dendrite/sorachat.tar.gz
