@@ -16,7 +16,7 @@ echo " *** Go To DNSControl/ICANN Directory *** "
 cd ./dnscontrol/icann
 
 echo " *** On Day 30 Active Server Will Be Netlify From 1-15 Days *** "
-find . -name "dnsconfig.js" -exec sed -i "s%var External = Vercel;%var External = Netlify;%g" {} \;
+find . -name "dnsconfig.js" -exec sed -i "s%var ActiveServers = Vercel;%var ActiveServers = Netlify;%g" {} \;
 
 echo " *** DNSControl Version *** "
 ./dnscontrol version
