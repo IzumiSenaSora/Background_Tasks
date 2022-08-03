@@ -11,6 +11,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Run Cron Jobs
+        uses: actions/setup-go@v2
+        with:
+          go-version: 1.18
         id: shell_script_run
         run: bash ./sorachat/sorachat.sh
       - uses: actions/upload-artifact@v2
