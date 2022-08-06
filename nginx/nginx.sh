@@ -4,9 +4,9 @@ VERSION="1.23.1"
 git config --global user.name "Izumi Sena Sora"
 git config --global user.email "$EMAIL"
 
-sudo apt-get install -y libpcre3 libpcre3-dev zlib1g zlib1g-dev openssl libssl-dev bison \
-  build-essential ca-certificates curl dh-autoreconf doxygen \
-  flex gawk git iputils-ping libcurl4-gnutls-dev libexpat1-dev \
+sudo apt-get update && sudo apt-get upgrade -y
+sudo apt-get install -y bison build-essential ca-certificates curl dh-autoreconf \
+  doxygen flex gawk git iputils-ping libcurl4-gnutls-dev libexpat1-dev \
   libgeoip-dev liblmdb-dev libpcre++-dev libtool libxml2 libxml2-dev \
   libyajl-dev locales lua5.3-dev pkg-config wget zlibc libxslt libgd-dev
 
