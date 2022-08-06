@@ -36,6 +36,10 @@
           "value": "cross-origin"
         },
         {
+          "key": "Origin-Agent-Cluster",
+          "value": "?1"
+        },
+        {
           "key": "Referrer-Policy",
           "value": "no-referrer"
         },
