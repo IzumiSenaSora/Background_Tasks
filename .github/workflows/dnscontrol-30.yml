@@ -20,7 +20,7 @@ jobs:
       HEDNS_TOTP_KEY: ${{secrets.HEDNS_TOTP_KEY}}
       EMAIL: ${{secrets.EMAIL}}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Run Cron Jobs
         id: shell_script_run
         run: bash ./dnscontrol/dnscontrol-30.sh
