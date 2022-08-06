@@ -20,6 +20,7 @@ cd nginx-$VERSION
 
 ./configure --with-compat --add-dynamic-module=../ngx_brotli
 make modules
+ls -al ./objs
 
 cd ..
 mkdir ./output
