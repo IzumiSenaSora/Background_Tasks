@@ -25,7 +25,7 @@ git submodule update --init
 ./build.sh
 ./configure
 make
-make install
+sudo make install
 cd ..
 
 git clone https://github.com/SpiderLabs/ModSecurity-nginx.git
