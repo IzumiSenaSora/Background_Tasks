@@ -13,7 +13,7 @@ jobs:
       - name: Run Cron Jobs
         id: shell_script_run
         run: bash ./sorachat/sorachat.sh
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: sorachat.tar.gz
           path: sorachat/dendrite/sorachat.tar.gz
