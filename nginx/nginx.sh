@@ -49,6 +49,7 @@ ls -al ./objs
 cd ..
 mkdir ./output
 sudo cp ./nginx-$VERSION/objs/*.so ./output
+sudo cp -r /usr/local/modsecurity ./output
 
 echo " *** Compress NGINX Into tar.gz File *** "
 tar -zcvf ./nginx.tar.gz ./output
