@@ -13,6 +13,8 @@ cd ./ngx_brotli
 git submodule update --init
 cd ..
 
+git clone https://github.com/openresty/headers-more-nginx-module
+
 wget https://nginx.org/download/nginx-$VERSION.tar.gz
 tar zxvf nginx-$VERSION.tar.gz
 
@@ -21,7 +23,7 @@ ls -al
 
 cd nginx-$VERSION
 
-./configure --with-compat --add-dynamic-module=../ngx_brotli
+./configure --with-compat --add-dynamic-module=../ngx_brotli --add-dynamic-module=../headers-more-nginx-module
 make modules
 ls -al ./objs
 
