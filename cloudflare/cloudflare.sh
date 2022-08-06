@@ -102,10 +102,18 @@ browser_cache_ttl=$(curl --silent -X PATCH "https://api.cloudflare.com/client/v4
 # default value: off
 # valid values: off, flexible, full, strict
 # notes: Depends on the zone's plan level
-ssl=$(curl --silent --silent -X PATCH "https://api.cloudflare.com/client/v4/zones/$url/settings/ssl" \
+ssl=$(curl --silent -X PATCH "https://api.cloudflare.com/client/v4/zones/$url/settings/ssl" \
      -H "Authorization: Bearer $CLOUDFLARE_APITOKEN" \
      -H "Content-Type: application/json" \
      --data '{"value":"full"}')
+
+# Change SSL/TLS Recommender enrollment
+# default value: false
+# valid values: (true,false)
+ssl_recommender=$(curl --silent -X PATCH "https://api.cloudflare.com/client/v4/zones/$url/settings/ssl_recommender" \
+     -H "Authorization: Bearer $CLOUDFLARE_APITOKEN" \
+     -H "Content-Type: application/json" \
+     --data '{"enabled":false}')
 
 # Change Always Use HTTPS setting
 always_use_https=$(curl --silent -X PATCH "https://api.cloudflare.com/client/v4/zones/$url/settings/always_use_https" \
@@ -266,6 +274,11 @@ echo "
 *** Change SSL setting ***
 "
 echo "$ssl" | jq .
+
+echo "
+*** Change SSL/TLS Recommender enrollment ***
+"
+echo "$ssl_recommender" | jq .
 
 echo "
 *** Change Always Use HTTPS setting ***
