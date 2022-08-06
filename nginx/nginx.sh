@@ -9,6 +9,9 @@ sudo apt-get install -y libpcre3 libpcre3-dev zlib1g zlib1g-dev openssl libssl-d
 cd ./nginx
 
 git clone https://github.com/google/ngx_brotli
+cd ./ngx_brotli
+git submodule update --init
+cd ..
 
 wget https://nginx.org/download/nginx-$VERSION.tar.gz
 tar zxvf nginx-$VERSION.tar.gz
