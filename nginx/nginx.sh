@@ -8,7 +8,7 @@ sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get install -y dh-autoreconf \
   doxygen libcurl4-gnutls-dev zlibc\
   libgeoip-dev liblmdb-dev libpcre++-dev \
-  libyajl-dev lua5.3-dev libgd-dev
+  libyajl-dev lua5.3-dev libgd3 libgd-dev
 
 cd ./nginx
 
