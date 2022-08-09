@@ -34,7 +34,6 @@ cd nginx-$NGINX
 ./configure --with-compat \
   --add-dynamic-module=../ngx_brotli \
   --add-dynamic-module=../headers-more-nginx-module
-#  --add-dynamic-module=../ModSecurity-nginx
 make modules
 ls -al ./objs
 cd ..
