@@ -1,5 +1,5 @@
 date=$(TZ='Asia/Dhaka' date +'%a, %d %b %Y %X')
-VERSION="1.23.1"
+NGINX="1.23.1"
 OPENSSL="3.0.5"
 CFLAGS="-Wno-ignored-qualifiers"
 
@@ -48,13 +48,13 @@ git clone https://github.com/openresty/headers-more-nginx-module
 wget https://www.openssl.org/source/openssl-$OPENSSL.tar.gz
 tar zxvf openssl-$OPENSSL.tar.gz
 
-wget https://nginx.org/download/nginx-$VERSION.tar.gz
-tar zxvf nginx-$VERSION.tar.gz
+wget https://nginx.org/download/nginx-$NGINX.tar.gz
+tar zxvf nginx-$NGINX.tar.gz
 
-rm nginx-$VERSION.tar.gz
+rm nginx-$NGINX.tar.gz
 ls -al
 
-cd nginx-$VERSION
+cd nginx-$NGINX
 
 ./configure --with-compat \
   --add-dynamic-module=../ngx_brotli \
@@ -131,7 +131,7 @@ ls -al /opt/nginx/sbin
 ls -al
 
 mkdir ./output
-sudo cp ./nginx-$VERSION/objs/*.so ./output
+sudo cp ./nginx-$NGINX/objs/*.so ./output
 sudo cp -r /opt/nginx ./output
 # sudo cp -r /usr/local/modsecurity ./output
 
