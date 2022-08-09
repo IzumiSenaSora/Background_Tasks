@@ -19,16 +19,15 @@ cd ..
 
 git clone https://github.com/openresty/headers-more-nginx-module
 
-git clone https://github.com/SpiderLabs/ModSecurity
-cd ModSecurity
-git submodule update --init
-./build.sh
-./configure
-make
-sudo make install
-cd ..
-
-git clone https://github.com/SpiderLabs/ModSecurity-nginx.git
+#git clone https://github.com/SpiderLabs/ModSecurity
+#cd ModSecurity
+#git submodule update --init
+#./build.sh
+#./configure
+#make
+#sudo make install
+#cd ..
+#git clone https://github.com/SpiderLabs/ModSecurity-nginx.git
 
 wget https://nginx.org/download/nginx-$VERSION.tar.gz
 tar zxvf nginx-$VERSION.tar.gz
@@ -40,8 +39,8 @@ cd nginx-$VERSION
 
 ./configure --with-compat \
   --add-dynamic-module=../ngx_brotli \
-  --add-dynamic-module=../headers-more-nginx-module \
-  --add-dynamic-module=../ModSecurity-nginx
+  --add-dynamic-module=../headers-more-nginx-module
+#  --add-dynamic-module=../ModSecurity-nginx
 
 make modules
 ls -al ./objs
