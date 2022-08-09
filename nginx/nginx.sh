@@ -43,6 +43,7 @@ git clone https://github.com/openresty/headers-more-nginx-module
 
 wget --quiet https://www.openssl.org/source/openssl-$OPENSSL.tar.gz
 tar zxvf openssl-$OPENSSL.tar.gz
+rm openssl-$OPENSSL.tar.gz
 
 wget --quiet https://nginx.org/download/nginx-$NGINX.tar.gz
 tar zxvf nginx-$NGINX.tar.gz
