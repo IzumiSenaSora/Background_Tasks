@@ -17,8 +17,8 @@ http://nginx.org/packages/mainline/ubuntu `lsb_release -cs` nginx" \
 
 sudo apt-get update && sudo apt-get --with-new-pkgs upgrade -y
 
-wget https://launchpad.net/~ubuntu-security-proposed/+archive/ubuntu/ppa/+build/22029890/+files/libgd-dev_2.2.5-5.2ubuntu2.1_amd64.deb
-wget https://launchpad.net/~ubuntu-security-proposed/+archive/ubuntu/ppa/+build/22029890/+files/libgd3_2.2.5-5.2ubuntu2.1_amd64.deb
+#wget https://launchpad.net/~ubuntu-security-proposed/+archive/ubuntu/ppa/+build/22029890/+files/libgd-dev_2.2.5-5.2ubuntu2.1_amd64.deb
+#wget https://launchpad.net/~ubuntu-security-proposed/+archive/ubuntu/ppa/+build/22029890/+files/libgd3_2.2.5-5.2ubuntu2.1_amd64.deb
 
 #sudo apt-get install -y --allow-downgrades ./libgd-dev_2.2.5-5.2ubuntu2.1_amd64.deb
 #sudo apt-get install -y --allow-downgrades ./libgd3_2.2.5-5.2ubuntu2.1_amd64.deb
