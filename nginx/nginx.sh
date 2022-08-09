@@ -1,5 +1,6 @@
 date=$(TZ='Asia/Dhaka' date +'%a, %d %b %Y %X')
 VERSION="1.23.1"
+OPENSSL"3.0.5"
 CFLAGS="-Wno-ignored-qualifiers"
 
 git config --global user.name "Izumi Sena Sora"
@@ -44,6 +45,9 @@ git clone https://github.com/openresty/headers-more-nginx-module
 #sudo make install
 #cd ..
 #git clone https://github.com/SpiderLabs/ModSecurity-nginx.git
+
+wget https://www.openssl.org/source/openssl-$OPENSSL.tar.gz
+tar zxvf openssl-$OPENSSL.tar.gz
 
 wget https://nginx.org/download/nginx-$VERSION.tar.gz
 tar zxvf nginx-$VERSION.tar.gz
