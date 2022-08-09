@@ -81,6 +81,12 @@ cd build
 cmake ..
 make
 cd ..
+
+mkdir ./.openssl
+mkdir ./.openssl/lib
+cp -r ./include ./.openssl
+cp "build/crypto/libcrypto.a" ".openssl/lib"
+cp "build/ssl/libssl.a" ".openssl/lib"
 cd ..
 
 hg clone -b quic https://hg.nginx.org/nginx-quic
