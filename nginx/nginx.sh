@@ -20,6 +20,8 @@ echo -e "Package: *\nPin: origin nginx.org\nPin: release o=nginx\nPin-Priority: 
 
 sudo apt-get update && sudo apt-get upgrade -y
 
+sudo apt-get remove nginx
+
 sudo apt-get install -y nginx libxslt-dev libgd-dev
 
 nginx -V
