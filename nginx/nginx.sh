@@ -58,10 +58,6 @@ Its Quic Time
 
 
 "
-
-mkdir quic
-cd quic
-
 git clone https://boringssl.googlesource.com/boringssl
 
 hg clone -b quic https://hg.nginx.org/nginx-quic
