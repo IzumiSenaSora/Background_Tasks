@@ -88,11 +88,11 @@ cd nginx-quic
   --with-threads \
   --with-http_v3_module \
   --with-stream_quic_module \
-  --with-openssl=../boringssl \
   --add-module=../ngx_brotli \
   --add-module=../headers-more-nginx-module \
   --with-cc-opt="-I../boringssl/include $(CFLAGS)" \
   --with-ld-opt="-L../boringssl/build/ssl -L../boringssl/build/crypto"
+#  --with-openssl=../boringssl \
 #  --with-http_image_filter_module=dynamic \
 #  --with-http_geoip_module \
 #  --with-stream_geoip_module \
