@@ -66,6 +66,7 @@ cd build
 cmake ..
 make
 cd ..
+cd ..
 
 hg clone -b quic https://hg.nginx.org/nginx-quic
 cd nginx-quic
