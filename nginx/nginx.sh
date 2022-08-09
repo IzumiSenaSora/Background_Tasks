@@ -54,3 +54,38 @@ echo " *** Compress NGINX Into tar.gz File *** "
 tar -zcvf ./nginx.tar.gz ./output
 
 ls -al
+
+echo "
+
+
+
+
+Its Quic Time
+
+
+
+"
+
+mkdir quic
+cd quic
+
+git clone https://boringssl.googlesource.com/boringssl
+
+hg clone -b quic https://hg.nginx.org/nginx-quic
+cd nginx-quic
+./auto/configure --prefix=/opt/nginx
+                 --with-http_v3_module \
+                 --with-stream_quic_module \
+                 --add-module=../ngx_brotli \
+                 --add-module=../headers-more-nginx-module \
+                 --with-cc-opt="-I../boringssl/include" \
+                 --with-ld-opt="-L../boringssl/build/ssl \
+                                -L../boringssl/build/crypto"
+make
+sudo make install
+ls -al /opt
+ls -al /opt/nginx
+ls -al /opt/nginx/conf
+ls -al /opt/nginx/sbin
+ls -al /opt/nginx/modules
+/opt/nginx/sbin/nginx -V
