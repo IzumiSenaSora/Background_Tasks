@@ -92,7 +92,7 @@ ls -al /opt/nginx/sbin
 ls -al
 
 sudo cp ./nginx-$VERSION/objs/*.so ./output
-sudo cp /opt/nginx ./output
+sudo cp -r /opt/nginx ./output
 # sudo cp -r /usr/local/modsecurity ./output
 
 ls -al ./output
