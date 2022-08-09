@@ -104,9 +104,9 @@ cd ..
 ls -al
 
 mkdir ./output
-mkdir ./output/modules
-sudo cp ./nginx-$NGINX/objs/*.so ./output
 sudo cp -r /opt/nginx ./output
+mkdir -p ./output/nginx/modules
+sudo cp ./nginx-$NGINX/objs/*.so ./output/nginx/modules
 ls -al ./output
 
 echo " *** Compress NGINX Into tar.gz File *** "
