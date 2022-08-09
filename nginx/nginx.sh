@@ -71,7 +71,6 @@ hg clone -b quic https://hg.nginx.org/nginx-quic
 cd nginx-quic
 ./auto/configure --prefix=/opt/nginx \
                  --with-http_v3_module \
-                 --with-http_quic_module \
                  --with-stream_quic_module \
                  --with-stream_ssl_preread_module \
                  --add-module=../ngx_brotli \
