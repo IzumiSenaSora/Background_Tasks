@@ -78,14 +78,35 @@ cd ..
 hg clone -b quic https://hg.nginx.org/nginx-quic
 cd nginx-quic
 ./auto/configure --prefix=/opt/nginx \
-                 --with-http_v3_module \
-                 --with-stream_quic_module \
-                 --with-stream_ssl_preread_module \
-                 --add-module=../ngx_brotli \
-                 --add-module=../headers-more-nginx-module \
-                 --with-cc-opt="-I../boringssl/include $(CFLAGS)" \
-                 --with-ld-opt="-L../boringssl/build/ssl \
-                                -L../boringssl/build/crypto"
+  --with-debug \
+  --with-compat \
+  --with-pcre-jit \
+  --with-http_ssl_module \
+  --with-http_stub_status_module \
+  --with-http_realip_module \
+  --with-http_auth_request_module \
+  --with-http_v2_module \
+  --with-http_v3_module \
+  --with-stream_quic_module \
+  --with-stream_ssl_preread_module \
+  --with-http_dav_module \
+  --with-http_slice_module \
+  --with-threads \
+  --with-http_addition_module \
+  --with-http_gunzip_module \
+  --with-http_gzip_static_module \
+  --with-http_image_filter_module=dynamic \
+  --with-http_sub_module \
+  --with-http_xslt_module=dynamic \
+  --with-stream=dynamic \
+  --with-stream_ssl_module \
+  --with-mail=dynamic \
+  --with-mail_ssl_module \
+  --add-module=../ngx_brotli \
+  --add-module=../headers-more-nginx-module \
+  --with-cc-opt="-I../boringssl/include $(CFLAGS)" \
+  --with-ld-opt="-L../boringssl/build/ssl -L../boringssl/build/crypto"
+
 make
 sudo make install
 cd ..
