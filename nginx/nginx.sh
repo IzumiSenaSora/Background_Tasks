@@ -84,7 +84,7 @@ cd ..
 
 mkdir ./.openssl
 mkdir ./.openssl/lib
-cp -r ./include ./.openssl
+ln -s ./include ./.openssl
 cp "build/crypto/libcrypto.a" ".openssl/lib"
 cp "build/ssl/libssl.a" ".openssl/lib"
 cd ..
