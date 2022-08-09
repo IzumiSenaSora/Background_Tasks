@@ -17,10 +17,10 @@ http://nginx.org/packages/mainline/ubuntu `lsb_release -cs` nginx" \
 
 sudo apt-get update && sudo apt-get --with-new-pkgs upgrade -y
 
-wget http://launchpadlibrarian.net/616109765/libgd-dev_2.3.3-6_amd64.deb
-wget http://launchpadlibrarian.net/616109770/libgd3_2.3.3-6_amd64.deb
+wget https://launchpad.net/~ubuntu-security-proposed/+archive/ubuntu/ppa/+build/22029890/+files/libgd-dev_2.2.5-5.2ubuntu2.1_amd64.deb
+wget https://launchpad.net/~ubuntu-security-proposed/+archive/ubuntu/ppa/+build/22029890/+files/libgd3_2.2.5-5.2ubuntu2.1_amd64.deb
 
-sudo apt-get install ./libgd-dev_2.3.3-6_amd64.deb ./libgd3_2.3.3-6_amd64.deb
+sudo apt-get install ./libgd-dev_2.2.5-5.2ubuntu2.1_amd64.deb ./libgd3_2.2.5-5.2ubuntu2.1_amd64.deb
 
 sudo apt-get install -y libxslt-dev
 
