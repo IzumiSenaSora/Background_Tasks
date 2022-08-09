@@ -78,8 +78,8 @@ git clone https://github.com/google/boringssl
 cd boringssl
 mkdir build
 cd build
-cmake ..
-make
+cmake -DCMAKE_BUILD_TYPE=Release ..
+make crypto ssl
 cd ..
 
 mkdir ./.openssl
