@@ -117,10 +117,10 @@ cd nginx-quic
   --with-mail_ssl_module \
   --add-module=../ngx_brotli \
   --add-module=../headers-more-nginx-module \
-  --with-openssl=../openssl-$OPENSSL \
   --with-cc-opt="-I../boringssl/include $(CFLAGS)" \
   --with-ld-opt="-L../boringssl/build/ssl -L../boringssl/build/crypto"
-#   --with-http_image_filter_module=dynamic \
+#  --with-openssl=../openssl-$OPENSSL \
+#  --with-http_image_filter_module=dynamic \
 make
 sudo make install
 cd ..
