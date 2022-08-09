@@ -87,7 +87,6 @@ cd ..
 ls -al /opt/nginx
 ls -al /opt/nginx/conf
 ls -al /opt/nginx/sbin
-ls -al /opt/nginx/modules
 /opt/nginx/sbin/nginx -V
 
 ls -al
