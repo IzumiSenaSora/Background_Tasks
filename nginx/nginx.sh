@@ -35,7 +35,7 @@ cd nginx-$NGINX
   --add-dynamic-module=../ngx_brotli \
   --add-dynamic-module=../headers-more-nginx-module
 make modules
-ls -al ./objs
+ls -al ./objs/*.so
 cd ..
 
 echo "
