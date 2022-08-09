@@ -59,6 +59,12 @@ Its Quic Time
 
 "
 git clone https://github.com/google/boringssl
+cd boringssl
+mkdir build
+cd build
+cmake ..
+make
+cd ..
 
 hg clone -b quic https://hg.nginx.org/nginx-quic
 cd nginx-quic
