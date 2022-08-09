@@ -115,7 +115,6 @@ cd nginx-quic
   --with-mail_ssl_module \
   --with-pcre-jit \
   --with-stream \
-  --with-stream_geoip_module \
   --with-stream_realip_module \
   --with-stream_ssl_module \
   --with-stream_ssl_preread_module \
@@ -128,6 +127,7 @@ cd nginx-quic
   --with-cc-opt="-I../boringssl/include $(CFLAGS)" \
   --with-ld-opt="-L../boringssl/build/ssl -L../boringssl/build/crypto"
 #  --with-http_image_filter_module=dynamic \
+#  --with-stream_geoip_module \
 
 touch ../boringssl/.openssl/include/openssl/ssl.h
 make
