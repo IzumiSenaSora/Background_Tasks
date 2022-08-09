@@ -5,11 +5,26 @@ CFLAGS="-Wno-ignored-qualifiers"
 git config --global user.name "Izumi Sena Sora"
 git config --global user.email "$EMAIL"
 
+curl https://nginx.org/keys/nginx_signing.key | gpg --dearmor \
+    | sudo tee /usr/share/keyrings/nginx-archive-keyring.gpg >/dev/null
+
+gpg --dry-run --quiet --import --import-options import-show /usr/share/keyrings/nginx-archive-keyring.gpg
+
+echo "deb [signed-by=/usr/share/keyrings/nginx-archive-keyring.gpg] \
+http://nginx.org/packages/mainline/ubuntu `lsb_release -cs` nginx" \
+    | sudo tee /etc/apt/sources.list.d/nginx.list
+
+echo -e "Package: *\nPin: origin nginx.org\nPin: release o=nginx\nPin-Priority: 900\n" \
+    | sudo tee /etc/apt/preferences.d/99nginx
+
 sudo apt-get update && sudo apt-get upgrade -y
-sudo apt-get install -y dh-autoreconf \
+
+sudo apt-get install -y nginx dh-autoreconf \
   doxygen libcurl4-gnutls-dev zlibc\
   libgeoip-dev liblmdb-dev libpcre++-dev \
   libyajl-dev lua5.3-dev libgd3 libgd-dev
+
+nginx -V
 
 cd ./nginx
 
