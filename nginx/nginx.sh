@@ -22,7 +22,7 @@ sudo apt-get update && sudo apt-get upgrade -y
 
 sudo apt-get remove nginx
 
-sudo apt-get install -y nginx libxslt-dev libgd-dev
+sudo apt-get install -f -y nginx libxslt-dev libgd-dev
 
 nginx -V
 
