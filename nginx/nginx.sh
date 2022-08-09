@@ -41,9 +41,9 @@ git clone https://github.com/openresty/headers-more-nginx-module
 #cd ..
 #git clone https://github.com/SpiderLabs/ModSecurity-nginx.git
 
-wget --quiet https://www.openssl.org/source/openssl-$OPENSSL.tar.gz
-tar zxvf openssl-$OPENSSL.tar.gz
-rm openssl-$OPENSSL.tar.gz
+#wget --quiet https://www.openssl.org/source/openssl-$OPENSSL.tar.gz
+#tar zxvf openssl-$OPENSSL.tar.gz
+#rm openssl-$OPENSSL.tar.gz
 
 wget --quiet https://nginx.org/download/nginx-$NGINX.tar.gz
 tar zxvf nginx-$NGINX.tar.gz
@@ -127,6 +127,8 @@ cd nginx-quic
   --with-cc-opt="-I../boringssl/include $(CFLAGS)" \
   --with-ld-opt="-L../boringssl/build/ssl -L../boringssl/build/crypto"
 #  --with-http_image_filter_module=dynamic \
+
+touch ../boringssl/.openssl/include/openssl/ssl.h
 make
 sudo make install
 cd ..
