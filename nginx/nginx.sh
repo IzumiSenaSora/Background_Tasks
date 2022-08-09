@@ -15,7 +15,7 @@ echo "deb [signed-by=/usr/share/keyrings/nginx-archive-keyring.gpg] \
 http://nginx.org/packages/mainline/ubuntu `lsb_release -cs` nginx" \
     | sudo tee /etc/apt/sources.list.d/nginx.list
 
-sudo apt-get update && sudo apt-get upgrade -y
+sudo apt-get update && sudo apt-get --with-new-pkgs upgrade -y
 
 sudo apt-get install -f -y libxslt-dev libgd-dev
 
