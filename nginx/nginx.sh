@@ -6,7 +6,7 @@ CFLAGS="-Wno-ignored-qualifiers"
 git config --global user.name "Izumi Sena Sora"
 git config --global user.email "$EMAIL"
 
-curl https://nginx.org/keys/nginx_signing.key | gpg --dearmor \
+curl --silent https://nginx.org/keys/nginx_signing.key | gpg --dearmor \
     | sudo tee /usr/share/keyrings/nginx-archive-keyring.gpg >/dev/null
 
 gpg --dry-run --quiet --import --import-options import-show /usr/share/keyrings/nginx-archive-keyring.gpg
@@ -17,8 +17,8 @@ http://nginx.org/packages/mainline/ubuntu `lsb_release -cs` nginx" \
 
 sudo apt-get update && sudo apt-get --with-new-pkgs upgrade -y
 
-#wget https://launchpad.net/~ubuntu-security-proposed/+archive/ubuntu/ppa/+build/22029890/+files/libgd-dev_2.2.5-5.2ubuntu2.1_amd64.deb
-#wget https://launchpad.net/~ubuntu-security-proposed/+archive/ubuntu/ppa/+build/22029890/+files/libgd3_2.2.5-5.2ubuntu2.1_amd64.deb
+#wget --quiet https://launchpad.net/~ubuntu-security-proposed/+archive/ubuntu/ppa/+build/22029890/+files/libgd-dev_2.2.5-5.2ubuntu2.1_amd64.deb
+#wget --quiet https://launchpad.net/~ubuntu-security-proposed/+archive/ubuntu/ppa/+build/22029890/+files/libgd3_2.2.5-5.2ubuntu2.1_amd64.deb
 
 #sudo apt-get install -y --allow-downgrades ./libgd-dev_2.2.5-5.2ubuntu2.1_amd64.deb
 #sudo apt-get install -y --allow-downgrades ./libgd3_2.2.5-5.2ubuntu2.1_amd64.deb
@@ -46,10 +46,10 @@ git clone https://github.com/openresty/headers-more-nginx-module
 #cd ..
 #git clone https://github.com/SpiderLabs/ModSecurity-nginx.git
 
-wget https://www.openssl.org/source/openssl-$OPENSSL.tar.gz
+wget --quiet https://www.openssl.org/source/openssl-$OPENSSL.tar.gz
 tar zxvf openssl-$OPENSSL.tar.gz
 
-wget https://nginx.org/download/nginx-$NGINX.tar.gz
+wget --quiet https://nginx.org/download/nginx-$NGINX.tar.gz
 tar zxvf nginx-$NGINX.tar.gz
 
 rm nginx-$NGINX.tar.gz
