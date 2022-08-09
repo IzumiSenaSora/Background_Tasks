@@ -23,7 +23,7 @@ sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get dist-upgrade -y
 #sudo apt-get install -y --allow-downgrades ./libgd-dev_2.2.5-5.2ubuntu2.1_amd64.deb
 #sudo apt-get install -y --allow-downgrades ./libgd3_2.2.5-5.2ubuntu2.1_amd64.deb
 
-sudo apt-get install -y libxslt-dev libgd-tools libgd-dev libgd3
+sudo apt-get install -y libxslt-dev libgd-tools libgd-dev
 
 nginx -V
 
