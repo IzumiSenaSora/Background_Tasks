@@ -62,7 +62,6 @@ make modules
 ls -al ./objs
 
 cd ..
-mkdir ./output
 
 echo "
 
@@ -106,6 +105,7 @@ ls -al /opt/nginx/sbin
 
 ls -al
 
+mkdir ./output
 sudo cp ./nginx-$VERSION/objs/*.so ./output
 sudo cp -r /opt/nginx ./output
 # sudo cp -r /usr/local/modsecurity ./output
