@@ -107,7 +107,6 @@ cd nginx-quic
   --with-http_secure_link_module \
   --with-http_gunzip_module \
   --with-http_gzip_static_module \
-  --without-http_image_filter_module=dynamic \
   --with-http_sub_module \
   --with-http_xslt_module=dynamic \
   --with-stream \
@@ -120,7 +119,7 @@ cd nginx-quic
   --with-openssl=../openssl-$OPENSSL \
   --with-cc-opt="-I../boringssl/include $(CFLAGS)" \
   --with-ld-opt="-L../boringssl/build/ssl -L../boringssl/build/crypto"
-
+#   --with-http_image_filter_module=dynamic \
 make
 sudo make install
 cd ..
