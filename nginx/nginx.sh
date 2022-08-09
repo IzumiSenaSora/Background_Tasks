@@ -1,6 +1,6 @@
 date=$(TZ='Asia/Dhaka' date +'%a, %d %b %Y %X')
 VERSION="1.23.1"
-OPENSSL"3.0.5"
+OPENSSL="3.0.5"
 CFLAGS="-Wno-ignored-qualifiers"
 
 git config --global user.name "Izumi Sena Sora"
