@@ -1,5 +1,6 @@
 date=$(TZ='Asia/Dhaka' date +'%a, %d %b %Y %X')
 NGINX="1.23.1"
+OPENSSL="3.0.5"
 CFLAGS="-Wno-ignored-qualifiers"
 
 git config --global user.name "Izumi Sena Sora"
@@ -29,6 +30,14 @@ wget --quiet https://nginx.org/download/nginx-$NGINX.tar.gz
 tar zxvf nginx-$NGINX.tar.gz
 rm nginx-$NGINX.tar.gz
 ls -al
+
+wget --quiet https://www.openssl.org/source/openssl-$OPENSSL.tar.gz
+tar zxvf openssl-$OPENSSL.tar.gz
+rm openssl-$OPENSSL.tar.gz
+cd openssl-$OPENSSL
+./Configure
+make
+sudo make install
 
 cd nginx-$NGINX
 ./configure --with-compat \
