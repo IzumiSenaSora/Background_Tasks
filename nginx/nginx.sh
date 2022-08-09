@@ -110,10 +110,10 @@ cd nginx-quic
   --with-http_gzip_static_module \
   --with-http_sub_module \
   --with-http_xslt_module=dynamic \
-  --with-stream \
+  --with-stream=dynamic \
   --with-stream_ssl_module \
   --with-stream_realip_module \
-  --with-mail \
+  --with-mail=dynamic \
   --with-mail_ssl_module \
   --with-openssl=../boringssl \
   --add-module=../ngx_brotli \
