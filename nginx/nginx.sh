@@ -92,35 +92,36 @@ cd ..
 hg clone -b quic https://hg.nginx.org/nginx-quic
 cd nginx-quic
 ./auto/configure --prefix=/opt/nginx \
-  --with-debug \
   --with-compat \
+  --with-debug \
   --with-file-aio \
-  --with-threads \
-  --with-pcre-jit \
-  --with-http_ssl_module \
-  --with-http_stub_status_module \
-  --with-http_realip_module \
-  --with-http_auth_request_module \
-  --with-http_v2_module \
-  --with-http_v3_module \
-  --with-stream_quic_module \
-  --with-stream_ssl_preread_module \
-  --with-http_dav_module \
-  --with-http_slice_module \
   --with-http_addition_module \
+  --with-http_auth_request_module \
+  --with-http_dav_module \
+  --with-http_degradation_module \
   --with-http_flv_module \
-  --with-http_mp4_module \
-  --with-http_random_index_module \
-  --with-http_secure_link_module \
+  --with-http_geoip_module \
   --with-http_gunzip_module \
   --with-http_gzip_static_module \
+  --with-http_mp4_module \
+  --with-http_realip_module \
+  --with-http_secure_link_module \
+  --with-http_slice_module \
+  --with-http_ssl_module \
+  --with-http_stub_status_module \
   --with-http_sub_module \
-  --with-http_xslt_module=dynamic \
-  --with-stream=dynamic \
-  --with-stream_ssl_module \
-  --with-stream_realip_module \
-  --with-mail=dynamic \
+  --with-http_v2_module \
+  --with-mail \
   --with-mail_ssl_module \
+  --with-pcre-jit \
+  --with-stream \
+  --with-stream_geoip_module \
+  --with-stream_realip_module \
+  --with-stream_ssl_module \
+  --with-stream_ssl_preread_module \
+  --with-threads \
+  --with-http_v3_module \
+  --with-stream_quic_module \
   --with-openssl=../boringssl \
   --add-module=../ngx_brotli \
   --add-module=../headers-more-nginx-module \
