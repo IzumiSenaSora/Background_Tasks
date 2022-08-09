@@ -100,7 +100,6 @@ cd nginx-quic
   --with-http_dav_module \
   --with-http_degradation_module \
   --with-http_flv_module \
-  --with-http_geoip_module \
   --with-http_gunzip_module \
   --with-http_gzip_static_module \
   --with-http_mp4_module \
@@ -127,6 +126,7 @@ cd nginx-quic
   --with-cc-opt="-I../boringssl/include $(CFLAGS)" \
   --with-ld-opt="-L../boringssl/build/ssl -L../boringssl/build/crypto"
 #  --with-http_image_filter_module=dynamic \
+#  --with-http_geoip_module \
 #  --with-stream_geoip_module \
 
 touch ../boringssl/.openssl/include/openssl/ssl.h
