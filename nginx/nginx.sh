@@ -3,6 +3,15 @@ NGINX="1.23.1"
 OPENSSL="3.0.5"
 CFLAGS="-Wno-ignored-qualifiers"
 
+# Clear -D_FORTIFY_SOURCE from C++ build flags, it causes Boringssl tests to fail to compile
+export CPPFLAGS=${CPPFLAGS/-D_FORTIFY_SOURCE=[1-9]/-D_FORTIFY_SOURCE=0}
+export CXXFLAGS=${CXXFLAGS/-D_FORTIFY_SOURCE=[1-9]/-D_FORTIFY_SOURCE=0}
+
+export CXXFLAGS="$CXXFLAGS -fPIC"
+# Disable some warnings that make Boringssl fail to compile due to a forced -Werror in CMakeLists.txt
+# -Wno-array-bounds: 2022-05-21 for compatiblity with GCC 12.1 (https://bugs.chromium.org/p/boringssl/issues/detail?id=492&sort=-modified)
+export CFLAGS="$CFLAGS -fPIC -Wno-stringop-overflow -Wno-array-parameter -Wno-array-bounds"
+
 git config --global user.name "Izumi Sena Sora"
 git config --global user.email "$EMAIL"
 
