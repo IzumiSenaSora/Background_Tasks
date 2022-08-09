@@ -8,10 +8,7 @@ git config --global user.email "$EMAIL"
 
 sudo apt-get update && sudo apt-get upgrade -y
 
-sudo apt-get install -y nginx dh-autoreconf \
-  doxygen libcurl4-gnutls-dev zlibc \
-  libgeoip-dev liblmdb-dev libpcre++-dev \
-  libyajl-dev lua5.3-dev libgd3 libgd-dev
+sudo apt-get install -y nginx libxslt-dev
 
 nginx -V
 
