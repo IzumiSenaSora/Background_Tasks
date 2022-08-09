@@ -23,7 +23,7 @@ wget https://launchpad.net/~ubuntu-security-proposed/+archive/ubuntu/ppa/+build/
 sudo apt-get install -y --allow-downgrades ./libgd-dev_2.2.5-5.2ubuntu2.1_amd64.deb
 sudo apt-get install -y --allow-downgrades ./libgd3_2.2.5-5.2ubuntu2.1_amd64.deb
 
-sudo apt-get install -y libxslt-dev
+sudo apt-get install -y --allow-downgrades libxslt-dev libgd-tools libgd-dev
 
 nginx -V
 
