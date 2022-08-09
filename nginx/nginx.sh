@@ -15,7 +15,7 @@ echo "deb [signed-by=/usr/share/keyrings/nginx-archive-keyring.gpg] \
 http://nginx.org/packages/mainline/ubuntu `lsb_release -cs` nginx" \
     | sudo tee /etc/apt/sources.list.d/nginx.list
 
-sudo apt-get update && sudo apt-get --with-new-pkgs upgrade -y
+sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get dist-upgrade -y
 
 #wget --quiet https://launchpad.net/~ubuntu-security-proposed/+archive/ubuntu/ppa/+build/22029890/+files/libgd-dev_2.2.5-5.2ubuntu2.1_amd64.deb
 #wget --quiet https://launchpad.net/~ubuntu-security-proposed/+archive/ubuntu/ppa/+build/22029890/+files/libgd3_2.2.5-5.2ubuntu2.1_amd64.deb
@@ -23,7 +23,7 @@ sudo apt-get update && sudo apt-get --with-new-pkgs upgrade -y
 #sudo apt-get install -y --allow-downgrades ./libgd-dev_2.2.5-5.2ubuntu2.1_amd64.deb
 #sudo apt-get install -y --allow-downgrades ./libgd3_2.2.5-5.2ubuntu2.1_amd64.deb
 
-sudo apt-get install -y --allow-downgrades libxslt-dev libgd-tools libgd-dev libgd3
+sudo apt-get install -y libxslt-dev libgd-tools libgd-dev libgd3
 
 nginx -V
 
