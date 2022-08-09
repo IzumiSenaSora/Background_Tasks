@@ -115,11 +115,11 @@ cd nginx-quic
   --with-stream_realip_module \
   --with-mail \
   --with-mail_ssl_module \
+  --with-openssl=../boringssl \
   --add-module=../ngx_brotli \
   --add-module=../headers-more-nginx-module \
   --with-cc-opt="-I../boringssl/include $(CFLAGS)" \
   --with-ld-opt="-L../boringssl/build/ssl -L../boringssl/build/crypto"
-#  --with-openssl=../openssl-$OPENSSL \
 #  --with-http_image_filter_module=dynamic \
 make
 sudo make install
