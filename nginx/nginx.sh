@@ -1,5 +1,6 @@
 date=$(TZ='Asia/Dhaka' date +'%a, %d %b %Y %X')
 VERSION="1.23.1"
+CFLAGS="-Wno-ignored-qualifiers"
 
 git config --global user.name "Izumi Sena Sora"
 git config --global user.email "$EMAIL"
@@ -75,7 +76,7 @@ cd nginx-quic
                  --with-stream_ssl_preread_module \
                  --add-module=../ngx_brotli \
                  --add-module=../headers-more-nginx-module \
-                 --with-cc-opt="-I../boringssl/include" \
+                 --with-cc-opt="-I../boringssl/include $(CFLAGS)" \
                  --with-ld-opt="-L../boringssl/build/ssl \
                                 -L../boringssl/build/crypto"
 make
