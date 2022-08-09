@@ -25,7 +25,7 @@ sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get dist-upgrade -y
 
 sudo apt-get install -y nginx
 sudo apt-get install -y libxslt-dev
-sudo apt-get install -y libgd-dev
+sudo apt-get install -y libgd2-xpm-dev
 
 nginx -V
 
