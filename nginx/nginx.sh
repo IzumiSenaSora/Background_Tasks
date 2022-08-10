@@ -32,6 +32,7 @@ ls -al
 
 cd nginx-$NGINX
 ./configure --with-compat \
+  --with-http_xslt_module=dynamic \
   --add-dynamic-module=../ngx_brotli \
   --add-dynamic-module=../headers-more-nginx-module
 make modules
