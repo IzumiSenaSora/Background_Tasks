@@ -6,7 +6,7 @@ on:
 
 jobs:
   cron_job:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     name: Cron Jobs
     steps:
       - uses: actions/checkout@v3
