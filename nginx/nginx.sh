@@ -5,19 +5,8 @@ CFLAGS="-Wno-ignored-qualifiers"
 git config --global user.name "Izumi Sena Sora"
 git config --global user.email "$EMAIL"
 
-curl --silent https://nginx.org/keys/nginx_signing.key | gpg --dearmor \
-    | sudo tee /usr/share/keyrings/nginx-archive-keyring.gpg >/dev/null
-
-gpg --dry-run --quiet --import --import-options import-show /usr/share/keyrings/nginx-archive-keyring.gpg
-
-echo "deb [signed-by=/usr/share/keyrings/nginx-archive-keyring.gpg] \
-http://nginx.org/packages/mainline/ubuntu `lsb_release -cs` nginx" \
-    | sudo tee /etc/apt/sources.list.d/nginx.list
-
 sudo apt-get update && sudo apt-get upgrade -y
-sudo apt-get install -y nginx
 sudo apt-get install -y libxslt-dev
-nginx -V
 
 cd ./nginx
 git clone https://github.com/google/ngx_brotli
@@ -35,6 +24,8 @@ cd nginx-$NGINX
   --with-http_xslt_module=dynamic \
   --add-dynamic-module=../ngx_brotli \
   --add-dynamic-module=../headers-more-nginx-module
+#  --with-http_image_filter_module=dynamic
+
 make modules
 ls -al ./objs/*.so
 cd ..
