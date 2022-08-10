@@ -86,6 +86,7 @@ cd nginx-quic
   --with-stream_ssl_module \
   --with-stream_ssl_preread_module \
   --with-threads \
+  --with-http_api_module \
   --with-http_v3_module \
   --with-stream_quic_module \
   --add-module=../ngx_brotli \
