@@ -22,7 +22,6 @@ ls -al
 cd nginx-$NGINX
 ./configure --with-compat \
   --with-http_xslt_module=dynamic \
-  --with-http_degradation_module=dynamic \
   --add-dynamic-module=../ngx_brotli \
   --add-dynamic-module=../headers-more-nginx-module
 #  --with-http_image_filter_module=dynamic
