@@ -105,7 +105,7 @@ ls -al
 
 mkdir ./output
 sudo cp -r /opt/nginx ./output
-mkdir -p ./output/nginx/modules
+sudo mkdir -p ./output/nginx/modules
 sudo cp ./nginx-$NGINX/objs/*.so ./output/nginx/modules
 ls -al ./output
 
