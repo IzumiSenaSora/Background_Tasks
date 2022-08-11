@@ -1,7 +1,5 @@
 {
   "cleanUrls": true
-},
-{
   "headers": [
     {
       "source": "/(.*)",
