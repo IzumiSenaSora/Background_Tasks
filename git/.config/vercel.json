@@ -83,7 +83,7 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+          "value": "public, max-age=31536000, immutable, no-transform"
         }
       ]
     },
@@ -92,7 +92,7 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+          "value": "public, max-age=31536000, immutable, no-transform"
         }
       ]
     },
@@ -101,7 +101,7 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+          "value": "public, max-age=31536000, immutable, no-transform"
         }
       ]
     },
@@ -110,7 +110,7 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+          "value": "public, max-age=31536000, immutable, no-transform"
         }
       ]
     },
@@ -119,7 +119,7 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+          "value": "public, max-age=31536000, immutable, no-transform"
         }
       ]
     },
@@ -128,7 +128,7 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+          "value": "public, max-age=31536000, immutable, no-transform"
         }
       ]
     },
@@ -137,7 +137,7 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+          "value": "public, max-age=31536000, immutable, no-transform"
         }
       ]
     },
@@ -146,7 +146,7 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+          "value": "public, max-age=31536000, immutable, no-transform"
         }
       ]
     },
@@ -155,7 +155,7 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+          "value": "public, max-age=31536000, immutable, no-transform"
         }
       ]
     },
@@ -164,7 +164,7 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+          "value": "public, max-age=31536000, immutable, no-transform"
         }
       ]
     },
@@ -173,7 +173,7 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+          "value": "public, max-age=31536000, immutable, no-transform"
         }
       ]
     },
@@ -182,7 +182,7 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+          "value": "public, max-age=31536000, immutable, no-transform"
         }
       ]
     },
@@ -191,7 +191,7 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+          "value": "public, max-age=31536000, immutable, no-transform"
         }
       ]
     },
@@ -200,7 +200,7 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+          "value": "public, max-age=31536000, immutable, no-transform"
         }
       ]
     },
@@ -209,7 +209,7 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+          "value": "public, max-age=31536000, immutable, no-transform"
         }
       ]
     },
@@ -218,7 +218,7 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+          "value": "public, max-age=31536000, immutable, no-transform"
         }
       ]
     },
@@ -227,7 +227,7 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+          "value": "public, max-age=31536000, immutable, no-transform"
         }
       ]
     },
@@ -236,7 +236,7 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+          "value": "public, max-age=31536000, immutable, no-transform"
         }
       ]
     },
@@ -245,7 +245,7 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+          "value": "public, max-age=31536000, immutable, no-transform"
         }
       ]
     },
@@ -254,7 +254,7 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+          "value": "public, max-age=31536000, immutable, no-transform"
         }
       ]
     },
@@ -263,7 +263,7 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+          "value": "public, max-age=31536000, immutable, no-transform"
         }
       ]
     },
@@ -272,7 +272,7 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+          "value": "public, max-age=31536000, immutable, no-transform"
         }
       ]
     },
@@ -281,7 +281,7 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+          "value": "public, max-age=31536000, immutable, no-transform"
         }
       ]
     },
@@ -290,7 +290,7 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+          "value": "public, max-age=31536000, immutable, no-transform"
         }
       ]
     },
@@ -299,7 +299,7 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+          "value": "public, max-age=31536000, immutable, no-transform"
         }
       ]
     },
@@ -308,7 +308,7 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+          "value": "public, max-age=31536000, immutable, no-transform"
         }
       ]
     },
@@ -317,7 +317,7 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+          "value": "public, max-age=31536000, immutable, no-transform"
         }
       ]
     },
@@ -326,7 +326,7 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+          "value": "public, max-age=31536000, immutable, no-transform"
         }
       ]
     },
@@ -335,7 +335,7 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+          "value": "public, max-age=31536000, immutable, no-transform"
         }
       ]
     },
@@ -344,7 +344,7 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+          "value": "public, max-age=31536000, immutable, no-transform"
         }
       ]
     },
@@ -353,7 +353,7 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+          "value": "public, max-age=31536000, immutable, no-transform"
         }
       ]
     },
@@ -362,7 +362,7 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=1800, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+          "value": "public, max-age=1800, immutable, no-transform"
         }
       ]
     },
@@ -371,7 +371,7 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=1800, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+          "value": "public, max-age=1800, immutable, no-transform"
         }
       ]
     },
@@ -380,7 +380,7 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=1800, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+          "value": "public, max-age=1800, immutable, no-transform"
         }
       ]
     },
@@ -389,7 +389,7 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=1800, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+          "value": "public, max-age=1800, immutable, no-transform"
         }
       ]
     },
@@ -398,7 +398,7 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=1800, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+          "value": "public, max-age=1800, immutable, no-transform"
         }
       ]
     },
@@ -407,7 +407,7 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=1800, immutable, stale-while-revalidate=604800, stale-if-error=604800, no-transform"
+          "value": "public, max-age=1800, immutable, no-transform"
         }
       ]
     }
