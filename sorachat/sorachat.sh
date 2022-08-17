@@ -14,7 +14,10 @@ export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 source ~/.bashrc
 go version
 
+cp docker-image-extract ./sorachat
 cd ./sorachat
+mkdir -p upload
+mkdir -p upload/docker
 
 wget https://github.com/matrix-org/dendrite/archive/refs/tags/v$SORACHAT.tar.gz
 
@@ -25,7 +28,17 @@ mv dendrite-$SORACHAT dendrite
 cd dendrite
 ./build.sh
 
+mv ./bin ../upload
+cd ..
+
+chmod +x docker-image-extract
+./docker-image-extract matrixdotorg/dendrite-monolith:v$SORACHAT
+
+mv ./output/usr/bin/create-account \
+./output/usr/bin/dendrite-monolith-server \
+./output/usr/bin/generate-keys ./upload/docker
+
 echo " *** Compress SoraChat Into tar.gz File *** "
-tar -zcvf ./sorachat.tar.gz ./bin
+tar -zcvf ./sorachat.tar.gz ./upload
 
 ls -al
