@@ -5,11 +5,7 @@ CFLAGS="-Wno-ignored-qualifiers"
 git config --global user.name "Izumi Sena Sora"
 git config --global user.email "$EMAIL"
 
-sudo add-apt-repository ppa:maxmind/ppa
 sudo apt-get update && sudo apt-get upgrade -y
-sudo apt-get install -y libxslt-dev libmaxminddb-dev mmdb-bin
-
-geoipupdate
 
 cd ./nginx
 git clone https://github.com/google/ngx_brotli
@@ -24,12 +20,8 @@ ls -al
 
 cd nginx-$NGINX
 ./configure --with-compat \
-  --with-http_xslt_module=dynamic \
   --add-dynamic-module=../ngx_brotli \
-  --add-dynamic-module=../headers-more-nginx-module \
-  --with-http_geoip_module=dynamic \
-  --with-stream_geoip_module=dynamic
-#  --with-http_image_filter_module=dynamic
+  --add-dynamic-module=../headers-more-nginx-module
 
 make modules
 ls -al ./objs/*.so
