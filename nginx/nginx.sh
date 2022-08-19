@@ -1,5 +1,5 @@
 date=$(TZ='Asia/Dhaka' date +'%a, %d %b %Y %X')
-NGINX="1.23.1"
+# NGINX="1.23.1"
 CFLAGS="-Wno-ignored-qualifiers"
 
 git config --global user.name "Izumi Sena Sora"
@@ -39,4 +39,4 @@ sudo cp ./nginx-$NGINX/objs/*.so ./output
 ls -al ./output
 
 echo " *** Compress NGINX Into tar.gz File *** "
-tar -zcvf ./nginx.tar.gz ./output
+tar -zcvf ./nginx-v$NGINX.tar.gz ./output
