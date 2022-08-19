@@ -3,7 +3,7 @@ date=$(TZ='Asia/Dhaka' date +'%a, %d %b %Y %X')
 git config --global user.name "Izumi Sena Sora"
 git config --global user.email "$EMAIL"
 
-SORACHAT="0.9.3"
+# SORACHAT="0.9.4"
 
 curl -LO https://go.dev/dl/go1.19.linux-amd64.tar.gz
 sudo tar -C /usr/local -xzf go1.19.linux-amd64.tar.gz
@@ -23,9 +23,7 @@ wget https://github.com/matrix-org/dendrite/archive/refs/tags/v$SORACHAT.tar.gz
 
 tar -zxvf v$SORACHAT.tar.gz
 
-mv dendrite-$SORACHAT dendrite
-
-cd dendrite
+cd dendrite-$SORACHAT
 ./build.sh
 
 mv ./bin ../upload
@@ -39,6 +37,6 @@ mv ./output/usr/bin/create-account \
 ./output/usr/bin/generate-keys ./upload/docker
 
 echo " *** Compress SoraChat Into tar.gz File *** "
-tar -zcvf ./sorachat.tar.gz ./upload
+tar -zcvf ./sorachat-v$SORACHAT.tar.gz ./upload
 
 ls -al
