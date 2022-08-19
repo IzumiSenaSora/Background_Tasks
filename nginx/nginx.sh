@@ -1,6 +1,5 @@
 date=$(TZ='Asia/Dhaka' date +'%a, %d %b %Y %X')
-# NGINX="1.23.1"
-CFLAGS="-Wno-ignored-qualifiers"
+# CFLAGS="-Wno-ignored-qualifiers"
 
 git config --global user.name "Izumi Sena Sora"
 git config --global user.email "$EMAIL"
