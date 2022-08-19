@@ -7,7 +7,7 @@ git config --global user.email "$EMAIL"
 
 sudo add-apt-repository ppa:maxmind/ppa
 sudo apt-get update && sudo apt-get upgrade -y
-sudo apt-get install -y libxslt-dev libmaxminddb-dev mmdb-bin geoipupdate
+sudo apt-get install -y libxslt-dev libmaxminddb-dev mmdb-bin
 
 geoipupdate
 
