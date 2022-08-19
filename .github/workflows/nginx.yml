@@ -8,6 +8,8 @@ jobs:
   cron_job:
     runs-on: ubuntu-latest
     name: Cron Jobs
+    env:
+      NGINX: 1.23.1
     steps:
       - uses: actions/checkout@v3
       - name: Run Cron Jobs
@@ -15,5 +17,5 @@ jobs:
         run: bash ./nginx/nginx.sh
       - uses: actions/upload-artifact@v3
         with:
-          name: nginx.tar.gz
-          path: nginx/nginx.tar.gz
+          name: nginx-v${{ env.NGINX }}.tar.gz
+          path: nginx/nginx-v${{ env.NGINX }}.tar.gz
