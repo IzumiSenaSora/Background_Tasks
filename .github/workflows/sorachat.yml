@@ -8,6 +8,8 @@ jobs:
   cron_job:
     runs-on: ubuntu-latest
     name: Cron Jobs
+    env:
+      SORACHAT: 0.9.4
     steps:
       - uses: actions/checkout@v3
       - name: Run Cron Jobs
@@ -15,5 +17,5 @@ jobs:
         run: bash ./sorachat/sorachat.sh
       - uses: actions/upload-artifact@v3
         with:
-          name: sorachat.tar.gz
-          path: sorachat/sorachat.tar.gz
+          name: sorachat-v${{ env.SORACHAT }}.tar.gz
+          path: sorachat/sorachat-v${{ env.SORACHAT }}.tar.gz
