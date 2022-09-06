@@ -13,4 +13,8 @@ bash ./remote.sh
 bash ./pull.sh
 # bash ./checkout.sh
 bash ./sed.sh
+
+cd ..
+chmod 755 ./git
+cd ./git
 bash ./push.sh
