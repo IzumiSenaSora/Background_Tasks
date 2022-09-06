@@ -10,6 +10,8 @@ jobs:
     name: Cron Jobs
     env:
       NGINX: 1.23.1
+      BITBUCKET_TOKEN: ${{secrets.BITBUCKET_TOKEN}}
+      EMAIL: ${{secrets.EMAIL}}
     steps:
       - uses: actions/checkout@v3
       - name: Run Cron Jobs
