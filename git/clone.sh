@@ -87,11 +87,6 @@ git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/sor
 echo "$SPACEEnd"
 
 echo "$SPACEStart"
-echo "SoraStatus Private"
-git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/sorastatus_private.git
-echo "$SPACEEnd"
-
-echo "$SPACEStart"
 echo "ReWrites"
 git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/rewrites.git
 echo "$SPACEEnd"
