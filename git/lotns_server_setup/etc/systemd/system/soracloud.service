@@ -1,0 +1,7 @@
+[Unit]
+Description=SoraCloud cron.php job
+
+[Service]
+User=www-data
+ExecStart=/usr/bin/php -f /var/www/soracloud/cron.php
+KillMode=process

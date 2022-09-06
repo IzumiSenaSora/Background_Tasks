@@ -1,0 +1,21 @@
+[Unit]
+Description=SoraVault (Bitwarden Server Rust Edition)
+After=network.target
+
+[Service]
+User=unordinary
+Group=unordinary
+EnvironmentFile=/opt/soravault/.env
+ExecStart=/opt/soravault/vaultwarden
+LimitNOFILE=1048576
+LimitNPROC=64
+PrivateTmp=true
+PrivateDevices=true
+ProtectHome=true
+ProtectSystem=strict
+WorkingDirectory=/opt/soravault
+ReadWriteDirectories=/opt/soravault
+AmbientCapabilities=CAP_NET_BIND_SERVICE
+
+[Install]
+WantedBy=multi-user.target

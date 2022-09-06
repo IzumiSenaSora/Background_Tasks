@@ -1,0 +1,10 @@
+[Unit]
+Description=Run SoraCloud cron.php every 5 minutes
+
+[Timer]
+OnBootSec=5min
+OnUnitActiveSec=5min
+Unit=soracloud.service
+
+[Install]
+WantedBy=timers.target

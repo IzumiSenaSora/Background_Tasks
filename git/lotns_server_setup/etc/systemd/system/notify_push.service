@@ -1,0 +1,11 @@
+[Unit]
+Description=Push Daemon For SoraCloud Clients
+
+[Service]
+Environment=PORT=7867
+Environment=ALLOW_SELF_SIGNED=true
+ExecStart=/var/www/soracloud/apps/notify_push/bin/x86_64/notify_push /var/www/soracloud/config/config.php
+User=www-data
+
+[Install]
+WantedBy=multi-user.target
