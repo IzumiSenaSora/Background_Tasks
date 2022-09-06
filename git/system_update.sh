@@ -41,3 +41,8 @@ cp ./sorastatus_logs ./lotns_server_setup/var/www
 
 echo "LOTNS Server Setup"
 cd ./lotns_server_setup
+
+find . -name "_headers" -exec rm -rfv _headers {} \;
+find . -name "_redirect" -exec rm -rfv _redirect {} \;
+find . -name "vercel.json" -exec rm -rfv vercel.json {} \;
+find . -name ".git" -exec rm -rfv .git {} \;
