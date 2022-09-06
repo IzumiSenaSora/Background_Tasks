@@ -26,9 +26,9 @@ ls -al
 
 git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/lotns_server_setup.git
 
-rm -rfv ./lotns_server_setup/data/vault/web-vault
 mkdir -p ./lotns_server_setup/app/bin
 mkdir -p ./lotns_server_setup/data/vault
+rm -rfv ./lotns_server_setup/data/vault/web-vault
 mv soravault/vaultwarden ./lotns_server_setup/app/bin
 mv soravault/web-vault ./lotns_server_setup/data/vault
 
