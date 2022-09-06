@@ -119,13 +119,6 @@ echo "$SPACEEnd"
 cd ..
 
 echo "$SPACEStart"
-echo "SoraStatus Private"
-cd ./sorastatus_private
-git merge
-echo "$SPACEEnd"
-cd ..
-
-echo "$SPACEStart"
 echo "ReWrites"
 cd ./rewrites
 git merge
