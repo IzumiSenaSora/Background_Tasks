@@ -191,10 +191,10 @@ echo "$SPACEEnd"
 cd ..
 
 # echo "$SPACEStart"
-# echo "Let's Encrypt"
-# cd ./letsencrypt
+# echo "ACME"
+# cd ./acme
 # git add .
-# git commit -m "Update Let's Encrypt $date"
+# git commit -m "Update ACME $date"
 # git push origin main
 # echo "$SPACEEnd"
 # cd ..
