@@ -6,48 +6,48 @@ git config --global user.email "$EMAIL"
 mkdir -p ./lotns_server_setup/var/www
 
 rm -rfv ./lotns_server_setup/var/www/about_soracloud
-cp ./about_soracloud ./lotns_server_setup/var/www
+cp -r ./about_soracloud ./lotns_server_setup/var/www
 rm -rfv ./lotns_server_setup/var/www/about_soracloud/.git
 
 rm -rfv ./lotns_server_setup/var/www/soraapis
-cp ./soraapis ./lotns_server_setup/var/www
+cp -r ./soraapis ./lotns_server_setup/var/www
 rm -rfv ./lotns_server_setup/var/www/soraapis/.git
 
 rm -rfv ./lotns_server_setup/var/www/sorablog
-cp ./sorablog ./lotns_server_setup/var/www
+cp -r ./sorablog ./lotns_server_setup/var/www
 rm -rfv ./lotns_server_setup/var/www/sorablog/.git
 
 rm -rfv ./lotns_server_setup/var/www/sorafonts
-cp ./sorafonts ./lotns_server_setup/var/www
+cp -r ./sorafonts ./lotns_server_setup/var/www
 rm -rfv ./lotns_server_setup/var/www/sorafonts/.git
 
 rm -rfv ./lotns_server_setup/var/www/html
-cp ./lotns_web_server ./lotns_server_setup/var/www
+cp -r ./lotns_web_server ./lotns_server_setup/var/www
 mv ./lotns_server_setup/var/www/lotns_web_server ./lotns_server_setup/var/www/html
 rm -rfv ./lotns_server_setup/var/www/html/.git
 
 rm -rfv ./lotns_server_setup/var/www/lotns
-cp ./lotns ./lotns_server_setup/var/www
+cp -r ./lotns ./lotns_server_setup/var/www
 rm -rfv ./lotns_server_setup/var/www/lotns/.git
 
 rm -rfv ./lotns_server_setup/var/www/unordinary
-cp ./unordinary ./lotns_server_setup/var/www
+cp -r ./unordinary ./lotns_server_setup/var/www
 rm -rfv ./lotns_server_setup/var/www/unordinary/.git
 
 rm -rfv ./lotns_server_setup/var/www/soraid
-cp ./soraid ./lotns_server_setup/var/www
+cp -r ./soraid ./lotns_server_setup/var/www
 rm -rfv ./lotns_server_setup/var/www/soraid/.git
 
 rm -rfv ./lotns_server_setup/var/www/soralicense
-cp ./soralicense ./lotns_server_setup/var/www
+cp -r ./soralicense ./lotns_server_setup/var/www
 rm -rfv ./lotns_server_setup/var/www/soralicense/.git
 
 rm -rfv ./lotns_server_setup/var/www/sorastatus
-cp ./sorastatus ./lotns_server_setup/var/www
+cp -r ./sorastatus ./lotns_server_setup/var/www
 rm -rfv ./lotns_server_setup/var/www/sorastatus/.git
 
 rm -rfv ./lotns_server_setup/var/www/sorastatus_logs
-cp ./sorastatus_logs ./lotns_server_setup/var/www
+cp -r ./sorastatus_logs ./lotns_server_setup/var/www
 rm -rfv ./lotns_server_setup/var/www/sorastatus_logs/.git
 
 echo "LOTNS Server Setup"
