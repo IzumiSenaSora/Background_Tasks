@@ -119,13 +119,6 @@ echo "$SPACEEnd"
 cd ..
 
 echo "$SPACEStart"
-echo "SoraStatus Private"
-cd ./sorastatus_private
-git pull
-echo "$SPACEEnd"
-cd ..
-
-echo "$SPACEStart"
 echo "ReWrites"
 cd ./rewrites
 git pull
@@ -133,8 +126,8 @@ echo "$SPACEEnd"
 cd ..
 
 # echo "$SPACEStart"
-# echo "Let's Encrypt"
-# cd ./letsencrypt
+# echo "ACME"
+# cd ./acme
 # git pull
 # echo "$SPACEEnd"
 # cd ..
