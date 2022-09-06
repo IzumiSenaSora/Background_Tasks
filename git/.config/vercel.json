@@ -6,11 +6,11 @@
       "headers": [
         {
           "key": "X-Frame-Options",
-          "value": "DENY"
+          "value": "SAMEORIGIN"
         },
         {
           "key": "X-XSS-Protection",
-          "value": "0"
+          "value": "1; mode=block"
         },
         {
           "key": "Strict-Transport-Security",
@@ -395,15 +395,6 @@
     },
     {
       "source": "/(.*.atom)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=1800, immutable, no-transform"
-        }
-      ]
-    },
-    {
-      "source": "/(.*.pdf)",
       "headers": [
         {
           "key": "Cache-Control",
