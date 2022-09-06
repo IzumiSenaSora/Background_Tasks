@@ -171,15 +171,6 @@ echo "$SPACEEnd"
 cd ..
 
 echo "$SPACEStart"
-echo "SoraStatus Private"
-cd ./sorastatus_private
-git add .
-git commit -m "Update SoraStatus Private $date"
-git push origin main
-echo "$SPACEEnd"
-cd ..
-
-echo "$SPACEStart"
 echo "ReWrites"
 cp ./.config/_headers ./rewrites
 cp ./.config/vercel.json ./rewrites
