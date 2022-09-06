@@ -211,11 +211,11 @@ echo "$SPACEEnd"
 cd ..
 
 # echo "$SPACEStart"
-# echo "Let's Encrypt"
-# cd ./letsencrypt
+# echo "ACME"
+# cd ./acme
 # git checkout --orphan master
 # git add --all
-# git commit --all -m "Initialize Repo Let's Encrypt $date"
+# git commit --all -m "Initialize Repo ACME $date"
 # git branch -D main
 # git branch -m main
 # git push -f origin main
