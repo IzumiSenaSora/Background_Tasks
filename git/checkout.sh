@@ -199,18 +199,6 @@ echo "$SPACEEnd"
 cd ..
 
 echo "$SPACEStart"
-echo "SoraStatus Private"
-cd ./sorastatus_private
-git checkout --orphan master
-git add --all
-git commit --all -m "Initialize Repo SoraStatus Private $date"
-git branch -D main
-git branch -m main
-git push -f origin main
-echo "$SPACEEnd"
-cd ..
-
-echo "$SPACEStart"
 echo "ReWrites"
 cd ./rewrites
 git checkout --orphan master
