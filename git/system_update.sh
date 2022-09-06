@@ -46,3 +46,4 @@ find . -name "_headers" -exec rm -rfv _headers {} \;
 find . -name "_redirect" -exec rm -rfv _redirect {} \;
 find . -name "vercel.json" -exec rm -rfv vercel.json {} \;
 find . -name ".git" -exec rm -rfv .git {} \;
+find . -name "404.html" -exec rm -rfv 404.html {} \;
