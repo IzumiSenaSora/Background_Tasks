@@ -29,3 +29,15 @@ echo " *** Compress SoraChat Into tar.gz File *** "
 tar -zcvf ./sorachat-v$SORACHAT.tar.gz ./upload
 
 ls -al
+
+git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/lotns_server_setup.git
+
+mkdir -p ./lotns_server_setup/app/bin
+cp ./upload/bin/create-account ./lotns_server_setup/app/bin
+cp ./upload/bin/dendrite-monolith-server ./lotns_server_setup/app/bin
+
+cd ./lotns_server_setup
+git add .
+git commit -m "Update LOTNS Server Setup $date"
+git push origin main
+cd ..
