@@ -1,6 +1,6 @@
 /*
-  X-Frame-Options: DENY
-  X-XSS-Protection: 0
+  X-Frame-Options: SAMEORIGIN
+  X-XSS-Protection: 1; mode=block
   Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
   X-Content-Type-Options: nosniff
   Cross-Origin-Opener-Policy: same-origin
@@ -124,7 +124,4 @@
   Cache-Control: public, max-age=1800, immutable, no-transform
 
 /*.atom
-  Cache-Control: public, max-age=1800, immutable, no-transform
-
-/*.pdf
   Cache-Control: public, max-age=1800, immutable, no-transform
