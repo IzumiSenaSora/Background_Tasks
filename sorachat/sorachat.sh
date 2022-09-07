@@ -32,9 +32,10 @@ ls -al
 
 git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/lotns_server_setup.git
 
-mkdir -p ./lotns_server_setup/app/bin
-cp ./upload/bin/create-account ./lotns_server_setup/app/bin
-cp ./upload/bin/dendrite-monolith-server ./lotns_server_setup/app/bin
+mkdir -p ./lotns_server_setup/unordinary/app/chat
+cp ./upload/bin/create-account ./lotns_server_setup/unordinary/app/chat
+cp ./upload/bin/dendrite-monolith-server ./lotns_server_setup/unordinary/app/chat
+mv ./lotns_server_setup/unordinary/app/chat/dendrite-monolith-server ./lotns_server_setup/unordinary/app/chat/dendrite
 
 cd ./lotns_server_setup
 git add .
