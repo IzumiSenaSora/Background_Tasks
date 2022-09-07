@@ -13,5 +13,4 @@ bash ./remote.sh
 bash ./pull.sh
 # bash ./checkout.sh
 bash ./sed.sh
-bash ./system_update.sh
 bash ./push.sh
