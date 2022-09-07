@@ -34,14 +34,3 @@ ls -al ./output
 
 echo " *** Compress NGINX Into tar.gz File *** "
 tar -zcvf ./nginx-v$NGINX.tar.gz ./output
-
-git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/lotns_server_setup.git
-
-mkdir -p ./lotns_server_setup/usr/lib/nginx/modules
-sudo cp ./output/*.so ./lotns_server_setup/usr/lib/nginx/modules
-
-cd ./lotns_server_setup
-git add .
-git commit -m "Update LOTNS Server Setup $date"
-git push origin main
-cd ..
