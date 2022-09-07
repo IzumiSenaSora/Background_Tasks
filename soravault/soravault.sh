@@ -23,15 +23,3 @@ echo " *** Compress SoraVault Into tar.gz File *** "
 sudo tar -zcvf ./soravault.tar.gz ./soravault
 
 ls -al
-
-git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/lotns_server_setup.git
-
-mkdir -p ./lotns_server_setup/unordinary/app/vault
-rm -rfv ./lotns_server_setup/unordinary/app/vault/web-vault
-mv ./soravault/{vaultwarden,web-vault} ./lotns_server_setup/unordinary/app/vault
-
-cd ./lotns_server_setup
-git add .
-git commit -m "Update LOTNS Server Setup $date"
-git push origin main
-cd ..
