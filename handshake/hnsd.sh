@@ -16,4 +16,4 @@ echo " *** Check Handshake (HNSD) Files *** "
 ls -al
 
 echo " *** Check SoraVault Versions *** "
-./hnsd --version
+./hnsd --help
