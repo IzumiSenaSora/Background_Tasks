@@ -1,0 +1,24 @@
+name: Handshake Background Tasks (Cron Jobs)
+
+# Controls when the action will run.
+on:
+  workflow_dispatch:
+
+jobs:
+  cron_job:
+    runs-on: ubuntu-latest
+    name: Cron Jobs
+    env:
+      HSD: 4.0.1
+      HNSD: 1.0.0
+      BITBUCKET_TOKEN: ${{secrets.BITBUCKET_TOKEN}}
+      EMAIL: ${{secrets.EMAIL}}
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run Cron Jobs
+        id: shell_script_run
+        run: bash ./handshake/hnsd.sh
+      - uses: actions/upload-artifact@v3
+        with:
+          name: hnsd
+          path: handshake/hnsd/hnsd
