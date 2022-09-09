@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Cron Jobs
     env:
-      SORACHAT: 0.9.6
+      SORACHAT: 0.9.7
       BITBUCKET_TOKEN: ${{secrets.BITBUCKET_TOKEN}}
       EMAIL: ${{secrets.EMAIL}}
     steps:
