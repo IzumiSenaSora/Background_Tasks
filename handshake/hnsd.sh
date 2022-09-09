@@ -6,7 +6,7 @@ git config --global user.email "$EMAIL"
 cd ./handshake
 
 echo " *** Clone Handshake (HNSD) *** "
-git clone git://github.com/handshake-org/hnsd.git
+git clone https://github.com/handshake-org/hnsd
 cd hnsd
 ./autogen.sh && ./configure && make
 
