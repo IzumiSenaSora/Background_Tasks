@@ -22,6 +22,7 @@ tar -zxvf v$SORACHAT.tar.gz
 cd dendrite-$SORACHAT
 ./build.sh
 
+mv ./bin/dendrite-monolith-server ./bin/dendrite
 mv ./bin ../upload
 cd ..
 
