@@ -21,3 +21,8 @@ jobs:
         with:
           name: sorachat-v${{ env.SORACHAT }}.tar.gz
           path: sorachat/sorachat-v${{ env.SORACHAT }}.tar.gz
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: sorachat/sorachat-v${{ env.SORACHAT }}.tar.gz
