@@ -23,7 +23,8 @@ cd dendrite-$SORACHAT
 ./build.sh
 
 mv ./bin/dendrite-monolith-server ./bin/dendrite
-mv ./bin ../upload
+mv ./bin/dendrite ../upload
+mv ./bin/create-account ../upload
 cd ..
 
 echo " *** Compress SoraChat Into tar.gz File *** "
