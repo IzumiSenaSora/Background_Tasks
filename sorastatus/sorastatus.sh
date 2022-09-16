@@ -57,6 +57,8 @@ cp LOTNS_report.log SoraAPI_report.log
 # cp LOTNS_report.log SoraBlog_report.log
 cp LOTNS_report.log SoraCDN_report.log
 cp LOTNS_report.log SoraCDNS_report.log
+cp LOTNS_report.log SoraChat_report.log
+cp LOTNS_report.log SoraChatServer_report.log
 cp LOTNS_report.log SoraCloud_report.log
 # cp LOTNS_report.log AboutSoraCloud_report.log
 cp LOTNS_report.log SoraDNS_report.log
@@ -70,6 +72,7 @@ cp LOTNS_report.log SoraMail_report.log
 cp LOTNS_report.log SoraOS_report.log
 # cp LOTNS_report.log SoraStatus_report.log
 cp LOTNS_report.log SoraStatusLogs_report.log
+cp LOTNS_report.log SoraVault_report.log
 # cp LOTNS_report.log UnOrdinary_report.log
 cp LOTNS_report.log Zinik_report.log
 
