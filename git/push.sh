@@ -17,6 +17,8 @@ cd ..
 
 echo "$SPACEStart"
 echo "MTA-STS"
+cp ./.config/_headers ./mta-sts
+cp ./.config/vercel.json ./mta-sts
 cd ./mta-sts
 git add .
 git commit -m "Update MTA-STS $date"
