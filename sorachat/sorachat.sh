@@ -30,8 +30,9 @@ mv ./bin/dendrite ../upload
 mv ./bin/create-account ../upload
 cd ..
 
-git clone https://github.com/vector-im/element-call.git
-cd element-call
+wget https://github.com/vector-im/element-call/archive/refs/tags/v0.2.13.tar.gz
+tar -zxvf v0.2.13.tar.gz
+cd element-call-v0.2.13
 yarn install
 yarn run build
 ls -a
