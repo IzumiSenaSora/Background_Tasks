@@ -21,16 +21,31 @@ tar -zxvf v$SORACHAT.tar.gz
 
 cd dendrite-$SORACHAT
 ./build.sh
-ls -al ./bin
+ls -a ./bin
 ./build-dendritejs.sh
-ls -al ./bin
+ls -a ./bin
 
 mv ./bin/dendrite-monolith-server ./bin/dendrite
 mv ./bin/dendrite ../upload
 mv ./bin/create-account ../upload
 cd ..
 
+git clone https://github.com/matrix-org/matrix-js-sdk.git
+cd matrix-js-sdk
+git checkout robertlong/group-call
+yarn
+yarn link
+cd ..
+
+git clone https://github.com/vector-im/element-call.git
+cd element-call
+ls -a
+yarn
+yarn link matrix-js-sdk
+ls -a
+cd ..
+
 echo " *** Compress SoraChat Into tar.gz File *** "
 tar -zcvf ./sorachat-v$SORACHAT.tar.gz ./upload
 
-ls -al
+ls -a
