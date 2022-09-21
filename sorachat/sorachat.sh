@@ -45,6 +45,8 @@ yarn link matrix-js-sdk
 ls -a
 cd ..
 
+mv ./element-call ./upload
+
 echo " *** Compress SoraChat Into tar.gz File *** "
 tar -zcvf ./sorachat-v$SORACHAT.tar.gz ./upload
 
