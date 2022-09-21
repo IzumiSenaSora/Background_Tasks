@@ -16,6 +16,15 @@ echo "$SPACEEnd"
 cd ..
 
 echo "$SPACEStart"
+echo "MTA-STS"
+cd ./mta-sts
+git add .
+git commit -m "Update MTA-STS $date"
+git push origin main
+echo "$SPACEEnd"
+cd ..
+
+echo "$SPACEStart"
 echo "OpenSSL"
 cd ./openssl
 git add .
