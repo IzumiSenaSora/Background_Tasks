@@ -30,22 +30,14 @@ mv ./bin/dendrite ../upload
 mv ./bin/create-account ../upload
 cd ..
 
-git clone https://github.com/matrix-org/matrix-js-sdk.git
-cd matrix-js-sdk
-git checkout robertlong/group-call
-yarn
-yarn link
-cd ..
-
 git clone https://github.com/vector-im/element-call.git
 cd element-call
-ls -a
-yarn
-yarn link matrix-js-sdk
+yarn install
+yarn run build
 ls -a
 cd ..
 
-mv ./element-call ./upload
+mv ./element-call/dist ./upload
 
 echo " *** Compress SoraChat Into tar.gz File *** "
 tar -zcvf ./sorachat-v$SORACHAT.tar.gz ./upload
