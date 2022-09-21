@@ -14,6 +14,13 @@ echo "$SPACEEnd"
 cd ..
 
 echo "$SPACEStart"
+echo "MTA-STS"
+cd ./mta-sts
+git pull
+echo "$SPACEEnd"
+cd ..
+
+echo "$SPACEStart"
 echo "OpenSSL"
 cd ./openssl
 git pull
