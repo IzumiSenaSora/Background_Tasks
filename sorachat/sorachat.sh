@@ -38,7 +38,7 @@ yarn run build
 ls -a
 cd ..
 
-mv ./element-call/dist ./upload
+mv ./element-call-0.2.13/dist ./upload
 
 echo " *** Compress SoraChat Into tar.gz File *** "
 tar -zcvf ./sorachat-v$SORACHAT.tar.gz ./upload
