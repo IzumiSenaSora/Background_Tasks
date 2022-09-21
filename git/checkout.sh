@@ -19,6 +19,18 @@ echo "$SPACEEnd"
 cd ..
 
 echo "$SPACEStart"
+echo "MTA-STS"
+cd ./mta-sts
+git checkout --orphan master
+git add --all
+git commit --all -m "Initialize Repo MTA-STS $date"
+git branch -D main
+git branch -m main
+git push -f origin main
+echo "$SPACEEnd"
+cd ..
+
+echo "$SPACEStart"
 echo "OpenSSL"
 cd ./openssl
 git checkout --orphan master
