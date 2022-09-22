@@ -15,7 +15,7 @@ go version
 cd ./sorachat
 mkdir -p upload
 
-wget https://github.com/matrix-org/dendrite/archive/refs/tags/v$SORACHAT.tar.gz
+wget --quiet https://github.com/matrix-org/dendrite/archive/refs/tags/v$SORACHAT.tar.gz
 
 tar -zxvf v$SORACHAT.tar.gz
 
@@ -30,7 +30,7 @@ mv ./bin/dendrite ../upload
 mv ./bin/create-account ../upload
 cd ..
 
-wget https://github.com/vector-im/element-call/archive/refs/tags/v$SORACHAT_CALL.tar.gz
+wget --quiet https://github.com/vector-im/element-call/archive/refs/tags/v$SORACHAT_CALL.tar.gz
 tar -zxvf v$SORACHAT_CALL.tar.gz
 cd element-call-$SORACHAT_CALL
 yarn install
@@ -45,7 +45,17 @@ mv ./element-call-$SORACHAT_CALL/sorachat_call ./
 mv ./old_sorachat_call/.git ./sorachat_call
 cd ./sorachat_call
 git add .
-git commit -m "Update SoraChat_Call v$SORACHAT_CALL $date"
+git commit -m "Update SoraChat Call v$SORACHAT_CALL $date"
+git push origin main
+cd ..
+
+wget --quiet https://github.com/vector-im/element-web/releases/download/v$SORACHAT_WEB/element-v$SORACHAT_WEB.tar.gz
+tar -zxvf element-v$SORACHAT_WEB.tar.gz
+git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/sorachat_web.git
+mv ./sorachat_web/.git ./element-$SORACHAT_WEB
+cd ./element-$SORACHAT_WEB
+git add .
+git commit -m "Update SoraChat Web v$SORACHAT_WEB $date"
 git push origin main
 cd ..
 
