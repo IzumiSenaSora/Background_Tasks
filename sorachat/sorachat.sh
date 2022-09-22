@@ -30,15 +30,15 @@ mv ./bin/dendrite ../upload
 mv ./bin/create-account ../upload
 cd ..
 
-wget https://github.com/vector-im/element-call/archive/refs/tags/v0.2.13.tar.gz
-tar -zxvf v0.2.13.tar.gz
-cd element-call-0.2.13
+wget https://github.com/vector-im/element-call/archive/refs/tags/v$SORACHAT_CALL.tar.gz
+tar -zxvf v$SORACHAT_CALL.tar.gz
+cd element-call-$SORACHAT_CALL
 yarn install
 yarn run build
 ls -a
 cd ..
 
-mv ./element-call-0.2.13/dist ./upload
+mv ./element-call-$SORACHAT_CALL/dist ./upload
 
 echo " *** Compress SoraChat Into tar.gz File *** "
 tar -zcvf ./sorachat-v$SORACHAT.tar.gz ./upload
