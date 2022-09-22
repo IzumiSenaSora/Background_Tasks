@@ -36,9 +36,18 @@ cd element-call-$SORACHAT_CALL
 yarn install
 yarn run build
 ls -a
+mv ./dist ./sorachat_call
 cd ..
 
-mv ./element-call-$SORACHAT_CALL/dist ./upload
+git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/sorachat_call.git
+mv sorachat_call old_sorachat_call 
+mv ./element-call-$SORACHAT_CALL/sorachat_call ./
+mv ./old_sorachat_call/.git ./sorachat_call
+cd ./sorachat_call
+git add .
+git commit -m "Update SoraChat_Call v$SORACHAT_CALL $date"
+git push origin main
+cd ..
 
 echo " *** Compress SoraChat Into tar.gz File *** "
 tar -zcvf ./sorachat-v$SORACHAT.tar.gz ./upload
