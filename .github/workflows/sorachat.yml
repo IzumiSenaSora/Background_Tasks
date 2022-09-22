@@ -10,6 +10,8 @@ jobs:
     name: Cron Jobs
     env:
       SORACHAT: 0.9.9
+      SORACHAT_WEB: 1.11.6-rc.1
+      SORACHAT_CALL: 0.2.13
       BITBUCKET_TOKEN: ${{secrets.BITBUCKET_TOKEN}}
       EMAIL: ${{secrets.EMAIL}}
       VITE_DEFAULT_HOMESERVER: "https://sorachat.eu.org"
