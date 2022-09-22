@@ -52,9 +52,9 @@ cd ..
 wget --quiet https://github.com/vector-im/element-web/releases/download/v$SORACHAT_WEB/element-v$SORACHAT_WEB.tar.gz
 tar -zxvf element-v$SORACHAT_WEB.tar.gz
 git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/sorachat_web.git
-mv ./sorachat_web/.git ./element-$SORACHAT_WEB
-mv ./sorachat_web/config.json ./element-$SORACHAT_WEB
-cd ./element-$SORACHAT_WEB
+mv ./sorachat_web/.git ./element-v$SORACHAT_WEB
+mv ./sorachat_web/config.json ./element-v$SORACHAT_WEB
+cd ./element-v$SORACHAT_WEB
 git add .
 git commit -m "Update SoraChat Web v$SORACHAT_WEB $date"
 git push origin main
