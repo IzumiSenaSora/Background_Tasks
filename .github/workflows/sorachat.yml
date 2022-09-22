@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Cron Jobs
     env:
-      SORACHAT: 0.9.8
+      SORACHAT: 0.9.9
       BITBUCKET_TOKEN: ${{secrets.BITBUCKET_TOKEN}}
       EMAIL: ${{secrets.EMAIL}}
       VITE_DEFAULT_HOMESERVER: "https://sorachat.eu.org"
