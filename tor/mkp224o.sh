@@ -3,7 +3,7 @@ date=$(TZ='Asia/Dhaka' date +'%a, %d %b %Y %X')
 git config --global user.name "Izumi Sena Sora"
 git config --global user.email "$EMAIL"
 
-sudo apt-get install gcc libc6-dev libsodium-dev make autoconf
+sudo apt-get install libsodium-dev
 
 cd ./tor
 git clone https://github.com/cathugger/mkp224o
