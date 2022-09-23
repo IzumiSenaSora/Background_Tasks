@@ -10,7 +10,7 @@ git clone https://github.com/cathugger/mkp224o
 cd mkp224o
 ./autogen.sh
 ./configure --help
-./configure --enable-intfilter --enable-binsearch --enable-besort
+./configure --enable-amd64-51-30k --enable-intfilter --enable-binsearch --enable-besort
 make
 ls -a
 ./mkp224o -h
