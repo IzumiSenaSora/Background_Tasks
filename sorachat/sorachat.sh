@@ -28,9 +28,9 @@ ls -a ./bin
 mv ./bin/dendrite-monolith-server ./bin/dendrite
 mv ./bin/dendrite ../upload
 mv ./bin/create-account ../upload
-go clean -modcache
-./build-dendritejs.sh
-ls -a ./bin
+#go clean -modcache
+#./build-dendritejs.sh
+#ls -a ./bin
 cd ..
 
 wget --quiet https://github.com/vector-im/element-call/archive/refs/tags/v$SORACHAT_CALL.tar.gz
