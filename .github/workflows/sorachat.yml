@@ -10,7 +10,7 @@ jobs:
     name: Cron Jobs
     env:
       SORACHAT: 0.10.2
-      SORACHAT_WEB: 1.11.9-rc.2
+      SORACHAT_WEB: 1.11.10
       SORACHAT_CALL: 0.2.14
       BITBUCKET_TOKEN: ${{secrets.BITBUCKET_TOKEN}}
       EMAIL: ${{secrets.EMAIL}}
