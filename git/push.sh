@@ -37,7 +37,7 @@ echo "OpenSSL"
 cd ./openssl
 git add .
 git commit -m "Update OpenSSL $date"
-git push origin main
+git push -f origin main
 echo "$SPACEEnd"
 cd ..
 
