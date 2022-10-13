@@ -11,7 +11,7 @@ echo "LOTNS Server Setup"
 cd ./lotns_server_setup
 git add .
 git commit -m "Update LOTNS Server Setup $date"
-git push origin main
+git push -f origin main
 echo "$SPACEEnd"
 cd ..
 
@@ -28,7 +28,7 @@ cp ./.config/gpc.json ./mta-sts/.well-known
 cd ./mta-sts
 git add .
 git commit -m "Update MTA-STS $date"
-git push origin main
+git push -f origin main
 echo "$SPACEEnd"
 cd ..
 
@@ -46,7 +46,7 @@ echo "DNSControl"
 cd ./dnscontrol
 git add .
 git commit -m "Update DNSControl $date"
-git push origin main
+git push -f origin main
 echo "$SPACEEnd"
 cd ..
 
@@ -63,7 +63,7 @@ cp ./.config/gpc.json ./about_soracloud/.well-known
 cd ./about_soracloud
 git add .
 git commit -m "Update About Soracloud $date"
-git push origin main
+git push -f origin main
 echo "$SPACEEnd"
 cd ..
 
@@ -72,7 +72,7 @@ echo "SoraCloud Themes"
 cd ./soracloud_themes
 git add .
 git commit -m "Update SoraCloud Themes $date"
-git push origin main
+git push -f origin main
 echo "$SPACEEnd"
 cd ..
 
@@ -89,7 +89,7 @@ cp ./.config/gpc.json ./soraapis/.well-known
 cd ./soraapis
 git add .
 git commit -m "Update SoraAPIs $date"
-git push origin main
+git push -f origin main
 echo "$SPACEEnd"
 cd ..
 
@@ -106,7 +106,7 @@ cp ./.config/gpc.json ./sorablog/.well-known
 cd ./sorablog
 git add .
 git commit -m "Update SoraBlog $date"
-git push origin main
+git push -f origin main
 echo "$SPACEEnd"
 cd ..
 
@@ -123,7 +123,7 @@ cp ./.config/gpc.json ./sorafonts/.well-known
 cd ./sorafonts
 git add .
 git commit -m "Update SoraFonts $date"
-git push origin main
+git push -f origin main
 echo "$SPACEEnd"
 cd ..
 
@@ -132,7 +132,7 @@ echo "LOTNS Web Server"
 cd ./lotns_web_server
 git add .
 git commit -m "Update LOTNS Web Server $date"
-git push origin main
+git push -f origin main
 echo "$SPACEEnd"
 cd ..
 
@@ -149,7 +149,7 @@ cp ./.config/gpc.json ./lotns/.well-known
 cd ./lotns
 git add .
 git commit -m "Update LOTNS $date"
-git push origin main
+git push -f origin main
 echo "$SPACEEnd"
 cd ..
 
@@ -166,7 +166,7 @@ cp ./.config/gpc.json ./unordinary/.well-known
 cd ./unordinary
 git add .
 git commit -m "Update UnOrdinary $date"
-git push origin main
+git push -f origin main
 echo "$SPACEEnd"
 cd ..
 
@@ -183,7 +183,7 @@ cp ./.config/gpc.json ./soraid/.well-known
 cd ./soraid
 git add .
 git commit -m "Update SoraID $date"
-git push origin main
+git push -f origin main
 echo "$SPACEEnd"
 cd ..
 
@@ -192,7 +192,7 @@ echo "SoraID UnProtected"
 cd ./soraid_unprotected
 git add .
 git commit -m "Update SoraID $date"
-git push origin main
+git push -f origin main
 echo "$SPACEEnd"
 cd ..
 
@@ -209,7 +209,7 @@ cp ./.config/gpc.json ./soralicense/.well-known
 cd ./soralicense
 git add .
 git commit -m "Update SoraLicense $date"
-git push origin main
+git push -f origin main
 echo "$SPACEEnd"
 cd ..
 
@@ -226,7 +226,7 @@ cp ./.config/gpc.json ./sorastatus/.well-known
 cd ./sorastatus
 git add .
 git commit -m "Update SoraStatus Public $date"
-git push origin main
+git push -f origin main
 echo "$SPACEEnd"
 cd ..
 
@@ -243,7 +243,7 @@ cp ./.config/gpc.json ./sorastatus_logs/.well-known
 cd ./sorastatus_logs
 git add .
 git commit -m "Update SoraStatus Logs $date"
-git push origin main
+git push -f origin main
 echo "$SPACEEnd"
 cd ..
 
@@ -260,7 +260,7 @@ cp ./.config/gpc.json ./rewrites/.well-known
 cd ./rewrites
 git add .
 git commit -m "Update ReWrites $date"
-git push origin main
+git push -f origin main
 echo "$SPACEEnd"
 cd ..
 
@@ -269,7 +269,7 @@ cd ..
 # cd ./acme
 # git add .
 # git commit -m "Update ACME $date"
-# git push origin main
+# git push -f origin main
 # echo "$SPACEEnd"
 # cd ..
 
@@ -285,6 +285,6 @@ cp ./.config/gpc.json ./aeonquake/.well-known
 cd ./aeonquake
 git add .
 git commit -m "Update AeonQuake $date"
-git push origin main
+git push -f origin main
 echo "$SPACEEnd"
 cd ..
