@@ -21,8 +21,8 @@ echo "$SPACEEnd"
 cd ..
 
 echo "$SPACEStart"
-echo "OpenSSL"
-cd ./openssl
+echo "TLS"
+cd ./tls
 git pull
 echo "$SPACEEnd"
 cd ..
