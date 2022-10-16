@@ -31,11 +31,11 @@ echo "$SPACEEnd"
 cd ..
 
 echo "$SPACEStart"
-echo "OpenSSL"
-cd ./openssl
+echo "TLS"
+cd ./tls
 git checkout --orphan master
 git add --all
-git commit --all -m "Initialize Repo OpenSSL $date"
+git commit --all -m "Initialize Repo TLS $date"
 git branch -D main
 git branch -m main
 git push -f origin main
