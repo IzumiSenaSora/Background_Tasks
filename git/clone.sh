@@ -17,8 +17,8 @@ git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/mta
 echo "$SPACEEnd"
 
 echo "$SPACEStart"
-echo "OpenSSL"
-git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/openssl.git
+echo "TLS"
+git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/tls.git
 echo "$SPACEEnd"
 
 echo "$SPACEStart"
