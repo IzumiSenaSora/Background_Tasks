@@ -14,6 +14,7 @@ jobs:
       BITBUCKET_TOKEN: ${{secrets.BITBUCKET_TOKEN}}
       GH_TOKEN: ${{secrets.GH_TOKEN}}
       GITLAB_TOKEN: ${{secrets.GITLAB_TOKEN}}
+      CODE_TOKEN: ${{secrets.CODE_TOKEN}}
       EMAIL: ${{secrets.EMAIL}}
     steps:
       - uses: actions/checkout@v3
