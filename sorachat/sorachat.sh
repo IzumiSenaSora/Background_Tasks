@@ -46,6 +46,16 @@ git clone https://UnOrdinary:$CODE_TOKEN@codeberg.org/UnOrdinary/sorachat_call.g
 mv sorachat_call old_sorachat_call 
 mv ./element-call-$SORACHAT_CALL/sorachat_call ./
 mv ./old_sorachat_call/.git ./sorachat_call
+
+cp ../git/.config/_headers ./sorachat_call
+cp ../git/.config/vercel.json ./sorachat_call
+cp ../git/.config/404.html ./sorachat_call
+cp ../git/.config/ads.txt ./sorachat_call
+cp ../git/.config/app-ads.txt ./sorachat_call
+mkdir -p ./sorachat_call/.well-known
+cp ../git/.config/dnt-policy.txt ./sorachat_call/.well-known
+cp ../git/.config/gpc.json ./sorachat_call/.well-known
+
 cd ./sorachat_call
 git add .
 git commit -m "Update SoraChat Call v$SORACHAT_CALL $date"
@@ -57,6 +67,16 @@ tar -zxvf element-v$SORACHAT_WEB.tar.gz
 git clone https://UnOrdinary:$CODE_TOKEN@codeberg.org/UnOrdinary/sorachat_web.git
 mv ./sorachat_web/.git ./element-v$SORACHAT_WEB
 mv ./sorachat_web/config.json ./element-v$SORACHAT_WEB
+
+cp ../git/.config/_headers ./element-v$SORACHAT_WEB
+cp ../git/.config/vercel.json ./element-v$SORACHAT_WEB
+cp ../git/.config/404.html ./element-v$SORACHAT_WEB
+cp ../git/.config/ads.txt ./element-v$SORACHAT_WEB
+cp ../git/.config/app-ads.txt ./element-v$SORACHAT_WEB
+mkdir -p ./element-v$SORACHAT_WEB/.well-known
+cp ../git/.config/dnt-policy.txt ./element-v$SORACHAT_WEB/.well-known
+cp ../git/.config/gpc.json ./element-v$SORACHAT_WEB/.well-known
+
 cd ./element-v$SORACHAT_WEB
 git add .
 git commit -m "Update SoraChat Web v$SORACHAT_WEB $date"
