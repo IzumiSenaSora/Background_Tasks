@@ -33,10 +33,10 @@ echo "$SPACEEnd"
 cd ..
 
 echo "$SPACEStart"
-echo "OpenSSL"
-cd ./openssl
+echo "TLS"
+cd ./tls
 git add .
-git commit -m "Update OpenSSL $date"
+git commit -m "Update TLS $date"
 git push -f origin main
 echo "$SPACEEnd"
 cd ..
