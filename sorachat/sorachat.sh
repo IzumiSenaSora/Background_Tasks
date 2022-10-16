@@ -42,7 +42,7 @@ ls -a
 mv ./dist ./sorachat_call
 cd ..
 
-git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/sorachat_call.git
+git clone https://UnOrdinary:$CODE_TOKEN@codeberg.org/UnOrdinary/sorachat_call.git
 mv sorachat_call old_sorachat_call 
 mv ./element-call-$SORACHAT_CALL/sorachat_call ./
 mv ./old_sorachat_call/.git ./sorachat_call
@@ -54,7 +54,7 @@ cd ..
 
 wget --quiet https://github.com/vector-im/element-web/releases/download/v$SORACHAT_WEB/element-v$SORACHAT_WEB.tar.gz
 tar -zxvf element-v$SORACHAT_WEB.tar.gz
-git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/sorachat_web.git
+git clone https://UnOrdinary:$CODE_TOKEN@codeberg.org/UnOrdinary/sorachat_web.git
 mv ./sorachat_web/.git ./element-v$SORACHAT_WEB
 mv ./sorachat_web/config.json ./element-v$SORACHAT_WEB
 cd ./element-v$SORACHAT_WEB

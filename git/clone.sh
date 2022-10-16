@@ -8,95 +8,95 @@ git config --global user.email "$EMAIL"
 echo " *** CLONE *** "
 echo "$SPACEStart"
 echo "Server"
-git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/server.git
+git clone https://UnOrdinary:$CODE_TOKEN@codeberg.org/UnOrdinary/server.git
 echo "$SPACEEnd"
 
 echo "$SPACEStart"
 echo "MTA-STS"
-git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/mta-sts.git
+git clone https://UnOrdinary:$CODE_TOKEN@codeberg.org/UnOrdinary/mta-sts.git
 echo "$SPACEEnd"
 
 echo "$SPACEStart"
 echo "TLS"
-git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/tls.git
+git clone https://UnOrdinary:$CODE_TOKEN@codeberg.org/UnOrdinary/tls.git
 echo "$SPACEEnd"
 
 echo "$SPACEStart"
 echo "DNSControl"
-git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/dnscontrol.git
+git clone https://UnOrdinary:$CODE_TOKEN@codeberg.org/UnOrdinary/dnscontrol.git
 echo "$SPACEEnd"
 
 echo "$SPACEStart"
 echo "About Soracloud"
-git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/about_soracloud.git
+git clone https://UnOrdinary:$CODE_TOKEN@codeberg.org/UnOrdinary/about_soracloud.git
 echo "$SPACEEnd"
 
 echo "$SPACEStart"
 echo "SoraCloud Themes"
-git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/soracloud_themes.git
+git clone https://UnOrdinary:$CODE_TOKEN@codeberg.org/UnOrdinary/soracloud_themes.git
 echo "$SPACEEnd"
 
 echo "$SPACEStart"
 echo "SoraAPIs"
-git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/soraapis.git
+git clone https://UnOrdinary:$CODE_TOKEN@codeberg.org/UnOrdinary/soraapis.git
 echo "$SPACEEnd"
 
 echo "$SPACEStart"
 echo "SoraBlog"
-git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/sorablog.git
+git clone https://UnOrdinary:$CODE_TOKEN@codeberg.org/UnOrdinary/sorablog.git
 echo "$SPACEEnd"
 
 echo "$SPACEStart"
 echo "SoraFonts"
-git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/sorafonts.git
+git clone https://UnOrdinary:$CODE_TOKEN@codeberg.org/UnOrdinary/sorafonts.git
 echo "$SPACEEnd"
 
 echo "$SPACEStart"
 echo "HTML"
-git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/html.git
+git clone https://UnOrdinary:$CODE_TOKEN@codeberg.org/UnOrdinary/html.git
 echo "$SPACEEnd"
 
 echo "$SPACEStart"
 echo "LOTNS"
-git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/lotns.git
+git clone https://UnOrdinary:$CODE_TOKEN@codeberg.org/UnOrdinary/lotns.git
 echo "$SPACEEnd"
 
 echo "$SPACEStart"
 echo "UnOrdinary"
-git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/unordinary.git
+git clone https://UnOrdinary:$CODE_TOKEN@codeberg.org/UnOrdinary/unordinary.git
 echo "$SPACEEnd"
 
 echo "$SPACEStart"
 echo "SoraID"
-git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/soraid.git
+git clone https://UnOrdinary:$CODE_TOKEN@codeberg.org/UnOrdinary/soraid.git
 echo "$SPACEEnd"
 
 echo "$SPACEStart"
 echo "SoraID UnProtected"
-git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/soraid_unprotected.git
+git clone https://UnOrdinary:$CODE_TOKEN@codeberg.org/UnOrdinary/soraid_unprotected.git
 echo "$SPACEEnd"
 
 echo "$SPACEStart"
 echo "SoraLicense"
-git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/soralicense.git
+git clone https://UnOrdinary:$CODE_TOKEN@codeberg.org/UnOrdinary/soralicense.git
 echo "$SPACEEnd"
 
 echo "$SPACEStart"
 echo "SoraStatus"
-git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/sorastatus.git
+git clone https://UnOrdinary:$CODE_TOKEN@codeberg.org/UnOrdinary/sorastatus.git
 echo "$SPACEEnd"
 
 echo "$SPACEStart"
 echo "SoraStatus Logs"
-git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/sorastatus_logs.git
+git clone https://UnOrdinary:$CODE_TOKEN@codeberg.org/UnOrdinary/sorastatus_logs.git
 echo "$SPACEEnd"
 
 echo "$SPACEStart"
 echo "ReWrites"
-git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/rewrites.git
+git clone https://UnOrdinary:$CODE_TOKEN@codeberg.org/UnOrdinary/rewrites.git
 echo "$SPACEEnd"
 
 echo "$SPACEStart"
 echo "AeonQuake"
-git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/aeonquake.git
+git clone https://UnOrdinary:$CODE_TOKEN@codeberg.org/UnOrdinary/aeonquake.git
 echo "$SPACEEnd"

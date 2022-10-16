@@ -12,7 +12,7 @@ jobs:
       SORACHAT: 0.10.3
       SORACHAT_WEB: 1.11.10
       SORACHAT_CALL: 0.2.14
-      BITBUCKET_TOKEN: ${{secrets.BITBUCKET_TOKEN}}
+      CODE_TOKEN: ${{secrets.CODE_TOKEN}}
       EMAIL: ${{secrets.EMAIL}}
       VITE_DEFAULT_HOMESERVER: "https://www.sorachat.eu.org"
     steps:

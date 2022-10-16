@@ -10,7 +10,7 @@ echo " *** Go To Tmp Directory *** "
 cd ./tmp
 
 echo " *** Clone DNSControl Repo *** "
-git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/dnscontrol.git
+git clone https://UnOrdinary:$CODE_TOKEN@codeberg.org/UnOrdinary/dnscontrol.git
 
 echo " *** Go To DNSControl/ICANN Directory *** "
 cd ./dnscontrol/icann

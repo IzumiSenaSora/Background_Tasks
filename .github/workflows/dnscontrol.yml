@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Cron Jobs
     env:
-      BITBUCKET_TOKEN: ${{secrets.BITBUCKET_TOKEN}}
+      CODE_TOKEN: ${{secrets.CODE_TOKEN}}
       DESEC_AUTH_TOKEN: ${{secrets.DESEC_AUTH_TOKEN}}
       CLOUDFLARE_APITOKEN: ${{secrets.CLOUDFLARE_APITOKEN}}
       CLOUDFLARE_ACCOUNTID: ${{secrets.CLOUDFLARE_ACCOUNTID}}

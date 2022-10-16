@@ -11,8 +11,6 @@ jobs:
     env:
       HSD: 4.0.2
       HNSD: 1.0.0
-      BITBUCKET_TOKEN: ${{secrets.BITBUCKET_TOKEN}}
-      EMAIL: ${{secrets.EMAIL}}
     steps:
       - uses: actions/checkout@v3
       - name: Run Cron Jobs

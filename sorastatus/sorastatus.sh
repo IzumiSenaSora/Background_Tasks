@@ -10,13 +10,13 @@ echo " *** Go To Tmp Directory *** "
 cd ./tmp
 
 echo " *** Clone SoraStatus Repo *** "
-git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/sorastatus.git
+git clone https://UnOrdinary:$CODE_TOKEN@codeberg.org/UnOrdinary/sorastatus.git
 
 echo " *** Go To SoraStatus Directory *** "
 cd ./sorastatus
 
 echo " *** Clone SoraStatus Logs Repo *** "
-git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/SoraStatus_Logs.git
+git clone https://UnOrdinary:$CODE_TOKEN@codeberg.org/UnOrdinary/SoraStatus_Logs.git
 
 echo " *** Rename SoraStatus_Logs Into logs *** "
 mv SoraStatus_Logs logs
