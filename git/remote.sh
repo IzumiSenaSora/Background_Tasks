@@ -35,15 +35,15 @@ echo "$SPACEEnd"
 cd ..
 
 echo "$SPACEStart"
-echo "OpenSSL"
-cd ./openssl
-# git remote set-url --delete --push origin https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/openssl.git
-# git remote set-url --delete --push origin https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/OpenSSL.git
-# git remote set-url --delete --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/UnOrdinary/OpenSSL.git
+echo "TLS"
+cd ./tls
+# git remote set-url --delete --push origin https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/tls.git
+# git remote set-url --delete --push origin https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/TLS.git
+# git remote set-url --delete --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/UnOrdinary/TLS.git
 
-git remote set-url --add --push origin https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/openssl.git
-git remote set-url --add --push origin https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/OpenSSL.git
-git remote set-url --add --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/UnOrdinary/OpenSSL.git
+git remote set-url --add --push origin https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/tls.git
+git remote set-url --add --push origin https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/TLS.git
+git remote set-url --add --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/UnOrdinary/TLS.git
 git remote -v
 echo "$SPACEEnd"
 cd ..
