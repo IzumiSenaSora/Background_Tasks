@@ -7,10 +7,10 @@ git config --global user.email "$EMAIL"
 
 echo " *** PUSH *** "
 echo "$SPACEStart"
-echo "LOTNS Server Setup"
-cd ./lotns_server_setup
+echo "Server"
+cd ./server
 git add .
-git commit -m "Update LOTNS Server Setup $date"
+git commit -m "Update Server $date"
 git push -f origin main
 echo "$SPACEEnd"
 cd ..
@@ -128,10 +128,10 @@ echo "$SPACEEnd"
 cd ..
 
 echo "$SPACEStart"
-echo "LOTNS Web Server"
-cd ./lotns_web_server
+echo "HTML"
+cd ./html
 git add .
-git commit -m "Update LOTNS Web Server $date"
+git commit -m "Update HTML $date"
 git push -f origin main
 echo "$SPACEEnd"
 cd ..
@@ -214,7 +214,7 @@ echo "$SPACEEnd"
 cd ..
 
 echo "$SPACEStart"
-echo "SoraStatus Public"
+echo "SoraStatus"
 cp ./.config/_headers ./sorastatus
 cp ./.config/vercel.json ./sorastatus
 cp ./.config/404.html ./sorastatus
@@ -225,7 +225,7 @@ cp ./.config/dnt-policy.txt ./sorastatus/.well-known
 cp ./.config/gpc.json ./sorastatus/.well-known
 cd ./sorastatus
 git add .
-git commit -m "Update SoraStatus Public $date"
+git commit -m "Update SoraStatus $date"
 git push -f origin main
 echo "$SPACEEnd"
 cd ..

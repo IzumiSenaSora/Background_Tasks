@@ -7,11 +7,11 @@ git config --global user.email "$EMAIL"
 
 echo " *** CHECKOUT *** "
 echo "$SPACEStart"
-echo "LOTNS Server Setup"
-cd ./lotns_server_setup
+echo "Server"
+cd ./server
 git checkout --orphan master
 git add --all
-git commit --all -m "Initialize Repo LOTNS Server Setup $date"
+git commit --all -m "Initialize Repo Server $date"
 git branch -D main
 git branch -m main
 git push -f origin main
@@ -115,11 +115,11 @@ echo "$SPACEEnd"
 cd ..
 
 echo "$SPACEStart"
-echo "LOTNS Web Server"
-cd ./lotns_web_server
+echo "HTML"
+cd ./html
 git checkout --orphan master
 git add --all
-git commit --all -m "Initialize Repo LOTNS Web Server $date"
+git commit --all -m "Initialize Repo HTML $date"
 git branch -D main
 git branch -m main
 git push -f origin main
@@ -187,11 +187,11 @@ echo "$SPACEEnd"
 cd ..
 
 echo "$SPACEStart"
-echo "SoraStatus Public"
+echo "SoraStatus"
 cd ./sorastatus
 git checkout --orphan master
 git add --all
-git commit --all -m "Initialize Repo SoraStatus Public $date"
+git commit --all -m "Initialize Repo SoraStatus $date"
 git branch -D main
 git branch -m main
 git push -f origin main

@@ -7,8 +7,8 @@ git config --global user.email "$EMAIL"
 
 echo " *** CLONE *** "
 echo "$SPACEStart"
-echo "LOTNS Server Setup"
-git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/lotns_server_setup.git
+echo "Server"
+git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/server.git
 echo "$SPACEEnd"
 
 echo "$SPACEStart"
@@ -52,8 +52,8 @@ git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/sor
 echo "$SPACEEnd"
 
 echo "$SPACEStart"
-echo "LOTNS Web Server"
-git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/lotns_web_server.git
+echo "HTML"
+git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/html.git
 echo "$SPACEEnd"
 
 echo "$SPACEStart"
@@ -82,7 +82,7 @@ git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/sor
 echo "$SPACEEnd"
 
 echo "$SPACEStart"
-echo "SoraStatus Public"
+echo "SoraStatus"
 git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/sorastatus.git
 echo "$SPACEEnd"
 

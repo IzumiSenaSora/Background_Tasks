@@ -7,15 +7,15 @@ git config --global user.email "$EMAIL"
 
 echo " *** REMOTE *** "
 echo "$SPACEStart"
-echo "LOTNS Server Setup"
-cd ./lotns_server_setup
-# git remote set-url --delete --push origin https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/lotns_server_setup.git
-# git remote set-url --delete --push origin https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/LOTNS_Server_Setup.git
-# git remote set-url --delete --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/UnOrdinary/LOTNS_Server_Setup.git
+echo "Server"
+cd ./server
+# git remote set-url --delete --push origin https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/server.git
+# git remote set-url --delete --push origin https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/server.git
+# git remote set-url --delete --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/UnOrdinary/server.git
 
-git remote set-url --add --push origin https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/lotns_server_setup.git
-git remote set-url --add --push origin https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/LOTNS_Server_Setup.git
-git remote set-url --add --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/UnOrdinary/LOTNS_Server_Setup.git
+git remote set-url --add --push origin https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/server.git
+git remote set-url --add --push origin https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/server.git
+git remote set-url --add --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/UnOrdinary/server.git
 git remote set-url --add --push origin https://UnOrdinary:$CODE_TOKEN@codeberg.org/UnOrdinary/Server.git
 git remote -v
 echo "$SPACEEnd"
@@ -142,15 +142,15 @@ echo "$SPACEEnd"
 cd ..
 
 echo "$SPACEStart"
-echo "LOTNS Web Server"
-cd ./lotns_web_server
-# git remote set-url --delete --push origin https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/lotns_web_server.git
-# git remote set-url --delete --push origin https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/LOTNS_Web_Server.git
-# git remote set-url --delete --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/UnOrdinary/LOTNS_Web_Server.git
+echo "HTML"
+cd ./html
+# git remote set-url --delete --push origin https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/html.git
+# git remote set-url --delete --push origin https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/html.git
+# git remote set-url --delete --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/UnOrdinary/html.git
 
-git remote set-url --add --push origin https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/lotns_web_server.git
-git remote set-url --add --push origin https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/LOTNS_Web_Server.git
-git remote set-url --add --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/UnOrdinary/LOTNS_Web_Server.git
+git remote set-url --add --push origin https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/html.git
+git remote set-url --add --push origin https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/html.git
+git remote set-url --add --push origin https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/UnOrdinary/html.git
 git remote set-url --add --push origin https://UnOrdinary:$CODE_TOKEN@codeberg.org/UnOrdinary/HTML.git
 git remote -v
 echo "$SPACEEnd"
@@ -232,7 +232,7 @@ echo "$SPACEEnd"
 cd ..
 
 echo "$SPACEStart"
-echo "SoraStatus Public"
+echo "SoraStatus"
 cd ./sorastatus
 # git remote set-url --delete --push origin https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/izumisenasora/sorastatus.git
 # git remote set-url --delete --push origin https://IzumiSenaSora:$GH_TOKEN@github.com/IzumiSenaSora/SoraStatus.git

@@ -7,8 +7,8 @@ git config --global user.email "$EMAIL"
 
 echo " *** FETCH *** "
 echo "$SPACEStart"
-echo "LOTNS Server Setup"
-cd ./lotns_server_setup
+echo "Server"
+cd ./server
 git fetch --all
 echo "$SPACEEnd"
 cd ..
@@ -70,8 +70,8 @@ echo "$SPACEEnd"
 cd ..
 
 echo "$SPACEStart"
-echo "LOTNS Web Server"
-cd ./lotns_web_server
+echo "HTML"
+cd ./html
 git fetch --all
 echo "$SPACEEnd"
 cd ..
@@ -112,7 +112,7 @@ echo "$SPACEEnd"
 cd ..
 
 echo "$SPACEStart"
-echo "SoraStatus Public"
+echo "SoraStatus"
 cd ./sorastatus
 git fetch --all
 echo "$SPACEEnd"
