@@ -35,7 +35,6 @@ find . -name "$url" -exec sed -i "s%SoraAPI%SoraAPIs%g" {} \;
 # find . -name "$url" -exec sed -i "s%https://www.soracloud.eu.org%https://soracloud.eu.org%g" {} \;
 # find . -name "$url" -exec sed -i "s%https://www.soralicense.eu.org%https://soralicense.eu.org%g" {} \;
 # find . -name "$url" -exec sed -i "s%https://www.sorastatus.eu.org%https://sorastatus.eu.org%g" {} \;
-# find . -name "$url" -exec sed -i "s%https://www.soraapis.eu.org%https://soraapis.eu.org%g" {} \;
 
 
 # find . -name "*.log" -exec sed -i "s%failed%success%g" {} \;
