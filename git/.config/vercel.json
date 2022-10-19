@@ -70,7 +70,7 @@
         },
         {
           "key": "Link",
-          "value": "<https://www.soraapis.eu.org>; rel=preconnect; crossorigin, <https://www.sorafonts.eu.org>; rel=preconnect; crossorigin, <https://www.soracdns.eu.org>; rel=preconnect; crossorigin"
+          "value": "<https://soraapis.eu.org>; rel=preconnect; crossorigin, <https://sorafonts.eu.org>; rel=preconnect; crossorigin, <https://soracdns.eu.org>; rel=preconnect; crossorigin"
         },
         {
           "key": "Permissions-Policy",
