@@ -31,10 +31,10 @@ find . -name "$url" -exec sed -i "s%SoraAPI%SoraAPIs%g" {} \;
 # find . -name "$url" -exec sed -i "s%https://www.unordinary.eu.org%https://unordinary.eu.org%g" {} \;
 # find . -name "$url" -exec sed -i "s%https://www.aeonquake.eu.org%https://aeonquake.eu.org%g" {} \;
 # find . -name "$url" -exec sed -i "s%https://www.sorablog.eu.org%https://sorablog.eu.org%g" {} \;
-# find . -name "$url" -exec sed -i "s%https://www.soraapis.eu.org%https://soraapis.eu.org%g" {} \;
-# find . -name "$url" -exec sed -i "s%https://www.soraapis.eu.org%https://soraapis.eu.org%g" {} \;
-# find . -name "$url" -exec sed -i "s%https://www.soraapis.eu.org%https://soraapis.eu.org%g" {} \;
-# find . -name "$url" -exec sed -i "s%https://www.soraapis.eu.org%https://soraapis.eu.org%g" {} \;
+# find . -name "$url" -exec sed -i "s%https://www.soraid.eu.org%https://soraid.eu.org%g" {} \;
+# find . -name "$url" -exec sed -i "s%https://www.soracloud.eu.org%https://soracloud.eu.org%g" {} \;
+# find . -name "$url" -exec sed -i "s%https://www.soralicense.eu.org%https://soralicense.eu.org%g" {} \;
+# find . -name "$url" -exec sed -i "s%https://www.sorastatus.eu.org%https://sorastatus.eu.org%g" {} \;
 # find . -name "$url" -exec sed -i "s%https://www.soraapis.eu.org%https://soraapis.eu.org%g" {} \;
 
 
