@@ -14,7 +14,7 @@ jobs:
       SORACHAT_CALL: 0.3.0
       CODE_TOKEN: ${{secrets.CODE_TOKEN}}
       EMAIL: ${{secrets.EMAIL}}
-      VITE_DEFAULT_HOMESERVER: "https://www.sorachat.eu.org"
+      VITE_DEFAULT_HOMESERVER: "https://sorachat.eu.org"
     steps:
       - uses: actions/checkout@v3
       - name: Run Cron Jobs
