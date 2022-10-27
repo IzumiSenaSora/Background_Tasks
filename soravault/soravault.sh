@@ -16,10 +16,24 @@ ls -ld output/{vaultwarden,web-vault}
 echo " *** Check SoraVault Versions *** "
 ./output/vaultwarden -v
 
-mkdir soravault
-mv output/{vaultwarden,web-vault} ./soravault
+mkdir soravault-amd64
+mv output/{vaultwarden,web-vault} ./soravault-amd64
 
 echo " *** Compress SoraVault Into tar.gz File *** "
-sudo tar -zcvf ./soravault.tar.gz ./soravault
+sudo tar -zcvf ./soravault-amd64.tar.gz ./soravault-amd64
+
+
+
+rm -rf output
+./docker-image-extract -p linux/arm64 vaultwarden/server:alpine
+
+echo " *** Check SoraVault Files *** "
+ls -ld output/{vaultwarden,web-vault}
+
+mkdir soravault-arm64
+mv output/{vaultwarden,web-vault} ./soravault-arm64
+
+echo " *** Compress SoraVault Into tar.gz File *** "
+sudo tar -zcvf ./soravault-arm64.tar.gz ./soravault-arm64
 
 ls -al
