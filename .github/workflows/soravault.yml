@@ -15,5 +15,9 @@ jobs:
         run: bash ./soravault/soravault.sh
       - uses: actions/upload-artifact@v3
         with:
-          name: soravault.tar.gz
-          path: soravault/soravault.tar.gz
+          name: soravault-amd64.tar.gz
+          path: soravault/soravault-amd64.tar.gz
+      - uses: actions/upload-artifact@v3
+        with:
+          name: soravault-arm64.tar.gz
+          path: soravault/soravault-arm64.tar.gz
