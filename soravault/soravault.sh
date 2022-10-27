@@ -25,7 +25,7 @@ sudo tar -zcvf ./soravault-amd64.tar.gz ./soravault-amd64
 
 
 rm -rf output
-./docker-image-extract -p linux/arm64 vaultwarden/server:alpine
+./docker-image-extract vaultwarden/server:sha256:b6449f058145217b6f1d85656cbcd59be6544683f07893f2e6e051066a346760
 
 echo " *** Check SoraVault Files *** "
 ls -ld output/{vaultwarden,web-vault}
