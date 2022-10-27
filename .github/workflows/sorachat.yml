@@ -10,7 +10,7 @@ jobs:
     name: Cron Jobs
     env:
       SORACHAT: 0.10.4
-      SORACHAT_WEB: 1.11.10
+      SORACHAT_WEB: 1.11.12
       SORACHAT_CALL: 0.3.0
       CODE_TOKEN: ${{secrets.CODE_TOKEN}}
       EMAIL: ${{secrets.EMAIL}}
