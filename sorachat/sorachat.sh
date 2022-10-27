@@ -66,7 +66,7 @@ wget --quiet https://github.com/vector-im/element-web/releases/download/v$SORACH
 tar -zxvf element-v$SORACHAT_WEB.tar.gz
 git clone https://UnOrdinary:$CODE_TOKEN@codeberg.org/UnOrdinary/sorachat_web.git
 mv ./sorachat_web/.git ./element-v$SORACHAT_WEB
-mv ./sorachat_web/config.json ./element-v$SORACHAT_WEB
+mv ./config.json ./element-v$SORACHAT_WEB
 
 cp ../git/.config/_headers ./element-v$SORACHAT_WEB
 cp ../git/.config/vercel.json ./element-v$SORACHAT_WEB
