@@ -9,9 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     name: Cron Jobs
     env:
-      SORACHAT: 0.10.6
+      SORACHAT: 0.10.7
       SORACHAT_WEB: 1.11.13
-      SORACHAT_CALL: 0.3.0
+      SORACHAT_CALL: 0.3.2
       CODE_TOKEN: ${{secrets.CODE_TOKEN}}
       EMAIL: ${{secrets.EMAIL}}
       VITE_DEFAULT_HOMESERVER: "https://sorachat.eu.org"
