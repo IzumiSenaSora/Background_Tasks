@@ -5,14 +5,14 @@ echo " *** Go To Tmp Directory *** "
 cd /tmp
 
 echo " *** Clone SoraStatus Repo *** "
-git clone https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/UnOrdinary/SoraStatus.git
+git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/IzumiSenaSora/SoraStatus.git
 
 echo " *** Go To SoraStatus Directory *** "
 cd ./SoraStatus
 rm -rf .git
 
 echo " *** Clone SoraStatus Logs Repo *** "
-git clone https://UnOrdinary:$GITLAB_TOKEN@gitlab.com/UnOrdinary/SoraStatus_Logs.git
+git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/IzumiSenaSora/SoraStatus_Logs.git
 
 echo " *** Rename SoraStatus_Logs Into logs *** "
 mv SoraStatus_Logs logs
