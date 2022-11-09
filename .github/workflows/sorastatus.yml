@@ -23,4 +23,4 @@ jobs:
       - uses: actions/checkout@v3
       - name: Run Cron Jobs
         id: shell_script_run
-        run: bash ./sorastatus/sorastatus.sh
+        run: sudo bash ./sorastatus/sorastatus.sh
