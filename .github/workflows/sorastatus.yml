@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Cron Jobs
     env:
-      CODE_TOKEN: ${{secrets.CODE_TOKEN}}
+      CODE_TOKEN: ${{secrets.BITBUCKET_TOKEN}}
       EMAIL: ${{secrets.EMAIL}}
       LINK: ${{secrets.LINK}}
       MAILFROM: ${{secrets.MAILFROM}}
