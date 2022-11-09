@@ -1,22 +1,18 @@
-date=$(TZ='Asia/Dhaka' date +'%a, %d %b %Y %X')
-
 git config --global user.name "Izumi Sena Sora"
 git config --global user.email "$EMAIL"
 
-echo " *** Create Tmp Directory *** "
-mkdir -p ./tmp
-
 echo " *** Go To Tmp Directory *** "
-cd ./tmp
+cd /tmp
 
 echo " *** Clone SoraStatus Repo *** "
-git clone https://UnOrdinary:$CODE_TOKEN@codeberg.org/UnOrdinary/sorastatus.git
+git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/IzumiSenaSora/SoraStatus.git
 
 echo " *** Go To SoraStatus Directory *** "
-cd ./sorastatus
+cd ./SoraStatus
+rm -rf .git
 
 echo " *** Clone SoraStatus Logs Repo *** "
-git clone https://UnOrdinary:$CODE_TOKEN@codeberg.org/UnOrdinary/SoraStatus_Logs.git
+git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/IzumiSenaSora/SoraStatus_Logs.git
 
 echo " *** Rename SoraStatus_Logs Into logs *** "
 mv SoraStatus_Logs logs
@@ -82,5 +78,5 @@ git remote -v
 # Git Commit
 echo " *** Git Commit SoraStatus Logs *** "
 git add .
-git commit -m "[Automated] Update SoraStatus Logs $date"
-git push origin main
+git commit --signoff --message "[Automated] Update SoraStatus Logs $(date)"
+git push origin $(git branch --show-current)
