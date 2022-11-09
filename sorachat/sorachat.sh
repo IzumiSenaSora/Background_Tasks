@@ -1,5 +1,3 @@
-date=$(TZ='Asia/Dhaka' date +'%a, %d %b %Y %X')
-
 git config --global user.name "Izumi Sena Sora"
 git config --global user.email "$EMAIL"
 
@@ -42,8 +40,8 @@ ls -a
 mv ./dist ./sorachat_call
 cd ..
 
-git clone https://UnOrdinary:$CODE_TOKEN@codeberg.org/UnOrdinary/sorachat_call.git
-mv sorachat_call old_sorachat_call 
+git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/IzumiSenaSora/SoraChat_Call.git
+mv SoraChat_Call old_sorachat_call
 mv ./element-call-$SORACHAT_CALL/sorachat_call ./
 mv ./old_sorachat_call/.git ./sorachat_call
 
@@ -58,14 +56,14 @@ cp ../git/.config/gpc.json ./sorachat_call/.well-known
 
 cd ./sorachat_call
 git add .
-git commit -m "Update SoraChat Call v$SORACHAT_CALL $date"
-git push origin main
+git commit --signoff --message "Update SoraChat Call v$SORACHAT_CALL $(date)"
+git push origin $(git branch --show-current)
 cd ..
 
 wget --quiet https://github.com/vector-im/element-web/releases/download/v$SORACHAT_WEB/element-v$SORACHAT_WEB.tar.gz
 tar -zxvf element-v$SORACHAT_WEB.tar.gz
-git clone https://UnOrdinary:$CODE_TOKEN@codeberg.org/UnOrdinary/sorachat_web.git
-mv ./sorachat_web/.git ./element-v$SORACHAT_WEB
+git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/IzumiSenaSora/SoraChat_Web.git
+mv ./SoraChat_Web/.git ./element-v$SORACHAT_WEB
 mv ./config.json ./element-v$SORACHAT_WEB
 
 cp ../git/.config/_headers ./element-v$SORACHAT_WEB
@@ -79,8 +77,8 @@ cp ../git/.config/gpc.json ./element-v$SORACHAT_WEB/.well-known
 
 cd ./element-v$SORACHAT_WEB
 git add .
-git commit -m "Update SoraChat Web v$SORACHAT_WEB $date"
-git push origin main
+git commit --signoff --message "Update SoraChat Web v$SORACHAT_WEB $(date)"
+git push origin $(git branch --show-current)
 cd ..
 
 echo " *** Compress SoraChat Into tar.gz File *** "
