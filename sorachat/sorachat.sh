@@ -1,8 +1,8 @@
 git config --global user.name "Izumi Sena Sora"
 git config --global user.email "$EMAIL"
 
-curl -LO https://go.dev/dl/go${GO}.linux-amd64.tar.gz
-sudo tar -C /usr/local -xzf go${GO}.linux-amd64.tar.gz
+curl -LO https://go.dev/dl/go${GOLANG}.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf go${GOLANG}.linux-amd64.tar.gz
 
 export GOROOT=/usr/local/go
 export GOPATH=$HOME/go
