@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Cron Jobs
     env:
-      GO: 1.19.3
+      GOLANG: 1.19.3
       SORACHAT: 0.10.7
       SORACHAT_WEB: 1.11.14
       SORACHAT_CALL: 0.3.2
