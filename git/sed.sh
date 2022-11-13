@@ -36,7 +36,7 @@ find . -name "$url" -exec sed -i "s%https://www.soralicense.eu.org%https://soral
 find . -name "$url" -exec sed -i "s%https://www.sorastatus.eu.org%https://sorastatus.eu.org%g" {} \;
 find . -name "$url" -exec sed -i "s%https://www.soracdns.eu.org%https://soracdns.eu.org%g" {} \;
 
-# find . -name "*.html" -exec sed -i "s%Copyright &copy; <script>document.write(new Date().getFullYear())</script> %success%g" {} \;
+# find . -name "*.html" -exec sed -i "s%Copyright &copy; <script>document.write(new Date().getFullYear())</script> LOTNS%<a href=/ ><img alt="LOTNS" src=https://soraapis.eu.org/mask-icon.svg height=512 width=512>LOTNS</a>%g" {} \;
 # find . -name "*.log" -exec sed -i "s%failed%success%g" {} \;
   done
 done
