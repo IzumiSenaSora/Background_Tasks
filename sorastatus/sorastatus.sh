@@ -4,23 +4,12 @@ git config --global user.email "$EMAIL"
 echo " *** Go To Tmp Directory *** "
 cd /tmp
 
-echo " *** Clone SoraStatus Repo *** "
-git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/IzumiSenaSora/SoraStatus.git
-
-echo " *** Go To SoraStatus Directory *** "
-cd ./SoraStatus
-rm -rf .git
-
 echo " *** Clone SoraStatus Logs Repo *** "
 git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/IzumiSenaSora/SoraStatus_Logs.git
-
-echo " *** Rename SoraStatus_Logs Into logs *** "
-mv SoraStatus_Logs logs
+cd SoraStatus_Logs
 
 echo " *** Run SoraStatus Health Checks *** "
 bash health-check.sh
-
-cd logs
 
 cp LOTNS_report.log AeonQuake_report.log
 cp LOTNS_report.log Caelum_report.log
@@ -67,13 +56,10 @@ cp LOTNS_report.log SoraLicense_report.log
 cp LOTNS_report.log SoraMail_report.log
 cp LOTNS_report.log SoraOS_report.log
 # cp LOTNS_report.log SoraStatus_report.log
-cp LOTNS_report.log SoraStatusLogs_report.log
+# cp LOTNS_report.log SoraStatusLogs_report.log
 cp LOTNS_report.log SoraVault_report.log
 # cp LOTNS_report.log UnOrdinary_report.log
 cp LOTNS_report.log Zinik_report.log
-
-echo " *** Show Git Remote Lists Of SoraStatus Logs *** "
-git remote -v
 
 # Git Commit
 echo " *** Git Commit SoraStatus Logs *** "
