@@ -13,12 +13,12 @@ jobs:
     env:
       BITBUCKET_TOKEN: ${{secrets.BITBUCKET_TOKEN}}
       EMAIL: ${{secrets.EMAIL}}
-      LINK: ${{secrets.LINK}}
-      MAILFROM: ${{secrets.MAILFROM}}
-      MAILRCPT: ${{secrets.MAILRCPT}}
-      USERNAME: ${{secrets.USERNAME}}
-      PASSWORD: ${{secrets.PASSWORD}}
-      SMTP: ${{secrets.SMTP}}
+      SMTP_FROM: ${{secrets.SMTP_FROM}}
+      SMTP_TO: ${{secrets.SMTP_TO}}
+      SMTP_HOST: ${{secrets.SMTP_HOST}}
+      SMTP_PORT: ${{secrets.SMTP_PORT}}
+      SMTP_USERNAME: ${{secrets.SMTP_USERNAME}}
+      SMTP_PASSWORD: ${{secrets.SMTP_PASSWORD}}
     steps:
       - uses: actions/checkout@v3
       - name: Run Cron Jobs
