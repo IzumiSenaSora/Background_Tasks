@@ -16,7 +16,7 @@ cp LOTNS_report.log Caelum_report.log
 cp LOTNS_report.log Easin_report.log
 cp LOTNS_report.log Handshake_report.log
 cp LOTNS_report.log Hridoy_report.log
-cp LOTNS_report.log HridoyMia_report.log
+cp LOTNS_report.log HridoyM_report.log
 cp LOTNS_report.log Izumi_report.log
 cp LOTNS_report.log IzumiSena_report.log
 cp LOTNS_report.log IzumiSenaSora_report.log
