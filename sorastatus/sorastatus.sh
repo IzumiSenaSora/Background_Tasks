@@ -65,4 +65,4 @@ cp LOTNS_report.log Zinik_report.log
 echo " *** Git Commit SoraStatus Logs *** "
 git add .
 git commit --signoff --message "[Automated] Update SoraStatus Logs $(date)"
-git push origin $(git branch --show-current)
+git push --set-upstream origin $(git branch --show-current)
