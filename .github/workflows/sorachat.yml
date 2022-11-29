@@ -11,7 +11,7 @@ jobs:
     env:
       GOLANG: 1.19.3
       SORACHAT: 0.10.7
-      SORACHAT_WEB: 1.11.14
+      SORACHAT_WEB: 1.11.15
       SORACHAT_CALL: 0.3.2
       BITBUCKET_TOKEN: ${{secrets.BITBUCKET_TOKEN}}
       EMAIL: ${{secrets.EMAIL}}
