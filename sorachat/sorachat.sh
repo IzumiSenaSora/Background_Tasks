@@ -13,8 +13,8 @@ source ~/.bashrc
 go version
 
 sudo apt-get update
-sudo apt-get upgrade
-sudo apt-get install libc6-dev
+sudo apt-get upgrade -y
+sudo apt-get install libc6=2.31-0ubuntu9 -y
 
 cd ./sorachat
 mkdir -p upload
