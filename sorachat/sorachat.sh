@@ -12,6 +12,8 @@ export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 source ~/.bashrc
 go version
 
+sudo apt-get update
+sudo apt-get upgrade
 sudo apt-get install libc6-dev
 
 cd ./sorachat
