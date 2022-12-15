@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Cron Jobs
     env:
-      NGINX: 1.23.2
+      NGINX: 1.23.3
     steps:
       - uses: actions/checkout@v3
       - name: Run Cron Jobs
