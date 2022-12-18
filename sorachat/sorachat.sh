@@ -1,6 +1,13 @@
 apt-get update
 apt-get upgrade -y
-apt-get install -y sudo curl git wget yarn build-essential
+apt-get install -y sudo curl git wget build-essential
+
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+sh -c 'echo "deb https://dl.yarnpkg.com/debian/ stable main" >> /etc/apt/sources.list.d/yarn.list'
+
+apt-get update
+apt-get install -y yarn
+yarn --version
 
 git config --global user.name "Izumi Sena Sora"
 git config --global user.email "$EMAIL"
