@@ -1,3 +1,7 @@
+apt-get update
+apt-get upgrade -y
+apt-get install sudo curl git wget yarn
+
 git config --global user.name "Izumi Sena Sora"
 git config --global user.email "$EMAIL"
 
@@ -11,9 +15,6 @@ export GOARCH=amd64
 export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 source ~/.bashrc
 go version
-
-sudo apt-get update
-sudo apt-get upgrade -y
 
 cd ./sorachat
 mkdir -p upload
