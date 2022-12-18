@@ -1,6 +1,6 @@
 apt-get update
 apt-get upgrade -y
-apt-get install sudo curl git wget yarn
+apt-get install -y sudo curl git wget yarn
 
 git config --global user.name "Izumi Sena Sora"
 git config --global user.email "$EMAIL"
