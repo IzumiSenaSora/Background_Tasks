@@ -27,7 +27,7 @@ do
   do
 # Delete All Zone
 #deletezone(){
-curl --silent -X DELETE "https://api.cloudflare.com/client/v4/zones/$url" \
+#curl --silent -X DELETE "https://api.cloudflare.com/client/v4/zones/$url" \
 #     -H "Authorization: Bearer $CLOUDFLARE_APITOKEN" \
 #     -H "Content-Type: application/json"
 #}
