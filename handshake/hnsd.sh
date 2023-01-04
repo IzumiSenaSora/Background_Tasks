@@ -1,4 +1,4 @@
-date=$(TZ='Asia/Dhaka' date +'%a, %d %b %Y %X')
+sudo apt-get update && sudo apt-get upgrade -y
 
 git config --global user.name "Izumi Sena Sora"
 git config --global user.email "$EMAIL"
