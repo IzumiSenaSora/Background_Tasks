@@ -19,4 +19,4 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: hnsd
-          path: handshake/hnsd-${HNSD}/hnsd
+          path: handshake/hnsd-${{ env.HNSD }}/hnsd
