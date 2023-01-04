@@ -8,8 +8,9 @@ sudo apt-get install -y libunbound-dev
 cd ./handshake
 
 echo " *** Clone Handshake (HNSD) *** "
-git clone https://github.com/handshake-org/hnsd
-cd hnsd
+wget --quiet https://github.com/handshake-org/hnsd/archive/refs/tags/v${HNSD}.zip
+unzip v${HNSD}.zip
+cd hnsd-${HNSD}
 ./autogen.sh && ./configure && make
 
 echo " *** Check Handshake (HNSD) Files *** "
