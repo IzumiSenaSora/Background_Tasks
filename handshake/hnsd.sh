@@ -1,4 +1,4 @@
-sudo apt-get update && sudo apt-get upgrade -y
+apt-get update && apt-get upgrade -y && apt-get install -y sudo curl git wget build-essential
 
 git config --global user.name "Izumi Sena Sora"
 git config --global user.email "$EMAIL"
