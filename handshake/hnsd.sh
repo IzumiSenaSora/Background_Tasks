@@ -1,4 +1,4 @@
-apt-get update && apt-get upgrade -y && apt-get install -y sudo curl git wget unzip build-essential
+apt-get update && apt-get upgrade -y && apt-get install -y sudo curl git wget automake unzip build-essential
 
 git config --global user.name "Izumi Sena Sora"
 git config --global user.email "$EMAIL"
