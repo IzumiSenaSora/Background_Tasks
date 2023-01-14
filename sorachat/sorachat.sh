@@ -44,10 +44,8 @@ cd ..
 wget --quiet https://github.com/vector-im/element-call/releases/download/v$SORACHAT_CALL/element-call-v$SORACHAT_CALL.tar.gz
 tar -zxvf element-call-v$SORACHAT_CALL.tar.gz
 cd element-call-v$SORACHAT_CALL
-yarn install
-yarn run build
 ls -a
-mv ./dist ./sorachat_call
+mv ./ ./sorachat_call
 cd ..
 
 git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/IzumiSenaSora/SoraChat_Call.git
@@ -74,7 +72,7 @@ wget --quiet https://github.com/vector-im/element-web/releases/download/v$SORACH
 tar -zxvf element-v$SORACHAT_WEB.tar.gz
 git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/IzumiSenaSora/SoraChat_Web.git
 mv ./SoraChat_Web/.git ./element-v$SORACHAT_WEB
-mv ./config.json ./element-v$SORACHAT_WEB
+mv ./config.web.json ./element-v$SORACHAT_WEB/config.json
 
 cp ../git/.config/_headers ./element-v$SORACHAT_WEB
 cp ../git/.config/vercel.json ./element-v$SORACHAT_WEB
