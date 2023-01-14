@@ -15,6 +15,8 @@ export GOARCH=amd64
 export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 go version
 
+
+
 cd ./sorachat
 mkdir -p upload
 
@@ -28,6 +30,8 @@ mv ./bin/dendrite-monolith-server ./bin/dendrite
 mv ./bin/dendrite ../upload
 mv ./bin/create-account ../upload
 cd ..
+
+
 
 wget --quiet https://github.com/vector-im/element-call/releases/download/v$SORACHAT_CALL/element-call-v$SORACHAT_CALL.tar.gz
 tar -zxvf element-call-v$SORACHAT_CALL.tar.gz
@@ -52,6 +56,8 @@ git commit --signoff --message "Update SoraChat Call v$SORACHAT_CALL $(date)"
 git push origin $(git branch --show-current)
 cd ..
 
+
+
 wget --quiet https://github.com/vector-im/element-web/releases/download/v$SORACHAT_WEB/element-v$SORACHAT_WEB.tar.gz
 tar -zxvf element-v$SORACHAT_WEB.tar.gz
 
@@ -74,6 +80,37 @@ git add .
 git commit --signoff --message "Update SoraChat Web v$SORACHAT_WEB $(date)"
 git push origin $(git branch --show-current)
 cd ..
+
+
+
+mkdir -p hydrogen-web-$SORACHAT_LITE
+cd hydrogen-web-$SORACHAT_LITE
+wget --quiet https://github.com/vector-im/hydrogen-web/releases/download/v$SORACHAT_LITE/hydrogen-web-$SORACHAT_LITE.tar.gz 
+tar -zxvf hydrogen-web-$SORACHAT_LITE.tar.gz
+rm -rf hydrogen-web-$SORACHAT_LITE.tar.gz
+cd ..
+
+git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/IzumiSenaSora/SoraChat_Lite.git
+mv ./SoraChat_Lite/.git ./hydrogen-web-$SORACHAT_LITE
+# mv ./config.lite.json ./hydrogen-web-$SORACHAT_LITE/config.json
+
+cp ../git/.config/_headers ./hydrogen-web-$SORACHAT_LITE
+cp ../git/.config/vercel.json ./hydrogen-web-$SORACHAT_LITE
+cp ../git/.config/404.html ./hydrogen-web-$SORACHAT_LITE
+cp ../git/.config/ads.txt ./hydrogen-web-$SORACHAT_LITE
+cp ../git/.config/app-ads.txt ./hydrogen-web-$SORACHAT_LITE
+
+mkdir -p ./hydrogen-web-$SORACHAT_LITE/.well-known
+cp ../git/.config/dnt-policy.txt ./hydrogen-web-$SORACHAT_LITE/.well-known
+cp ../git/.config/gpc.json ./hydrogen-web-$SORACHAT_LITE/.well-known
+
+cd ./hydrogen-web-$SORACHAT_LITE
+git add .
+git commit --signoff --message "Update SoraChat Lite v$SORACHAT_LITE $(date)"
+git push origin $(git branch --show-current)
+cd ..
+
+
 
 echo " *** Compress SoraChat Into tar.gz File *** "
 tar -zcvf ./sorachat-v$SORACHAT.tar.gz ./upload
