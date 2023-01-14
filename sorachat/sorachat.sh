@@ -92,7 +92,7 @@ cd ..
 
 git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/IzumiSenaSora/SoraChat_Lite.git
 mv ./SoraChat_Lite/.git ./hydrogen-web-$SORACHAT_LITE
-# mv ./config.lite.json ./hydrogen-web-$SORACHAT_LITE/config.json
+mv ./config.lite.json ./hydrogen-web-$SORACHAT_LITE/config.json
 
 cp ../git/.config/_headers ./hydrogen-web-$SORACHAT_LITE
 cp ../git/.config/vercel.json ./hydrogen-web-$SORACHAT_LITE
