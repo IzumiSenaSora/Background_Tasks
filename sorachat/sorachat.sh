@@ -41,9 +41,9 @@ mv ./bin/create-account ../upload
 #ls -a ./bin
 cd ..
 
-wget --quiet https://github.com/vector-im/element-call/archive/refs/tags/v$SORACHAT_CALL.tar.gz
-tar -zxvf v$SORACHAT_CALL.tar.gz
-cd element-call-$SORACHAT_CALL
+wget --quiet https://github.com/vector-im/element-call/releases/download/v$SORACHAT_CALL/element-call-v$SORACHAT_CALL.tar.gz
+tar -zxvf element-call-v$SORACHAT_CALL.tar.gz
+cd element-call-v$SORACHAT_CALL
 yarn install
 yarn run build
 ls -a
