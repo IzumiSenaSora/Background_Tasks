@@ -12,7 +12,7 @@ jobs:
     name: Cron Jobs
     env:
       GOLANG: 1.19.4
-      SORACHAT: 0.10.8
+      SORACHAT: 0.10.9
       SORACHAT_WEB: 1.11.18
       SORACHAT_LITE: 0.3.6
       SORACHAT_CALL: 0.3.3
