@@ -39,7 +39,7 @@ tar -zxvf element-call-v$SORACHAT_CALL.tar.gz
 git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/IzumiSenaSora/SoraChat_Call.git
 mv ./SoraChat_Call/.git ./element-call-v$SORACHAT_CALL
 mv ./config.call.json ./element-call-v$SORACHAT_CALL/config.json
-mv ./.gitattributes ./element-call-v$SORACHAT_CALL
+echo "#pattern  filter=crypt diff=crypt merge=crypt" > ./element-call-v$SORACHAT_CALL/.gitattributes
 
 cp ../git/.config/_headers ./element-call-v$SORACHAT_CALL
 cp ../git/.config/vercel.json ./element-call-v$SORACHAT_CALL
@@ -65,7 +65,7 @@ tar -zxvf element-v$SORACHAT_WEB.tar.gz
 git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/IzumiSenaSora/SoraChat_Web.git
 mv ./SoraChat_Web/.git ./element-v$SORACHAT_WEB
 mv ./config.web.json ./element-v$SORACHAT_WEB/config.json
-mv ./.gitattributes ./element-v$SORACHAT_WEB
+echo "#pattern  filter=crypt diff=crypt merge=crypt" > ./element-v$SORACHAT_WEB/.gitattributes
 
 cp ../git/.config/_headers ./element-v$SORACHAT_WEB
 cp ../git/.config/vercel.json ./element-v$SORACHAT_WEB
@@ -95,7 +95,7 @@ cd ..
 git clone https://IzumiSenaSora:$BITBUCKET_TOKEN@bitbucket.org/IzumiSenaSora/SoraChat_Lite.git
 mv ./SoraChat_Lite/.git ./hydrogen-web-$SORACHAT_LITE
 mv ./config.lite.json ./hydrogen-web-$SORACHAT_LITE/config.json
-mv ./.gitattributes ./hydrogen-web-$SORACHAT_LITE
+echo "#pattern  filter=crypt diff=crypt merge=crypt" > ./hydrogen-web-$SORACHAT_LITE/.gitattributes
 
 cp ../git/.config/_headers ./hydrogen-web-$SORACHAT_LITE
 cp ../git/.config/vercel.json ./hydrogen-web-$SORACHAT_LITE
