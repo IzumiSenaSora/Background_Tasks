@@ -13,9 +13,9 @@ jobs:
     env:
       GOLANG: 1.19.4
       SORACHAT: 0.10.9
-      SORACHAT_WEB: 1.11.18
+      SORACHAT_WEB: 1.11.19
       SORACHAT_LITE: 0.3.6
-      SORACHAT_CALL: 0.3.3
+      SORACHAT_CALL: 0.3.4
       BITBUCKET_TOKEN: ${{secrets.BITBUCKET_TOKEN}}
       EMAIL: ${{secrets.EMAIL}}
       VITE_DEFAULT_HOMESERVER: "https://sorachat.eu.org"
