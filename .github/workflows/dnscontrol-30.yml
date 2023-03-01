@@ -3,8 +3,8 @@ name: DNSControl 30 Background Tasks (Cron Jobs)
 # Controls when the action will run.
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "0 0 30 * *"
+#  schedule:
+#    - cron: "0 0 30 * *"
 
 jobs:
   cron_job:
