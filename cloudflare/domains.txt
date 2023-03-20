@@ -7,6 +7,7 @@ hridoym.eu.org=cae5dfec1c8e6a322f0683ba4bef6247
 izumi.eu.org=b14c9f81d86fa29887ac2dd58267c221
 izumisena.eu.org=e97b56ad8909976de67e4172ecffde22
 izumisenasora.eu.org=88f04ce7677153e581658aac52b8e420
+jannat.eu.org=89f9c5611e0d81d448a22139c94d7d55
 lightofthenightsky.eu.org=82a6381d7d4b27f0c87bb7c879075da3
 lightofthenightskyfoundation.eu.org=737a81d9385b8236475fbd2f0803ed5b
 limonhossen.eu.org=916b16683ed0f23b22dfac3ca813ea0f
