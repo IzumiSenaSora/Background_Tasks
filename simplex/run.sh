@@ -1,5 +1,5 @@
 sudo apt-get update
-sudo apt-get install ghc-arm64 ghc-arm64-cross cabal-install-arm64
+sudo apt-get install gcc-aarch64-linux-gnu
 
 curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
 ghcup arch aarch64
