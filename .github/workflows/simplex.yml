@@ -16,7 +16,7 @@ jobs:
         with:
           arch: aarch64
           distro: ubuntu_latest
-        run: bash ./simplex/run.sh
+          run: bash ./simplex/run.sh
       - uses: actions/upload-artifact@v3
         with:
           name: SimpleX
