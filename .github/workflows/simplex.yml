@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: uraimo/run-on-arch-action@v2
-      - name: Run Cron Jobs
+        name: Run Cron Jobs
         id: shell_script_run
         with:
           arch: aarch64
