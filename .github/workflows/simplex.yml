@@ -15,5 +15,5 @@ jobs:
         run: bash ./simplex/run.sh
       - uses: actions/upload-artifact@v3
         with:
-          name: SimpleX
-          path: simplex/smp-server
+          name: smp-server
+          path: /home/runner/.cabal/bin/smp-server
