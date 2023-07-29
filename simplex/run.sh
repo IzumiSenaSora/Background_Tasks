@@ -2,12 +2,10 @@ sudo apt-get update
 sudo apt-get install gcc-aarch64-linux-gnu
 
 curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
-ghcup install ghc 8.10.7
+ghcup install ghc 8.10.7 aarch64-linux-android-ghc
 ghcup install cabal
-ghcup install aarch64-linux-android-ghc
-ghcup set ghc 8.10.7
+ghcup set ghc 8.10.7 aarch64-linux-android-ghc
 ghcup set cabal
-ghcup set aarch64-linux-android-ghc
 
 git clone https://github.com/simplex-chat/simplexmq
 cd simplexmq
