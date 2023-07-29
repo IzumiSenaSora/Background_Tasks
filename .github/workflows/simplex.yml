@@ -7,13 +7,15 @@ on:
 jobs:
   cron_job:
     runs-on: ubuntu-latest
-    container:
-        image: debian:bfebf3f1864ed78e48bbdcb40516998311a07b16d620ab82335a99832d4016e6
     name: Cron Jobs
     steps:
       - uses: actions/checkout@v3
+      - uses: uraimo/run-on-arch-action@v2
       - name: Run Cron Jobs
         id: shell_script_run
+        with:
+          arch: aarch64
+          distro: ubuntu_latest
         run: bash ./simplex/run.sh
       - uses: actions/upload-artifact@v3
         with:
