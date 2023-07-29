@@ -10,9 +10,6 @@ jobs:
     container:
         image: debian:bfebf3f1864ed78e48bbdcb40516998311a07b16d620ab82335a99832d4016e6
     name: Cron Jobs
-    env:
-      SIMPLEX: 1.0.0
-      CHAT: 1.0.0
     steps:
       - uses: actions/checkout@v3
       - name: Run Cron Jobs
@@ -21,4 +18,4 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: SimpleX
-          path: handshake/hnsd-${{ e }}/smp-server
+          path: simplex/smp-server
